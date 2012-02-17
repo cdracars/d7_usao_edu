@@ -26,7 +26,7 @@
 ; - variables
 ; -----------------------------------------------------------------------------
 
-name = mig5 Profiler Example
+name = d7usaoedu_profile
 description = An example Install profile that uses Profiler.
 core = 7.x
 theme = garland
