@@ -13,8 +13,8 @@ before_script:
   - pear channel-discover pear.drush.org
   - pear install drush/drush
   - phpenv rehash
-  - drush make d7_usao_edu.build ../d7.usao.edu
-  - cd ../d7.usao.edu
+  - drush make d7_usao_edu.build ../d7_dev.usao.edu
+  - cd ../d7_dev.usao.edu
   - sudo chmod -R 777 sites/
   - drush si d7_usao_edu --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=USAO@2012 --site-mail=admin@example.com --site-name="d7.usao.edu" --yes
   - drush cc all --yes
