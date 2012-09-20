@@ -4,10 +4,10 @@
 
  projects[drupal][version] = "7.14"
 
- projects[candw][type] = "profile"
+ projects[d7_usao_edu][type] = "profile"
 
- projects[candw][download][type] = "git"
+ projects[d7_usao_edu][download][type] = "git"
 
- projects[candw][download][url] = "https://github.com/cdracars/d7.usao.edu.git"
+ projects[d7_usao_edu][download][url] = "https://github.com/cdracars/d7.usao.edu.git"
 
- projects[candw][download][branch] = "master"
+ projects[d7_usao_edu][download][branch] = "master"
