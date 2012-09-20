@@ -8,6 +8,6 @@
 
  projects[candw][download][type] = "git"
 
- projects[candw][download][url] = "https://github.com/cdracars/profile-d7.usao.edu.git"
+ projects[candw][download][url] = "https://github.com/cdracars/d7.usao.edu.git"
 
  projects[candw][download][branch] = "master"
