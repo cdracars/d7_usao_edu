@@ -1,0 +1,13 @@
+ core = 7.x
+
+ api = 2
+
+ projects[drupal][version] = "7.14"
+
+ projects[candw][type] = "profile"
+
+ projects[candw][download][type] = "git"
+
+ projects[candw][download][url] = "https://github.com/cdracars/profile-d7.usao.edu.git"
+
+ projects[candw][download][branch] = "master"
