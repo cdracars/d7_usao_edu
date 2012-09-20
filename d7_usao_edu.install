@@ -11,7 +11,7 @@
  *
  * @see system_install()
  */
-function usaod7_install() {
+function d7_usao_edu_install() {
 
     $filtered_html_format = array(
     'format' => 'filtered_html',
