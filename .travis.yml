@@ -21,3 +21,7 @@ before_script:
 
 script:
   - test -d profiles/d7_usao_edu
+  - test -d profiles/d7_usao_edu/modules
+  - test -d profiles/d7_usao_edu/themes
+  - grep MemCacheDrupal sites/default/settings.php
+  - grep VarnishCache sites/default/settings.php
