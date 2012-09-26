@@ -23,6 +23,9 @@ projects[admin_tools][subdir] = contrib
 projects[ctools][version] = "1.1"
 projects[ctools][subdir] = contrib
 
+projects[custom_search][version] = "1.11"
+projects[custom_search][subdir] = contrib
+
 projects[devel][version] = "1.3"
 projects[devel][subdir] = contrib
 

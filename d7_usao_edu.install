@@ -14,6 +14,11 @@
 function d7_usao_edu_install() {
 
     variable_set('site_slogan', 'Oklahoma\'s Nationally Ranked Public Liberal Arts College');
+    variable_set('admin_toolbar', array('behavior' => 'ah'));
+    variable_set('custom_search_image_path', 'public://custom_search/search.jpg');
+    variable_set('custom_search_size', '20');
+    variable_set('custom_search_text', 'Search USAO');
+    variable_set('typekit_api_token', '723a028f846cf366a07845aef608740ff660abe3');
 
     $filtered_html_format = array(
     'format' => 'filtered_html',

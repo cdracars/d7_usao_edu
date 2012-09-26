@@ -30,6 +30,7 @@ dependencies[] = views_ui
 dependencies[] = admin
 dependencies[] = admin_tools
 dependencies[] = ctools
+dependencies[] = custom_search
 dependencies[] = migrate
 dependencies[] = migrate_ui
 dependencies[] = migrate_extras

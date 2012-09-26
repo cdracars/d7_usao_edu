@@ -26,4 +26,19 @@ function usaod7_form_install_configure_form_alter(&$form, $form_state) {
 
   // Only check for updates, no need for email notifications
   $form['update_notifications']['update_status_module']['#default_value'] = array(1);
+
+  /I am storing images in /images folder of my install profile
+  $file_path = drupal_get_path('profile', '<name_of_profile>') . '/images/search.jpg';
+
+  //Preparing file object
+    $file = (object)array(
+      "uid" => 1,
+      "uri" => $file_path,
+      "filemime" => file_get_mimetype($file_path),
+      "status" => 1
+    );
+
+  //copying files from profile/images folder to public folder. This works, as the files are copied to the files folder & also entries are created in database tables
+
+    $file = file_copy($file, 'public://custom_search/', FILE_EXISTS_REPLACE);
 }
