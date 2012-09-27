@@ -27,7 +27,7 @@ function usaod7_form_install_configure_form_alter(&$form, $form_state) {
   // Only check for updates, no need for email notifications
   $form['update_notifications']['update_status_module']['#default_value'] = array(1);
 
-  /I am storing images in /images folder of my install profile
+  //I am storing images in /images folder of my install profile
   $file_path = drupal_get_path('profile', '<name_of_profile>') . '/images/search.jpg';
 
   //Preparing file object
