@@ -39,6 +39,6 @@ function usaod7_form_install_configure_form_alter(&$form, $form_state) {
     );
 
   //copying files from profile/images folder to public folder. This works, as the files are copied to the files folder & also entries are created in database tables
-    drupal_mkdir('public://custom_search/', 0755);
+    mkdir('public://custom_search/', 0755);
     file_copy($file, 'public://', FILE_EXISTS_REPLACE);
 }
