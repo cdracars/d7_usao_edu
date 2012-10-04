@@ -207,11 +207,15 @@ function d7_usao_edu_install() {
       "status" => 1
     );
 
-    $directory = mkdir ('public://custom_search', 0755);
+    if (!file_exists('public://custom_search/')) {
+       $directory = mkdir ('public://custom_search', 0755) . 'search.jpg';
+    } else {
+       $directory = 'public://custom_search/search.jpg';
+    }
 
    // copying files from profile/images folder to public folder. This works, as
    // the files are copied to the files folder & also entries are created in
    // database tables
 
     file_copy($file, $directory, FILE_EXISTS_REPLACE);
-}
+ }
