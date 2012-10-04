@@ -197,7 +197,7 @@ function d7_usao_edu_install() {
 
   //I am storing images in /images folder of my install profile
   //$file_path = 'profiles/d7_usao_edu/themes/gray-n-green/images/search.jpg';
-  $file_path = drupal_get_path('module', 'd7.usao.edu') . '/images/search.jpg';
+  $file_path = drupal_get_path('profile', 'd7_usao_edu') . '/images/search.jpg';
 
   //Preparing file object
     $file = (object)array(
