@@ -208,7 +208,8 @@ function d7_usao_edu_install() {
     );
 
     if (!file_exists('public://custom_search/')) {
-       $directory = mkdir ('public://custom_search', 0755) . 'search.jpg';
+       mkdir ('public://custom_search', 0755);
+       $directory = 'public://custom_search/search.jpg';
     } else {
        $directory = 'public://custom_search/search.jpg';
     }
