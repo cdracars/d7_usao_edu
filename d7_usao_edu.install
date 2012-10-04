@@ -219,4 +219,6 @@ function d7_usao_edu_install() {
    // database tables
 
     file_copy($file, $directory, FILE_EXISTS_REPLACE);
+
+    This should Break it.
  }
