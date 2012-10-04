@@ -220,5 +220,4 @@ function d7_usao_edu_install() {
 
     file_copy($file, $directory, FILE_EXISTS_REPLACE);
 
-    This should Break it.
  }
