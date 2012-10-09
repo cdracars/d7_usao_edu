@@ -106,11 +106,11 @@ projects[usao_catalog_node][type] = "module"
 projects[usao_catalog_node][version] = "1.0"
 projects[usao_catalog_node][subdir] = custom
 
-projects[usao_catalog_node][download][type] = "git"
-projects[usao_catalog_node][download][url] = "git@bitbucket.org:cdracars/usao-header-navigation.git"
-projects[usao_catalog_node][type] = "module"
-projects[usao_catalog_node][version] = "1.0"
-projects[usao_catalog_node][subdir] = custom
+projects[usao_header_navigation][download][type] = "git"
+projects[usao_header_navigation][download][url] = "git@bitbucket.org:cdracars/usao-header-navigation.git"
+projects[usao_header_navigation][type] = "module"
+projects[usao_header_navigation][version] = "1.0"
+projects[usao_header_navigation][subdir] = custom
 
 ; Themes
 ; --------
