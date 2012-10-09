@@ -107,7 +107,7 @@ projects[usao_catalog_node][version] = "1.0"
 projects[usao_catalog_node][subdir] = custom
 
 projects[usao_catalog_node][download][type] = "git"
-projects[usao_catalog_node][download][url] = "git@bitbucket.org:cdracars/usao-header-navigatioheader-navigationn.git"
+projects[usao_catalog_node][download][url] = "git@bitbucket.org:cdracars/usao-header-navigation.git"
 projects[usao_catalog_node][type] = "module"
 projects[usao_catalog_node][version] = "1.0"
 projects[usao_catalog_node][subdir] = custom
