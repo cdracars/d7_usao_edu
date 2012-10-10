@@ -50,7 +50,6 @@ dependencies[] = workflow_actions
 dependencies[] = workflow_access
 dependencies[] = revisioning_scheduler
 dependencies[] = strongarm
-dependencies[] = features_extra
 
 ; Custom
 ; --------
