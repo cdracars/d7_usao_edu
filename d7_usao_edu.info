@@ -57,6 +57,7 @@ dependencies[] = migrate_usaod6
 dependencies[] = usao_courses_node
 dependencies[] = usao_catalog_node
 dependencies[] = usao_header_navigation
+dependencies[] = usao_footer_navigation
 
 ; Information added by drupal.org packaging script on 2012-05-02
 ; --------
