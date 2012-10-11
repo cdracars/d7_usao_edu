@@ -110,6 +110,7 @@ function d7_usao_edu_install() {
       'weight' => 0,
       'region' => 'content',
       'pages' => '',
+      'title' => '',
       'cache' => -1,
     ),
     array(
@@ -120,6 +121,7 @@ function d7_usao_edu_install() {
       'weight' => 0,
       'region' => 'sidebar_first',
       'pages' => '',
+      'title' => '',
       'cache' => -1,
     ),
     array(
@@ -130,6 +132,7 @@ function d7_usao_edu_install() {
       'weight' => 0,
       'region' => 'sidebar_first',
       'pages' => '',
+      'title' => '',
       'cache' => -1,
     ),
     array(
@@ -140,6 +143,7 @@ function d7_usao_edu_install() {
       'weight' => 1,
       'region' => 'sidebar_first',
       'pages' => '',
+      'title' => '',
       'cache' => -1,
     ),
     array(
@@ -150,6 +154,7 @@ function d7_usao_edu_install() {
       'weight' => 0,
       'region' => 'help',
       'pages' => '',
+      'title' => '',
       'cache' => -1,
     ),
     array(
@@ -160,6 +165,7 @@ function d7_usao_edu_install() {
       'weight' => 0,
       'region' => 'header',
       'pages' => '',
+      'title' => '',
       'cache' => -1,
     ),
     array(
