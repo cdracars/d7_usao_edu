@@ -13,15 +13,32 @@
  */
 function d7_usao_edu_install() {
 
-    variable_set('site_slogan', 'Oklahoma\'s Nationally Ranked Public Liberal Arts College');
-    variable_set('admin_toolbar', array('behavior' => 'ah'));
-    variable_set('custom_search_image_path', 'public://custom_search/search.jpg');
-    variable_set('custom_search_size', '20');
-    variable_set('custom_search_label_visibility', '0');
-    variable_set('custom_search_text', 'Search USAO');
-    variable_set('typekit_api_token', '723a028f846cf366a07845aef608740ff660abe3');
+  variable_set('site_slogan', 'Oklahoma\'s Nationally Ranked Public Liberal Arts College');
+  variable_set('admin_toolbar', array('behavior' => 'ah'));
+  variable_set('custom_search_image_path', 'public://custom_search/search.jpg');
+  variable_set('custom_search_size', '20');
+  variable_set('custom_search_label_visibility', '0');
+  variable_set('custom_search_text', 'Search USAO');
+  variable_set('typekit_api_token', '723a028f846cf366a07845aef608740ff660abe3');
 
-    $filtered_html_format = array(
+  // Set Default Theme
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'gray_n_green')
+    ->execute();
+  variable_set('theme_default', 'gray_n_green');
+
+  // Set Admin Theme
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'rubik')
+    ->execute();
+  variable_set('admin_theme', 'rubik');
+  variable_set('node_admin_theme', '1');
+
+  $filtered_html_format = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
     'weight' => 0,
@@ -184,23 +201,6 @@ function d7_usao_edu_install() {
 
   // Update the menu router information.
   menu_rebuild();
-
-  // Set Default Theme
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'gray_n_green')
-    ->execute();
-  variable_set('theme_default', 'gray_n_green');
-
-  // Set Admin Theme
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'rubik')
-    ->execute();
-  variable_set('admin_theme', 'rubik');
-  variable_set('node_admin_theme', '1');
 
   //I am storing images in /images folder of my install profile
   //$file_path = 'profiles/d7_usao_edu/themes/gray-n-green/images/search.jpg';
