@@ -8,6 +8,6 @@
 
  projects[d7_usao_edu][download][type] = "git"
 
- projects[d7_usao_edu][download][url] = "git@bitbucket.org/cdracars/d7.usao.edu.git"
+ projects[d7_usao_edu][download][url] = "ssh:/git@bitbucket.org/cdracars/d7.usao.edu.git"
 
  projects[d7_usao_edu][download][branch] = "master"
