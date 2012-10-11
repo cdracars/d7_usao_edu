@@ -170,6 +170,7 @@ function d7_usao_edu_install() {
       'weight' => 0,
       'region' => 'header',
       'pages' => '',
+      'title' => '<none>',
       'cache' => -1,
     ),
   );
