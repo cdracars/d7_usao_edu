@@ -81,7 +81,6 @@ function d7_usao_edu_install() {
     ->condition('type', 'theme')
     ->condition('name', 'dingus')
     ->execute();
-  variable_set('theme_default', 'gray_n_green');
 
   // Enable some standard blocks.
   $default_theme = variable_get('theme_default', 'gray_n_green');
@@ -185,6 +184,14 @@ function d7_usao_edu_install() {
 
   // Update the menu router information.
   menu_rebuild();
+
+  // Set Default Theme
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'gray_n_green')
+    ->execute();
+  variable_set('theme_default', 'gray_n_green');
 
   // Set Admin Theme
   db_update('system')
