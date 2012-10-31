@@ -50,6 +50,8 @@ dependencies[] = workflow_actions
 dependencies[] = workflow_access
 dependencies[] = revisioning_scheduler
 dependencies[] = strongarm
+dependencies[] = fontyourface_ui
+dependencies[] = typekit_api
 
 ; Custom
 ; --------
