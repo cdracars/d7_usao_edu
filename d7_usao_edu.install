@@ -19,7 +19,6 @@ function d7_usao_edu_install() {
   variable_set('custom_search_size', '20');
   variable_set('custom_search_label_visibility', '0');
   variable_set('custom_search_text', 'Search USAO');
-  variable_set('typekit_api_token', '723a028f846cf366a07845aef608740ff660abe3');
 
   // Set Default Theme
   db_update('system')

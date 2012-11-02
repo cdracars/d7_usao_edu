@@ -86,9 +86,6 @@ projects[strongarm][subdir] = contrib
 projects[revisioning][version] = "1.0"
 projects[revisioning][subdir] = contrib
 
-projects[fontyourface][version] = "2.5"
-projects[fontyourface][subdir] = contrib
-
 ; Custom Modules
 : --------
 projects[migrate_usaod6][download][type] = "git"
