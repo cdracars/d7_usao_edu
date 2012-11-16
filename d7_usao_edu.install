@@ -218,17 +218,6 @@ function d7_usao_edu_install() {
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 
-  // Create a Home link in the main menu.
-  $item = array(
-    'link_title' => st('Home'),
-    'link_path' => '<front>',
-    'menu_name' => 'main-menu',
-  );
-  menu_link_save($item);
-
-  // Update the menu router information.
-  menu_rebuild();
-
   //I am storing images in /images folder of my install profile
   //$file_path = 'profiles/d7_usao_edu/themes/gray-n-green/images/search.jpg';
   $file_path = drupal_get_path('profile', 'd7_usao_edu') . '/images/search.jpg';
