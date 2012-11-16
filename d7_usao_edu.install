@@ -134,7 +134,7 @@ function d7_usao_edu_install() {
       'title' => '',
       'cache' => -1,
     ),
-    array(
+    /*array(
       'module' => 'menu',
       'delta' => 'menu-header-navigation',
       'theme' => $default_theme,
@@ -145,7 +145,7 @@ function d7_usao_edu_install() {
       'title' => '<none>',
       'cache' => -1,
     ),
-   /* array(
+    array(
       'module' => 'menu',
       'delta' => 'menu-footer-navigation',
       'theme' => $default_theme,
