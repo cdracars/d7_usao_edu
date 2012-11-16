@@ -145,7 +145,7 @@ function d7_usao_edu_install() {
       'title' => '<none>',
       'cache' => -1,
     ),
-    array(
+   /* array(
       'module' => 'menu',
       'delta' => 'menu-footer-navigation',
       'theme' => $default_theme,
@@ -155,7 +155,7 @@ function d7_usao_edu_install() {
       'pages' => '',
       'title' => '<none>',
       'cache' => -1,
-    ),
+    ),*/
   );
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'title', 'cache'));
   foreach ($values as $record) {
