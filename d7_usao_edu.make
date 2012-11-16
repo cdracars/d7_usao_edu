@@ -56,6 +56,9 @@ projects[entityreference][subdir] = contrib
 projects[features][version] = "1.0"
 projects[features][subdir] = contrib
 
+projects[features_extra][version] = "1.0-alpha1"
+projects[features_extra][subdir] = contrib
+
 projects[eck][version] = "2.0-beta1"
 projects[eck][subdir] = contrib
 
