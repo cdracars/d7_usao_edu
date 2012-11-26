@@ -12,6 +12,14 @@ core = 7.x
 
 api = 2
 
+; Development
+; -----------
+projects[devel][version] = "1.3"
+projects[devel][subdir] = contrib
+
+projects[diff][version] = "3.2"
+projects[diff][subdir] = contrib
+
 ; Modules
 ; --------
 projects[admin][version] = "2.0-beta3"
@@ -25,9 +33,6 @@ projects[ctools][subdir] = contrib
 
 projects[custom_search][version] = "1.11"
 projects[custom_search][subdir] = contrib
-
-projects[devel][version] = "1.3"
-projects[devel][subdir] = contrib
 
 projects[views][version] = "3.3"
 projects[views][subdir] = contrib

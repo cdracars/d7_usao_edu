@@ -24,6 +24,12 @@ dependencies[] = file
 dependencies[] = rdf
 dependencies[] = syslog
 
+: Development
+: --------
+
+dependencies[] = devel
+dependencies[] = diff
+
 ; Contrib
 ; --------
 dependencies[] = views_ui
