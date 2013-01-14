@@ -128,10 +128,10 @@ projects[usao_footer_navigation][subdir] = custom
 
 ; Themes
 ; --------
-projects[gray-n-green][download][type] = "git"
-projects[gray-n-green][download][url] = "git@bitbucket.org:cdracars/gray-n-green.git"
-projects[gray-n-green][type] = "theme"
-projects[gray-n-green][version] = "1.0"
+projects[drover-town][download][type] = "git"
+projects[drover-town][download][url] = "git@bitbucket.org:cdracars/drover-town.git"
+projects[drover-town][type] = "theme"
+projects[drover-town][version] = "1.0"
 
 projects[rubik][version] = "4.0-beta8"
 

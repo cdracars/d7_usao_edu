@@ -24,9 +24,9 @@ function d7_usao_edu_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'gray_n_green')
+    ->condition('name', 'drover_town')
     ->execute();
-  variable_set('theme_default', 'gray_n_green');
+  variable_set('theme_default', 'drover_town');
 
   // Set Admin Theme
   db_update('system')
@@ -99,7 +99,7 @@ function d7_usao_edu_install() {
     ->execute();
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'gray_n_green');
+  $default_theme = variable_get('theme_default', 'drover_town');
   $values = array(
     array(
       'module' => 'system',
