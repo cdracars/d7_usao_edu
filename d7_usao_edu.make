@@ -129,8 +129,8 @@ projects[usao_footer_navigation][type] = "module"
 projects[usao_footer_navigation][version] = "1.0"
 projects[usao_footer_navigation][subdir] = custom
 
-projects[usao-news][type] = "git"
-projects[usao-news][url] = "git@bitbucket.org:cdracars/usao-news.git"
+projects[usao-news][download][type] = "git"
+projects[usao-news][download][url] = "git@bitbucket.org:cdracars/usao-news.git"
 projects[usao-news][type] = "module"
 projects[usao-news][version] = "1.0"
 projects[usao-news][subdir] = custom
