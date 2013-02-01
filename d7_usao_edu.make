@@ -129,6 +129,12 @@ projects[usao_footer_navigation][type] = "module"
 projects[usao_footer_navigation][version] = "1.0"
 projects[usao_footer_navigation][subdir] = custom
 
+projects[usao_news][type] = "git"
+projects[usao_news][url] = "git@bitbucket.org:cdracars/usao-news.git"
+projects[usao_news] = "module"
+projects[usao_news] = "1.0"
+projects[usao_news] = custom
+
 ; Themes
 ; --------
 projects[drover-town][download][type] = "git"
