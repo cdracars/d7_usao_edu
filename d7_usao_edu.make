@@ -94,7 +94,7 @@ projects[strongarm][subdir] = contrib
 projects[revisioning][version] = "1.0"
 projects[revisioning][subdir] = contrib
 
-projects[nodequeue][version] = "7.x-2.0-beta1"
+projects[nodequeue][version] = "2.0-beta1"
 projects[nodequeue][subdir] = contrib
 
 ; Custom Modules
@@ -131,9 +131,9 @@ projects[usao_footer_navigation][subdir] = custom
 
 projects[usao-news][type] = "git"
 projects[usao-news][url] = "git@bitbucket.org:cdracars/usao-news.git"
-projects[usao-news] = "module"
-projects[usao-news] = "1.0"
-projects[usao-news] = custom
+projects[usao-news][type] = "module"
+projects[usao-news][version] = "1.0"
+projects[usao-news][subdir] = custom
 
 ; Themes
 ; --------
