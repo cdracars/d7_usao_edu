@@ -28,19 +28,19 @@ projects[admin][subdir] = contrib
 projects[admin_tools][version] = "1.1"
 projects[admin_tools][subdir] = contrib
 
-projects[ctools][version] = "1.1"
+projects[ctools][version] = "1.2"
 projects[ctools][subdir] = contrib
 
 projects[custom_search][version] = "1.11"
 projects[custom_search][subdir] = contrib
 
-projects[views][version] = "3.3"
+projects[views][version] = "3.5"
 projects[views][subdir] = contrib
 
 projects[views_bulk_operations][version] = "3.0-rc1"
 projects[views_bulk_operations][subdir] = contrib
 
-projects[migrate][version] = "2.4"
+projects[migrate][version] = "2.5"
 projects[migrate][subdir] = contrib
 
 projects[migrate_extras][version] = "2.4"
@@ -52,7 +52,7 @@ projects[office_hours][subdir] = contrib
 projects[workflow][version] = "1.0"
 projects[workflow][subdir] = contrib
 
-projects[entity][version] = "1.0-rc3"
+projects[entity][version] = "1.0"
 projects[entity][subdir] = contrib
 
 projects[entityreference][version] = "1.0-rc3"
@@ -73,13 +73,13 @@ projects[search_api_solr][subdir] = contrib
 projects[search_api][version] = "1.2"
 projects[search_api][subdir] = contrib
 
-projects[facetapi][version] = "1.1"
+projects[facetapi][version] = "1.2"
 projects[facetapi][subdir] = contrib
 
 projects[panels][version] = "3.2"
 projects[panels][subdir] = contrib
 
-projects[rules][version] = "2.1"
+projects[rules][version] = "2.2"
 projects[rules][subdir] = contrib
 
 projects[memcache][version] = "1.0"
