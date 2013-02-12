@@ -147,7 +147,7 @@ function d7_usao_edu_install() {
     ),
     array(
       'module' => 'views',
-      'delta' => 'nodequeue_1-block',
+      'delta' => 'featured_news-block',
       'theme' => $default_theme,
       'status' => 1,
       'weight' => 0,
