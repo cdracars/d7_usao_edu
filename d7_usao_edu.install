@@ -151,7 +151,7 @@ function d7_usao_edu_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => 0,
-      'region' => 'footer',
+      'region' => 'sidebar_first',
       'pages' => '',
       'title' => '<none>',
       'cache' => -1,
