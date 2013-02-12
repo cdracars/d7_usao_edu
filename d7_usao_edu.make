@@ -123,11 +123,11 @@ projects[usao_header_navigation][type] = "module"
 projects[usao_header_navigation][version] = "1.0"
 projects[usao_header_navigation][subdir] = custom
 
-projects[usao_footer_navigation][download][type] = "git"
-projects[usao_footer_navigation][download][url] = "git@bitbucket.org:cdracars/usao-footer-navigation.git"
-projects[usao_footer_navigation][type] = "module"
-projects[usao_footer_navigation][version] = "1.0"
-projects[usao_footer_navigation][subdir] = custom
+projects[usao_footer][download][type] = "git"
+projects[usao_footer][download][url] = "git@bitbucket.org:cdracars/usao-footer.git"
+projects[usao_footer][type] = "module"
+projects[usao_footer][version] = "1.0"
+projects[usao_footer][subdir] = custom
 
 projects[usao-news][download][type] = "git"
 projects[usao-news][download][url] = "git@bitbucket.org:cdracars/usao-news.git"
