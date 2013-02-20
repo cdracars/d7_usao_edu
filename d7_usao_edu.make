@@ -3,7 +3,7 @@
 ; Each makefile should begin by declaring the core version of Drupal that all
 ; projects should be compatible with.
 
-core = 7.x
+
 
 ; API version
 ; ------------
@@ -128,6 +128,12 @@ projects[usao_footer][download][url] = "git@bitbucket.org:cdracars/usao-footer.g
 projects[usao_footer][type] = "module"
 projects[usao_footer][version] = "1.0"
 projects[usao_footer][subdir] = custom
+
+projects[usao_front_buttons][download][type] = "git"
+projects[usao_front_buttons][download][url] = "git@bitbucket.org:cdracars/usao_front_buttons.git"
+projects[usao_front_buttons][type] = "module"
+projects[usao_front_buttons][version] = "1.0"
+projects[usao_front_buttons][subdir] = custom
 
 projects[usao-news][download][type] = "git"
 projects[usao-news][download][url] = "git@bitbucket.org:cdracars/usao-news.git"

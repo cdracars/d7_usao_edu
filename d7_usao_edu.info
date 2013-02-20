@@ -68,6 +68,7 @@ dependencies[] = usao_catalog_node
 dependencies[] = usao_header_navigation
 dependencies[] = usao_footer
 dependencies[] = usao_news
+dependencies[] = usao_front_buttons
 
 ; Information added by drupal.org packaging script on 2012-05-02
 ; --------
