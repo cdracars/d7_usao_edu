@@ -141,6 +141,12 @@ projects[usao-news][type] = "module"
 projects[usao-news][version] = "1.0"
 projects[usao-news][subdir] = custom
 
+projects[usao_testimonial][download][type] = "git"
+projects[usao_testimonial][download][url] = "git@bitbucket.org:cdracars/usao_testimonial.git"
+projects[usao_testimonial][type] = "module"
+projects[usao_testimonial][version] = "1.0"
+projects[usao_testimonial][subdir] = custom
+
 ; Themes
 ; --------
 projects[drover-town][download][type] = "git"
