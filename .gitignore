@@ -2,3 +2,5 @@
 *.swo
 .sass-cache
 .DS_Store
+modules/*
+themes/*
