@@ -106,8 +106,8 @@ projects[token][subdir] = contrib
 projects[globalredirect][version] = "1.5"
 projects[globalredirect][subdir] = contrib
 
-projects[pathlogic][version] = "2.10"
-projects[pathlogic][subdir] = contrib
+projects[pathologic][version] = "2.10"
+projects[pathologic][subdir] = contrib
 
 projects[redirect][version] = "1.0-rc1"
 projects[redirect][subdir] = contrib
