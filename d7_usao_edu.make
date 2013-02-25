@@ -97,6 +97,21 @@ projects[revisioning][subdir] = contrib
 projects[nodequeue][version] = "2.0-beta1"
 projects[nodequeue][subdir] = contrib
 
+projects[pathauto][version] = "1.2"
+projects[pathauto][subdir] = contrib
+
+projects[token][version] = "1.5"
+projects[token][subdir] = contrib
+
+projects[globalredirect][version] = "1.5"
+projects[globalredirect][subdir] = contrib
+
+projects[pathlogic][version] = "2.10"
+projects[pathlogic][subdir] = contrib
+
+projects[redirect][version] = "1.0-rc1"
+projects[redirect][subdir] = contrib
+
 ; Custom Modules
 : --------
 projects[migrate_usaod6][download][type] = "git"

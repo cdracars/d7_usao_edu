@@ -51,14 +51,14 @@ dependencies[] = rules_admin
 dependencies[] = rules_scheduler
 dependencies[] = node_reference
 dependencies[] = user_reference
-dependencies[] = workflow_views
-dependencies[] = workflow_rules
-dependencies[] = workflow_admin_ui
-dependencies[] = workflow_actions
-dependencies[] = workflow_access
 dependencies[] = revisioning_scheduler
 dependencies[] = strongarm
 dependencies[] = nodequeue
+dependencies[] = pathauto
+dependencies[] = token
+dependencies[] = pathlogic
+dependencies[] = globalredirect
+dependencies[] = redirect
 
 ; Custom
 ; --------
@@ -73,7 +73,7 @@ dependencies[] = usao_testimonials
 
 ; Information added by drupal.org packaging script on 2012-05-02
 ; --------
-version = "7.15"
+version = "7.20"
 project = "drupal"
 datestamp = "1335997555"
 
