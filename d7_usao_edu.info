@@ -56,7 +56,7 @@ dependencies[] = strongarm
 dependencies[] = nodequeue
 dependencies[] = pathauto
 dependencies[] = token
-dependencies[] = pathlogic
+dependencies[] = pathologic
 dependencies[] = globalredirect
 dependencies[] = redirect
 
