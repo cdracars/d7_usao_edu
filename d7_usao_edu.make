@@ -43,7 +43,7 @@ projects[views_bulk_operations][subdir] = contrib
 projects[migrate][version] = "2.5"
 projects[migrate][subdir] = contrib
 
-projects[migrate_extras][version] = "2.4"
+projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][subdir] = contrib
 
 projects[office_hours][version] = "1.0"
@@ -64,13 +64,13 @@ projects[features][subdir] = contrib
 projects[features_extra][version] = "1.0-alpha1"
 projects[features_extra][subdir] = contrib
 
-projects[eck][version] = "2.0-beta1"
+projects[eck][version] = "2.0-rc1"
 projects[eck][subdir] = contrib
 
 projects[search_api_solr][version] = "1.0-rc2"
 projects[search_api_solr][subdir] = contrib
 
-projects[search_api][version] = "1.2"
+projects[search_api][version] = "1.4"
 projects[search_api][subdir] = contrib
 
 projects[facetapi][version] = "1.2"
@@ -85,13 +85,13 @@ projects[rules][subdir] = contrib
 projects[memcache][version] = "1.0"
 projects[memcache][subdir] = contrib
 
-projects[references][version] = "2.0"
+projects[references][version] = "2.1"
 projects[references][subdir] = contrib
 
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = contrib
 
-projects[revisioning][version] = "1.0"
+projects[revisioning][version] = "1.4"
 projects[revisioning][subdir] = contrib
 
 projects[nodequeue][version] = "2.0-beta1"
