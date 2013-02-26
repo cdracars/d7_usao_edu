@@ -156,11 +156,11 @@ projects[usao_news][type] = "module"
 projects[usao_news][version] = "1.0"
 projects[usao_news][subdir] = custom
 
-projects[usao_testimonial][download][type] = "git"
-projects[usao_testimonial][download][url] = "git@bitbucket.org:cdracars/usao_testimonials.git"
-projects[usao_testimonial][type] = "module"
-projects[usao_testimonial][version] = "1.0"
-projects[usao_testimonial][subdir] = custom
+projects[usao_testimonials][download][type] = "git"
+projects[usao_testimonials][download][url] = "git@bitbucket.org:cdracars/usao_testimonials.git"
+projects[usao_testimonials][type] = "module"
+projects[usao_testimonials][version] = "1.0"
+projects[usao_testimonials][subdir] = custom
 
 ; Themes
 ; --------
