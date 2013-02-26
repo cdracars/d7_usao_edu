@@ -150,11 +150,11 @@ projects[usao_front_buttons][type] = "module"
 projects[usao_front_buttons][version] = "1.0"
 projects[usao_front_buttons][subdir] = custom
 
-projects[usao-news][download][type] = "git"
-projects[usao-news][download][url] = "git@bitbucket.org:cdracars/usao-news.git"
-projects[usao-news][type] = "module"
-projects[usao-news][version] = "1.0"
-projects[usao-news][subdir] = custom
+projects[usao_news][download][type] = "git"
+projects[usao_news][download][url] = "git@bitbucket.org:cdracars/usao_news.git"
+projects[usao_news][type] = "module"
+projects[usao_news][version] = "1.0"
+projects[usao_news][subdir] = custom
 
 projects[usao_testimonial][download][type] = "git"
 projects[usao_testimonial][download][url] = "git@bitbucket.org:cdracars/usao_testimonials.git"
