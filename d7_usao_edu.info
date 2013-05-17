@@ -65,15 +65,15 @@ dependencies[] = redirect
 dependencies[] = migrate_usaod6
 dependencies[] = usao_courses_node
 dependencies[] = usao_catalog_node
-dependencies[] = usao_header_navigation
-dependencies[] = usao_footer
-dependencies[] = usao_news
-dependencies[] = usao_front_buttons
-dependencies[] = usao_testimonials
+dependencies[] = mission_respondable_header
+dependencies[] = mission_respondable_footer
+dependencies[] = mission_respondable_news
+dependencies[] = mission_respondable_front_buttons
+dependencies[] = mission_respondable_testimonials
 
 ; Information added by drupal.org packaging script on 2012-05-02
 ; --------
-version = "7.20"
+version = "7.22"
 project = "drupal"
 datestamp = "1335997555"
 

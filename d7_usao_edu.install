@@ -24,9 +24,9 @@ function d7_usao_edu_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'drover_town')
+    ->condition('name', 'mission_respondable')
     ->execute();
-  variable_set('theme_default', 'drover_town');
+  variable_set('theme_default', 'mission_respondable');
 
   // Set Admin Theme
   db_update('system')
@@ -99,7 +99,7 @@ function d7_usao_edu_install() {
     ->execute();
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'drover_town');
+  $default_theme = variable_get('theme_default', 'mission_respondable');
   $values = array(
     array(
       'module' => 'system',

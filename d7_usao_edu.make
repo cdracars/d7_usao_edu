@@ -132,42 +132,42 @@ projects[usao_catalog_node][type] = "module"
 projects[usao_catalog_node][version] = "1.0"
 projects[usao_catalog_node][subdir] = custom
 
-projects[usao_header_navigation][download][type] = "git"
-projects[usao_header_navigation][download][url] = "git@bitbucket.org:cdracars/usao-header-navigation.git"
-projects[usao_header_navigation][type] = "module"
-projects[usao_header_navigation][version] = "1.0"
-projects[usao_header_navigation][subdir] = custom
+projects[mission_respondable_header][download][type] = "git"
+projects[mission_respondable_header][download][url] = "git@bitbucket.org:cdracars/mission_respondable_header.git"
+projects[mission_respondable_header][type] = "module"
+projects[mission_respondable_header][version] = "1.0"
+projects[mission_respondable_header][subdir] = custom
 
-projects[usao_footer][download][type] = "git"
-projects[usao_footer][download][url] = "git@bitbucket.org:cdracars/usao-footer.git"
-projects[usao_footer][type] = "module"
-projects[usao_footer][version] = "1.0"
-projects[usao_footer][subdir] = custom
+projects[mission_respondable_footer][download][type] = "git"
+projects[mission_respondable_footer][download][url] = "git@bitbucket.org:cdracars/mission_respondable_footer.git"
+projects[mission_respondable_footer][type] = "module"
+projects[mission_respondable_footer][version] = "1.0"
+projects[mission_respondable_footer][subdir] = custom
 
-projects[usao_front_buttons][download][type] = "git"
-projects[usao_front_buttons][download][url] = "git@bitbucket.org:cdracars/usao_front_buttons.git"
-projects[usao_front_buttons][type] = "module"
-projects[usao_front_buttons][version] = "1.0"
-projects[usao_front_buttons][subdir] = custom
+projects[mission_respondable_front_buttons][download][type] = "git"
+projects[mission_respondable_front_buttons][download][url] = "git@bitbucket.org:cdracars/mission_respondable_front_buttons.git"
+projects[mission_respondable_front_buttons][type] = "module"
+projects[mission_respondable_front_buttons][version] = "1.0"
+projects[mission_respondable_front_buttons][subdir] = custom
 
-projects[usao_news][download][type] = "git"
-projects[usao_news][download][url] = "git@bitbucket.org:cdracars/usao_news.git"
-projects[usao_news][type] = "module"
-projects[usao_news][version] = "1.0"
-projects[usao_news][subdir] = custom
+projects[mission_respondable_news][download][type] = "git"
+projects[mission_respondable_news][download][url] = "git@bitbucket.org:cdracars/mission_respondable_news.git"
+projects[mission_respondable_news][type] = "module"
+projects[mission_respondable_news][version] = "1.0"
+projects[mission_respondable_news][subdir] = custom
 
-projects[usao_testimonials][download][type] = "git"
-projects[usao_testimonials][download][url] = "git@bitbucket.org:cdracars/usao_testimonials.git"
-projects[usao_testimonials][type] = "module"
-projects[usao_testimonials][version] = "1.0"
-projects[usao_testimonials][subdir] = custom
+projects[mission_respondable_testimonials][download][type] = "git"
+projects[mission_respondable_testimonials][download][url] = "git@bitbucket.org:cdracars/mission_repondable_testimonials.git"
+projects[mission_respondable_testimonials][type] = "module"
+projects[mission_respondable_testimonials][version] = "1.0"
+projects[mission_respondable_testimonials][subdir] = custom
 
 ; Themes
 ; --------
-projects[drover-town][download][type] = "git"
-projects[drover-town][download][url] = "git@bitbucket.org:cdracars/drover-town.git"
-projects[drover-town][type] = "theme"
-projects[drover-town][version] = "1.0"
+projects[mission_repondable][download][type] = "git"
+projects[mission_repondable][download][url] = "git@bitbucket.org:cdracars/mission_repondable.git"
+projects[mission_repondable][type] = "theme"
+projects[mission_repondable][version] = "1.0"
 
 projects[rubik][version] = "4.0-beta8"
 
