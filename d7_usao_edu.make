@@ -157,7 +157,7 @@ projects[mission_respondable_news][version] = "1.0"
 projects[mission_respondable_news][subdir] = custom
 
 projects[mission_respondable_testimonials][download][type] = "git"
-projects[mission_respondable_testimonials][download][url] = "git@bitbucket.org:cdracars/mission_repondable_testimonials.git"
+projects[mission_respondable_testimonials][download][url] = "git@bitbucket.org:cdracars/mission_respondable_testimonials.git"
 projects[mission_respondable_testimonials][type] = "module"
 projects[mission_respondable_testimonials][version] = "1.0"
 projects[mission_respondable_testimonials][subdir] = custom
@@ -165,7 +165,7 @@ projects[mission_respondable_testimonials][subdir] = custom
 ; Themes
 ; --------
 projects[mission_repondable][download][type] = "git"
-projects[mission_repondable][download][url] = "git@bitbucket.org:cdracars/mission_repondable.git"
+projects[mission_repondable][download][url] = "git@bitbucket.org:cdracars/mission_respondable.git"
 projects[mission_repondable][type] = "theme"
 projects[mission_repondable][version] = "1.0"
 
