@@ -2,7 +2,7 @@
 
  api = 2
 
- projects[drupal][version] = "7.20"
+ projects[drupal][version] = "7.22"
 
  projects[d7_usao_edu][type] = "profile"
 
