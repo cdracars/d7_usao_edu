@@ -125,17 +125,6 @@ function d7_usao_edu_install() {
     ),
     array(
       'module' => 'menu',
-      'delta' => 'menu-header-navigation',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'header',
-      'pages' => '',
-      'title' => '<none>',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'menu',
       'delta' => 'menu-footer-navigation',
       'theme' => $default_theme,
       'status' => 1,
