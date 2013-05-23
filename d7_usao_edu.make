@@ -186,6 +186,12 @@ projects[mission_respondable_frontpage][type] = "module"
 projects[mission_respondable_frontpage][version] = "1.0"
 projects[mission_respondable_frontpage][subdir] = custom
 
+projects[mission_respondable_viewbook][download][type] = "git"
+projects[mission_respondable_viewbook][download][url] = "git@bitbucket.org:cdracars/mission_respondable_viewbook.git"
+projects[mission_respondable_viewbook][type] = "module"
+projects[mission_respondable_viewbook][version] = "1.0"
+projects[mission_respondable_viewbook][subdir] = custom
+
 ; Libraries
 ; --------
 libraries[plupload][download][type] = "git"
