@@ -130,6 +130,9 @@ projects[maxlength][subdir] = contrib
 projects[menu_block][version] = "2.3"
 projects[menu_block][subdir] = contrib
 
+projects[libraries][version] = "2.1"
+projects[libraries][subdir] = contrib
+
 ; Custom Modules
 : --------
 projects[migrate_usaod6][download][type] = "git"
