@@ -112,6 +112,24 @@ projects[pathologic][subdir] = contrib
 projects[redirect][version] = "1.0-rc1"
 projects[redirect][subdir] = contrib
 
+projects[flexslider][version] = "2.0-alpha1"
+projects[flexslider][subdir] = contrib
+
+projects[flexslider_views_slideshow][version] = "2.x-dev"
+projects[flexslider_views_slideshow][subdir] = contrib
+
+projects[views_slideshow][version] = "3.0"
+projects[views_slideshow][subdir] = contrib
+
+projects[block_titlelink][version] = "1.3"
+projects[block_tiltelink][subdir] = contrib
+
+projects[maxlength][version] = "3.0-beta1"
+projects[maxlength][subdir] = contrib
+
+projects[menu_block][version] = "2.3"
+projects[menu_block][subdir] = contrib
+
 ; Custom Modules
 : --------
 projects[migrate_usaod6][download][type] = "git"
@@ -161,6 +179,12 @@ projects[mission_respondable_testimonials][download][url] = "git@bitbucket.org:c
 projects[mission_respondable_testimonials][type] = "module"
 projects[mission_respondable_testimonials][version] = "1.0"
 projects[mission_respondable_testimonials][subdir] = custom
+
+projects[mission_respondable_frontpage][download][type] = "git"
+projects[mission_respondable_frontpage][download][url] = "git@bitbucket.org:cdracars/mission_respondable_frontpage.git"
+projects[mission_respondable_frontpage][type] = "module"
+projects[mission_respondable_frontpage][version] = "1.0"
+projects[mission_respondable_frontpage][subdir] = custom
 
 ; Themes
 ; --------
