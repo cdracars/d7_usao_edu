@@ -122,7 +122,7 @@ projects[views_slideshow][version] = "3.0"
 projects[views_slideshow][subdir] = contrib
 
 projects[block_titlelink][version] = "1.3"
-projects[block_tiltelink][subdir] = contrib
+projects[block_titlelink][subdir] = contrib
 
 projects[maxlength][version] = "3.0-beta1"
 projects[maxlength][subdir] = contrib
@@ -185,6 +185,13 @@ projects[mission_respondable_frontpage][download][url] = "git@bitbucket.org:cdra
 projects[mission_respondable_frontpage][type] = "module"
 projects[mission_respondable_frontpage][version] = "1.0"
 projects[mission_respondable_frontpage][subdir] = custom
+
+; Libraries
+; --------
+libraries[plupload][download][type] = "git"
+libraries[plupload][download][url] = "https://github.com/woothemes/FlexSlider"
+libraries[plupload][directory_name] = "flexslider"
+libraries[plupload][type] = "library"
 
 ; Themes
 ; --------
