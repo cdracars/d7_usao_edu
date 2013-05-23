@@ -75,6 +75,7 @@ dependencies[] = mission_respondable_front_buttons
 dependencies[] = mission_respondable_testimonials
 dependencies[] = mission_respondable_header
 dependencies[] = mission_respondable_frontpage
+dependencies[] = mission_respondable_viewbook
 
 ; Information added by drupal.org packaging script on 2012-05-02
 ; --------
