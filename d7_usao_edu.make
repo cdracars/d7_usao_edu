@@ -82,9 +82,6 @@ projects[panels][subdir] = contrib
 projects[rules][version] = "2.2"
 projects[rules][subdir] = contrib
 
-projects[memcache][version] = "1.0"
-projects[memcache][subdir] = contrib
-
 projects[references][version] = "2.1"
 projects[references][subdir] = contrib
 
