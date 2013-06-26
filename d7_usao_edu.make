@@ -52,7 +52,7 @@ projects[office_hours][subdir] = contrib
 projects[workflow][version] = "1.0"
 projects[workflow][subdir] = contrib
 
-projects[entity][version] = "1.0"
+projects[entity][version] = "1.1"
 projects[entity][subdir] = contrib
 
 projects[entityreference][version] = "1.0-rc3"
