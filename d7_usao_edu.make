@@ -46,6 +46,9 @@ projects[migrate][subdir] = contrib
 projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][subdir] = contrib
 
+projects[ds][version] = "2.4"
+projects[ds][subdir] = contrib
+
 projects[office_hours][version] = "1.0"
 projects[office_hours][subdir] = contrib
 
