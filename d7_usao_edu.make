@@ -136,6 +136,9 @@ projects[libraries][subdir] = contrib
 projects[date][version] = "2.6"
 projects[date][subdir] = contrib
 
+projects[cleanpager][version] = "1.0"
+projects[cleanpager][subdir] = contrib
+
 ; Custom Modules
 : --------
 projects[migrate_usaod6][download][type] = "git"
