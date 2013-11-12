@@ -40,6 +40,9 @@ projects[block_titlelink][subdir] = contrib
 projects[cleanpager][version] = "1.0"
 projects[cleanpager][subdir] = contrib
 
+projects[colors][version] = "1.0-rc1"
+projects[colors][subdir] = contrib
+
 projects[ctools][version] = "1.2"
 projects[ctools][subdir] = contrib
 
