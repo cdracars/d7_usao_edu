@@ -28,38 +28,44 @@ projects[admin][subdir] = contrib
 projects[admin_tools][version] = "1.1"
 projects[admin_tools][subdir] = contrib
 
+projects[admin_views][version] = "1.2"
+projects[admin_views][subdir] = contrib
+
+projects[advagg][version] = "2.1"
+projects[advagg][subdir] = contrib
+
+projects[block_titlelink][version] = "1.3"
+projects[block_titlelink][subdir] = contrib
+
+projects[calendar][version] = "3.4"
+projects[calendar][subdir] = contrib
+
+projects[cleanpager][version] = "1.0"
+projects[cleanpager][subdir] = contrib
+
 projects[ctools][version] = "1.2"
 projects[ctools][subdir] = contrib
 
 projects[custom_search][version] = "1.11"
 projects[custom_search][subdir] = contrib
 
-projects[views][version] = "3.5"
-projects[views][subdir] = contrib
+projects[date][version] = "2.6"
+projects[date][subdir] = contrib
 
-projects[views_bulk_operations][version] = "3.0-rc1"
-projects[views_bulk_operations][subdir] = contrib
-
-projects[migrate][version] = "2.5"
-projects[migrate][subdir] = contrib
-
-projects[migrate_extras][version] = "2.5"
-projects[migrate_extras][subdir] = contrib
-
-projects[ds][version] = "2.4"
+projects[ds][version] = "2.6"
 projects[ds][subdir] = contrib
 
-projects[office_hours][version] = "1.0"
-projects[office_hours][subdir] = contrib
-
-projects[workflow][version] = "1.0"
-projects[workflow][subdir] = contrib
+projects[email][version] = "1.2"
+projects[email][subdir] = contrib
 
 projects[entity][version] = "1.1"
 projects[entity][subdir] = contrib
 
-projects[entityreference][version] = "1.0-rc3"
+projects[entityreference][version] = "1.0"
 projects[entityreference][subdir] = contrib
+
+projects[facetapi][version] = "1.3"
+projects[facetapi][subdir] = contrib
 
 projects[features][version] = "2.0-beta1"
 projects[features][subdir] = contrib
@@ -67,50 +73,17 @@ projects[features][subdir] = contrib
 projects[features_extra][version] = "1.0-alpha1"
 projects[features_extra][subdir] = contrib
 
-projects[eck][version] = "2.0-rc1"
-projects[eck][subdir] = contrib
+projects[field_group][version] = "1.3"
+projects[field_group][subdir] = contrib
 
-projects[search_api_solr][version] = "1.0-rc2"
-projects[search_api_solr][subdir] = contrib
+projects[file_entity][version] = "2.0-alpha3"
+projects[file_entity][subdir] = contrib
 
-projects[search_api][version] = "1.4"
-projects[search_api][subdir] = contrib
+projects[filter_perms][version] = "1.0"
+projects[filter_perms][subdir] = contrib
 
-projects[facetapi][version] = "1.2"
-projects[facetapi][subdir] = contrib
-
-projects[panels][version] = "3.2"
-projects[panels][subdir] = contrib
-
-projects[rules][version] = "2.2"
-projects[rules][subdir] = contrib
-
-projects[references][version] = "2.1"
-projects[references][subdir] = contrib
-
-projects[strongarm][version] = "2.0"
-projects[strongarm][subdir] = contrib
-
-projects[revisioning][version] = "1.4"
-projects[revisioning][subdir] = contrib
-
-projects[nodequeue][version] = "2.0-beta1"
-projects[nodequeue][subdir] = contrib
-
-projects[pathauto][version] = "1.2"
-projects[pathauto][subdir] = contrib
-
-projects[token][version] = "1.5"
-projects[token][subdir] = contrib
-
-projects[globalredirect][version] = "1.5"
-projects[globalredirect][subdir] = contrib
-
-projects[pathologic][version] = "2.10"
-projects[pathologic][subdir] = contrib
-
-projects[redirect][version] = "1.0-rc1"
-projects[redirect][subdir] = contrib
+projects[flag][version] = "3.2"
+projects[flag][subdir] = contrib
 
 projects[flexslider][version] = "2.0-alpha1"
 projects[flexslider][subdir] = contrib
@@ -118,26 +91,131 @@ projects[flexslider][subdir] = contrib
 projects[flexslider_views_slideshow][version] = "2.x-dev"
 projects[flexslider_views_slideshow][subdir] = contrib
 
-projects[views_slideshow][version] = "3.0"
-projects[views_slideshow][subdir] = contrib
+projects[globalredirect][version] = "1.5"
+projects[globalredirect][subdir] = contrib
 
-projects[block_titlelink][version] = "1.3"
-projects[block_titlelink][subdir] = contrib
+projects[google_analytics][version] = "1.4"
+projects[google_analytics][subdir] = contrib
 
-projects[maxlength][version] = "3.0-beta1"
-projects[maxlength][subdir] = contrib
+projects[httprl][version] = "1.13"
+projects[httprl][subdir] = contrib
 
-projects[menu_block][version] = "2.3"
-projects[menu_block][subdir] = contrib
+projects[inline_entity_form][version] = "1.3"
+projects[inline_entity_form][subdir] = contrib
+
+projects[insert][version] = "1.3"
+projects[insert][subdir] = contrib
 
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = contrib
 
-projects[date][version] = "2.6"
-projects[date][subdir] = contrib
+projects[masquerade][version] = "1.0-5rc"
+projects[masquerade][subdir] = contrib
 
-projects[cleanpager][version] = "1.0"
-projects[cleanpager][subdir] = contrib
+projects[maxlength][version] = "3.0-beta1"
+projects[maxlength][subdir] = contrib
+
+projects[media][version] = "2.0-alpha3"
+projects[media][subdir] = contrib
+
+projects[metatag][version] = "1.0-beta7"
+projects[metatag][subdir] = contrib
+
+projects[memcache][version] = "1.0"
+projects[memcache][subdir] = contrib
+
+projects[menu_block][version] = "2.3"
+projects[menu_block][subdir] = contrib
+
+projects[migrate][version] = "2.6-rc1"
+projects[migrate][subdir] = contrib
+
+projects[migrate_d2d][version] = "2.1-beta1"
+projects[migrate_d2d][subdir] = contrib
+
+projects[migrate_extras][version] = "2.5"
+projects[migrate_extras][subdir] = contrib
+
+projects[module_filter][version] = "1.8"
+projects[module_filter][subdir] = contrib
+
+projects[nodequeue][version] = "2.0-beta1"
+projects[nodequeue][subdir] = contrib
+
+projects[office_hours][version] = "1.0"
+projects[office_hours][subdir] = contrib
+
+projects[page_title][version] = "2.7"
+projects[page_title][subdir] = contrib
+
+projects[panels][version] = "3.3"
+projects[panels][subdir] = contrib
+
+projects[pathauto][version] = "1.2"
+projects[pathauto][subdir] = contrib
+
+projects[pathologic][version] = "2.11"
+projects[pathologic][subdir] = contrib
+
+projects[quicktabs][version] = "3.6"
+projects[quicktabs][subdir] = contrib
+
+projects[redirect][version] = "1.0-rc1"
+projects[redirect][subdir] = contrib
+
+projects[references][version] = "2.1"
+projects[references][subdir] = contrib
+
+projects[revisioning][version] = "1.4"
+projects[revisioning][subdir] = contrib
+
+projects[rules][version] = "2.6"
+projects[rules][subdir] = contrib
+
+projects[search_api_solr][version] = "1.0-rc2"
+projects[search_api_solr][subdir] = contrib
+
+projects[search_api][version] = "1.9"
+projects[search_api][subdir] = contrib
+
+projects[select_or_other][version] = "2.20"
+projects[select_or_other][subdir] = contrib
+
+projects[strongarm][version] = "2.0"
+projects[strongarm][subdir] = contrib
+
+projects[token][version] = "1.5"
+projects[token][subdir] = contrib
+
+projects[varnish][version] = "1.0-beta2"
+projects[varnish][subdir] = contrib
+
+projects[views][version] = "3.7"
+projects[views][subdir] = contrib
+
+projects[views_bulk_operations][version] = "3.1"
+projects[views_bulk_operations][subdir] = contrib
+
+projects[views_slideshow][version] = "3.0"
+projects[views_slideshow][subdir] = contrib
+
+projects[webform][version] = "4.0-beta1"
+projects[webform][subdir] = contrib
+
+projects[webform_accordion][version] = "2.0-alpha1"
+projects[webform_accordion][subdir] = contrib
+
+projects[webform_validation][version] = "1.3"
+projects[webform_validation][subdir] = contrib
+
+projects[weight][version] = "2.2"
+projects[weight][subdir] = contrib
+
+projects[workflow][version] = "1.0"
+projects[workflow][subdir] = contrib
+
+projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][subdir] = contrib
 
 ; Custom Modules
 : --------
@@ -201,6 +279,12 @@ projects[mission_respondable_viewbook][type] = "module"
 projects[mission_respondable_viewbook][version] = "1.0"
 projects[mission_respondable_viewbook][subdir] = custom
 
+projects[wec][download][type] = "git"
+projects[wec][download][url] = "git@bitbucket.org:drakythe/wec.git"
+projects[wec][type] = "module"
+projects[wec][version] = "1.0"
+projects[wec][subdir] = custom
+
 ; Libraries
 ; --------
 libraries[plupload][download][type] = "git"
@@ -219,4 +303,4 @@ projects[rubik][version] = "4.0-beta8"
 
 projects[tao][version] = "3.0-beta4"
 
-projects[zen][version] = "5.1"
+projects[zen][version] = "5.4"
