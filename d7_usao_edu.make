@@ -37,9 +37,6 @@ projects[advagg][subdir] = contrib
 projects[block_titlelink][version] = "1.3"
 projects[block_titlelink][subdir] = contrib
 
-projects[calendar][version] = "3.4"
-projects[calendar][subdir] = contrib
-
 projects[cleanpager][version] = "1.0"
 projects[cleanpager][subdir] = contrib
 
@@ -51,6 +48,7 @@ projects[custom_search][subdir] = contrib
 
 projects[date][version] = "2.6"
 projects[date][subdir] = contrib
+projects[date][patch][] = "https://drupal.org/files/2034231-date-migration-consolidated-do-not-test.patch" 
 
 projects[ds][version] = "2.6"
 projects[ds][subdir] = contrib
@@ -60,6 +58,7 @@ projects[email][subdir] = contrib
 
 projects[entity][version] = "1.1"
 projects[entity][subdir] = contrib
+projects[entity][patch][] = "https://drupal.org/files/entity-node_access-1780646-256.diagnostic.patch"
 
 projects[entityreference][version] = "1.0"
 projects[entityreference][subdir] = contrib
@@ -91,6 +90,9 @@ projects[flexslider][subdir] = contrib
 projects[flexslider_views_slideshow][version] = "2.x-dev"
 projects[flexslider_views_slideshow][subdir] = contrib
 
+projects[fullcalendar][version] = "2.0"
+projects[fullcalendar][subdir] = contrib
+
 projects[globalredirect][version] = "1.5"
 projects[globalredirect][subdir] = contrib
 
@@ -109,7 +111,7 @@ projects[insert][subdir] = contrib
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = contrib
 
-projects[masquerade][version] = "1.0-5rc"
+projects[masquerade][version] = "1.0-rc5"
 projects[masquerade][subdir] = contrib
 
 projects[maxlength][version] = "3.0-beta1"
