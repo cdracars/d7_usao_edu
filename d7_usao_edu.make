@@ -48,7 +48,7 @@ projects[custom_search][subdir] = contrib
 
 projects[date][version] = "2.6"
 projects[date][subdir] = contrib
-projects[date][patch][] = "https://drupal.org/files/2034231-date-migration-consolidated-do-not-test.patch" 
+projects[date][patch][] = "http://drupal.org/files/2034231-date-migration-consolidated-do-not-test.patch" 
 
 projects[ds][version] = "2.6"
 projects[ds][subdir] = contrib
@@ -58,7 +58,7 @@ projects[email][subdir] = contrib
 
 projects[entity][version] = "1.1"
 projects[entity][subdir] = contrib
-projects[entity][patch][] = "https://drupal.org/files/entity-node_access-1780646-256.diagnostic.patch"
+projects[entity][patch][] = "http://drupal.org/files/entity-node_access-1780646-256.diagnostic.patch"
 
 projects[entityreference][version] = "1.0"
 projects[entityreference][subdir] = contrib
