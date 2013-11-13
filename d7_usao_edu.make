@@ -189,6 +189,9 @@ projects[select_or_other][subdir] = contrib
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = contrib
 
+projects[tinynav][version] = "1.2"
+projects[tinynav][subdir] = contrib
+
 projects[token][version] = "1.5"
 projects[token][subdir] = contrib
 
@@ -295,6 +298,10 @@ projects[wec][subdir] = custom
 libraries[plupload][download][type] = "git"
 libraries[plupload][download][url] = "https://github.com/woothemes/FlexSlider"
 libraries[plupload][directory_name] = "flexslider"
+libraries[plupload][type] = "library"
+
+libraries[plupload][download][type] = "git"
+libraries[plupload][download][url] = "https://github.com/viljamis/TinyNav.js.git"
 libraries[plupload][type] = "library"
 
 ; Themes
