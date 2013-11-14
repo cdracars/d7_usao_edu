@@ -300,9 +300,10 @@ libraries[plupload][download][url] = "https://github.com/woothemes/FlexSlider"
 libraries[plupload][directory_name] = "flexslider"
 libraries[plupload][type] = "library"
 
-libraries[plupload][download][type] = "git"
-libraries[plupload][download][url] = "https://github.com/viljamis/TinyNav.js.git"
-libraries[plupload][type] = "library"
+libraries[tinynav][download][type] = "git"
+libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
+libraries[tinynav][directory_name] = "tinynav"
+libraries[tinynav][type] = "library"
 
 ; Themes
 ; --------
