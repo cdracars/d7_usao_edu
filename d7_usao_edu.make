@@ -75,6 +75,9 @@ projects[features][subdir] = contrib
 projects[features_extra][version] = "1.0-alpha1"
 projects[features_extra][subdir] = contrib
 
+projects[fences][version] = "1.0"
+projects[fences][subdir] = contrib
+
 projects[field_group][version] = "1.3"
 projects[field_group][subdir] = contrib
 
@@ -104,6 +107,12 @@ projects[google_analytics][subdir] = contrib
 
 projects[httprl][version] = "1.13"
 projects[httprl][subdir] = contrib
+
+projects[imce][version] = "1.7"
+projects[imce][subdir] = contrib
+
+projects[imce_wysiwyg][version] = "1.0"
+projects[imce_wysiwyg][subdir] = contrib
 
 projects[inline_entity_form][version] = "1.3"
 projects[inline_entity_form][subdir] = contrib
@@ -304,6 +313,11 @@ libraries[tinynav][download][type] = "git"
 libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
 libraries[tinynav][directory_name] = "tinynav"
 libraries[tinynav][type] = "library"
+
+libraries[fullcalendar][download][type] = "get"
+libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
+libraries[fullcalendar][download][subtree] = fullcalendar-1.6.4/fullcalendar/
+libraries[fullcalendar][type] = "library"
 
 ; Themes
 ; --------
