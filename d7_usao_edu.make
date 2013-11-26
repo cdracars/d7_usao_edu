@@ -34,6 +34,9 @@ projects[admin_views][subdir] = contrib
 projects[advagg][version] = "2.1"
 projects[advagg][subdir] = contrib
 
+projects[block_class][version] = "2.1"
+projects[block_class][subdir] = contrib
+
 projects[block_titlelink][version] = "1.3"
 projects[block_titlelink][subdir] = contrib
 
