@@ -108,6 +108,9 @@ projects[globalredirect][subdir] = contrib
 projects[google_analytics][version] = "1.4"
 projects[google_analytics][subdir] = contrib
 
+projects[htmlmail][version] = "2.65"
+projects[htmlmail][subdir] = contrib
+
 projects[httprl][version] = "1.13"
 projects[httprl][subdir] = contrib
 
@@ -125,6 +128,9 @@ projects[insert][subdir] = contrib
 
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = contrib
+
+projects[mailsystem][version] = "2.34"
+projects[mailsystem][subdir] = contrib
 
 projects[masquerade][version] = "1.0-rc5"
 projects[masquerade][subdir] = contrib
