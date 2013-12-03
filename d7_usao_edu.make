@@ -126,6 +126,9 @@ projects[inline_entity_form][subdir] = contrib
 projects[insert][version] = "1.3"
 projects[insert][subdir] = contrib
 
+projects[jump_menu][version] = "1.4"
+projects[jump_menu][subdir] = contrib
+
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = contrib
 
