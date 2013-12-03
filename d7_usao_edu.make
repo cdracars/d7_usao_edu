@@ -31,7 +31,7 @@ projects[admin_tools][subdir] = contrib
 projects[admin_views][version] = "1.2"
 projects[admin_views][subdir] = contrib
 
-projects[advagg][version] = "2.1"
+projects[advagg][version] = "2.3"
 projects[advagg][subdir] = contrib
 
 projects[block_class][version] = "2.1"
@@ -46,7 +46,7 @@ projects[cleanpager][subdir] = contrib
 projects[colors][version] = "1.0-rc1"
 projects[colors][subdir] = contrib
 
-projects[ctools][version] = "1.2"
+projects[ctools][version] = "1.3"
 projects[ctools][subdir] = contrib
 
 projects[custom_search][version] = "1.11"
@@ -62,11 +62,11 @@ projects[ds][subdir] = contrib
 projects[email][version] = "1.2"
 projects[email][subdir] = contrib
 
-projects[entity][version] = "1.1"
+projects[entity][version] = "1.2"
 projects[entity][subdir] = contrib
 projects[entity][patch][] = "http://drupal.org/files/entity-node_access-1780646-256.diagnostic.patch"
 
-projects[entityreference][version] = "1.0"
+projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = contrib
 
 projects[facetapi][version] = "1.3"
@@ -93,7 +93,7 @@ projects[filter_perms][subdir] = contrib
 projects[flag][version] = "3.2"
 projects[flag][subdir] = contrib
 
-projects[flexslider][version] = "2.0-alpha1"
+projects[flexslider][version] = "2.0-alpha3"
 projects[flexslider][subdir] = contrib
 
 projects[flexslider_views_slideshow][version] = "2.x-dev"
@@ -198,7 +198,7 @@ projects[revisioning][subdir] = contrib
 projects[rules][version] = "2.6"
 projects[rules][subdir] = contrib
 
-projects[search_api_solr][version] = "1.0-rc2"
+projects[search_api_solr][version] = "1.3"
 projects[search_api_solr][subdir] = contrib
 
 projects[search_api][version] = "1.9"
@@ -225,7 +225,7 @@ projects[views][subdir] = contrib
 projects[views_bulk_operations][version] = "3.1"
 projects[views_bulk_operations][subdir] = contrib
 
-projects[views_slideshow][version] = "3.0"
+projects[views_slideshow][version] = "3.1"
 projects[views_slideshow][subdir] = contrib
 
 projects[webform][version] = "4.0-beta1"
