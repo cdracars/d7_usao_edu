@@ -254,18 +254,6 @@ projects[migrate_usaod6][type] = "module"
 projects[migrate_usaod6][version] = "1.0"
 projects[migrate_usaod6][subdir] = custom
 
-projects[usao_courses_node][download][type] = "git"
-projects[usao_courses_node][download][url] = "git@bitbucket.org:cdracars/usao-courses-node.git"
-projects[usao_courses_node][type] = "module"
-projects[usao_courses_node][version] = "1.0"
-projects[usao_courses_node][subdir] = custom
-
-projects[usao_catalog_node][download][type] = "git"
-projects[usao_catalog_node][download][url] = "git@bitbucket.org:cdracars/usao-catalog-node.git"
-projects[usao_catalog_node][type] = "module"
-projects[usao_catalog_node][version] = "1.0"
-projects[usao_catalog_node][subdir] = custom
-
 projects[mission_respondable_header][download][type] = "git"
 projects[mission_respondable_header][download][url] = "git@bitbucket.org:cdracars/mission_respondable_header.git"
 projects[mission_respondable_header][type] = "module"
