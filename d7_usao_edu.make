@@ -40,6 +40,9 @@ projects[block_class][subdir] = contrib
 projects[block_titlelink][version] = "1.3"
 projects[block_titlelink][subdir] = contrib
 
+projects[calendar][version] = "3.4"
+projects[calendar][subdir] = contrib
+
 projects[cleanpager][version] = "1.0"
 projects[cleanpager][subdir] = contrib
 
