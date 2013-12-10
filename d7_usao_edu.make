@@ -248,16 +248,10 @@ projects[workflow][subdir] = contrib
 
 projects[wysiwyg][version] = "2.x-dev"
 projects[wysiwyg][subdir] = contrib
-projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch" 
+projects[wysiwyg][patch][] = "http://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch" 
 
 ; Custom Modules
 : --------
-projects[migrate_usaod6][download][type] = "git"
-projects[migrate_usaod6][download][url] = "git@bitbucket.org:cdracars/migrate_usaod6.git"
-projects[migrate_usaod6][type] = "module"
-projects[migrate_usaod6][version] = "1.0"
-projects[migrate_usaod6][subdir] = custom
-
 projects[mission_respondable_header][download][type] = "git"
 projects[mission_respondable_header][download][url] = "git@bitbucket.org:cdracars/mission_respondable_header.git"
 projects[mission_respondable_header][type] = "module"
@@ -334,9 +328,5 @@ projects[mission_repondable][download][type] = "git"
 projects[mission_repondable][download][url] = "git@bitbucket.org:cdracars/mission_respondable.git"
 projects[mission_repondable][type] = "theme"
 projects[mission_repondable][version] = "1.0"
-
-projects[rubik][version] = "4.0-beta8"
-
-projects[tao][version] = "3.0-beta4"
 
 projects[zen][version] = "5.4"
