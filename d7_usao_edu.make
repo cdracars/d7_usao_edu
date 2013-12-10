@@ -324,9 +324,9 @@ libraries[ckeditor][type] = "library"
 
 ; Themes
 ; --------
-projects[mission_repondable][download][type] = "git"
-projects[mission_repondable][download][url] = "git@bitbucket.org:cdracars/mission_respondable.git"
-projects[mission_repondable][type] = "theme"
-projects[mission_repondable][version] = "1.0"
+projects[mission_respondable][download][type] = "git"
+projects[mission_respondable][download][url] = "git@bitbucket.org:cdracars/mission_respondable.git"
+projects[mission_respondable][type] = "theme"
+projects[mission_respondable][version] = "1.0"
 
 projects[zen][version] = "5.4"
