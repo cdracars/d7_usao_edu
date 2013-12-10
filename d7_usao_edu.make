@@ -246,8 +246,9 @@ projects[weight][subdir] = contrib
 projects[workflow][version] = "1.0"
 projects[workflow][subdir] = contrib
 
-projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][version] = "2.x-dev"
 projects[wysiwyg][subdir] = contrib
+projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch" 
 
 ; Custom Modules
 : --------
@@ -321,6 +322,11 @@ libraries[fullcalendar][download][type] = "get"
 libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 libraries[fullcalendar][download][subtree] = fullcalendar-1.6.4/fullcalendar/
 libraries[fullcalendar][type] = "library"
+
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_standard.zip"
+libraries[tinynav][directory_name] = "ckeditor"
+libraries[ckeditor][type] = "library"
 
 ; Themes
 ; --------
