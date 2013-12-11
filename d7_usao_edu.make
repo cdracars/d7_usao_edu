@@ -215,6 +215,7 @@ projects[strongarm][subdir] = contrib
 
 projects[tinynav][version] = "1.2"
 projects[tinynav][subdir] = contrib
+projects[tinynav][patch][] = "https://app.box.com/s/ud2gifm556xcau9o2z0q" 
 
 projects[token][version] = "1.5"
 projects[token][subdir] = contrib
