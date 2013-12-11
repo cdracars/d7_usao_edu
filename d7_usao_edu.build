@@ -2,7 +2,10 @@
 
  api = 2
 
- projects[drupal][version] = "7.22"
+ projects[drupal][type] = "core"
+ projects[drupal][version] = "7.24"
+ projects[drupal][patch] = "http://drupal.org/files/drupal-https-only-961508-23-32.patch"
+ projects[drupal][patch] = "http://drupal.org/files/issues/471970_0.patch"
 
  projects[d7_usao_edu][type] = "profile"
 
