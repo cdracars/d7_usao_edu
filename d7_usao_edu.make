@@ -207,6 +207,9 @@ projects[search_api_solr][subdir] = contrib
 projects[search_api][version] = "1.9"
 projects[search_api][subdir] = contrib
 
+projects[securepages][version] = "1.0-beta2"
+projects[securepages][subdir] = contrib
+
 projects[select_or_other][version] = "2.20"
 projects[select_or_other][subdir] = contrib
 
