@@ -79,7 +79,7 @@ dependencies[] = mission_respondable_viewbook
 
 ; Information added by drupal.org packaging script on 2012-05-02
 ; --------
-version = "7.22"
+version = "7.24"
 project = "drupal"
 datestamp = "1335997555"
 
