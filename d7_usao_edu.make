@@ -188,6 +188,7 @@ projects[pathologic][subdir] = contrib
 
 projects[quicktabs][version] = "3.6"
 projects[quicktabs][subdir] = contrib
+projects[quicktabs][patch][] = "http://drupal.org/files/894746-quicktabs-html-tab-title-33.patch" 
 
 projects[redirect][version] = "1.0-rc1"
 projects[redirect][subdir] = contrib
