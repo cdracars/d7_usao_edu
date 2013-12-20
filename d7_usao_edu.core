@@ -6,3 +6,4 @@
  ; Patches
  projects[drupal][patch][] = "http://drupal.org/files/drupal-https-only-961508-23-32.patch"
  projects[drupal][patch][] = "http://drupal.org/files/issues/471970_0.patch"
+

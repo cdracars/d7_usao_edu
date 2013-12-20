@@ -310,10 +310,11 @@ projects[wec][subdir] = custom
 
 ; Libraries
 ; --------
-libraries[plupload][download][type] = "git"
-libraries[plupload][download][url] = "https://github.com/woothemes/FlexSlider"
-libraries[plupload][directory_name] = "flexslider"
-libraries[plupload][type] = "library"
+libraries[flexslider][type] = "library"
+libraries[flexslider][directory_name] = "flexslider"
+libraries[flexslider][download][type] = "git"
+libraries[flexslider][download][url] = "git@github.com:woothemes/FlexSlider.git"
+libraries[flexslider][download][branch] = "release-2-2-0"
 
 libraries[tinynav][download][type] = "git"
 libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
