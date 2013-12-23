@@ -57,7 +57,6 @@ projects[custom_search][subdir] = contrib
 
 projects[date][version] = "2.7"
 projects[date][subdir] = contrib
-projects[date][patch][] = "http://drupal.org/files/2034231-date-migration-consolidated-do-not-test.patch" 
 
 projects[ds][version] = "2.6"
 projects[ds][subdir] = contrib
