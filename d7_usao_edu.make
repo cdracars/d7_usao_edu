@@ -55,7 +55,7 @@ projects[ctools][subdir] = contrib
 projects[custom_search][version] = "1.11"
 projects[custom_search][subdir] = contrib
 
-projects[date][version] = "2.6"
+projects[date][version] = "2.7"
 projects[date][subdir] = contrib
 projects[date][patch][] = "http://drupal.org/files/2034231-date-migration-consolidated-do-not-test.patch" 
 
@@ -75,7 +75,7 @@ projects[entityreference][subdir] = contrib
 projects[facetapi][version] = "1.3"
 projects[facetapi][subdir] = contrib
 
-projects[features][version] = "2.0-beta1"
+projects[features][version] = "2.0"
 projects[features][subdir] = contrib
 
 projects[features_extra][version] = "1.0-alpha1"
@@ -117,7 +117,7 @@ projects[htmlmail][subdir] = contrib
 projects[httprl][version] = "1.13"
 projects[httprl][subdir] = contrib
 
-projects[imce][version] = "1.7"
+projects[imce][version] = "1.8"
 projects[imce][subdir] = contrib
 
 projects[imce_wysiwyg][version] = "1.0"
@@ -183,7 +183,7 @@ projects[panels][subdir] = contrib
 projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = contrib
 
-projects[pathologic][version] = "2.11"
+projects[pathologic][version] = "2.12"
 projects[pathologic][subdir] = contrib
 
 projects[quicktabs][version] = "3.6"
@@ -202,11 +202,11 @@ projects[revisioning][subdir] = contrib
 projects[rules][version] = "2.6"
 projects[rules][subdir] = contrib
 
+projects[search_api][version] = "1.10"
+projects[search_api][subdir] = contrib
+
 projects[search_api_solr][version] = "1.3"
 projects[search_api_solr][subdir] = contrib
-
-projects[search_api][version] = "1.9"
-projects[search_api][subdir] = contrib
 
 projects[securepages][version] = "1.0-beta2"
 projects[securepages][subdir] = contrib
@@ -239,7 +239,7 @@ projects[views][subdir] = contrib
 projects[views_accordion][version] = "1.0-rc2"
 projects[views_accordion][subdir] = contrib
 
-projects[views_bulk_operations][version] = "3.1"
+projects[views_bulk_operations][version] = "3.2"
 projects[views_bulk_operations][subdir] = contrib
 
 projects[views_slideshow][version] = "3.1"
@@ -254,7 +254,7 @@ projects[webform_accordion][subdir] = contrib
 projects[webform_validation][version] = "1.3"
 projects[webform_validation][subdir] = contrib
 
-projects[weight][version] = "2.2"
+projects[weight][version] = "2.3"
 projects[weight][subdir] = contrib
 
 projects[workflow][version] = "1.0"
