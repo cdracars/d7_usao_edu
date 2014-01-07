@@ -116,6 +116,9 @@ projects[htmlmail][subdir] = contrib
 projects[httprl][version] = "1.13"
 projects[httprl][subdir] = contrib
 
+projects[imagemagick][version] = "1.0"
+projects[imagemagick][subdir] = contrib
+
 projects[imce][version] = "1.8"
 projects[imce][subdir] = contrib
 
