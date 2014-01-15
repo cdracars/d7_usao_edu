@@ -163,6 +163,7 @@ projects[migrate][subdir] = contrib
 
 projects[migrate_d2d][version] = "2.1-beta1"
 projects[migrate_d2d][subdir] = contrib
+projects[migrate_d2d][patch][] = "http://drupal.org/files/migrate_d2d-use-cck-image-alt-field-2021413-15.patch" 
 
 projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][subdir] = contrib
