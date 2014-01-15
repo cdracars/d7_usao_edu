@@ -31,7 +31,7 @@ projects[admin_tools][subdir] = contrib
 projects[admin_views][version] = "1.2"
 projects[admin_views][subdir] = contrib
 
-projects[advagg][version] = "2.3"
+projects[advagg][version] = "2.4"
 projects[advagg][subdir] = contrib
 
 projects[block_class][version] = "2.1"
@@ -64,7 +64,7 @@ projects[ds][subdir] = contrib
 projects[email][version] = "1.2"
 projects[email][subdir] = contrib
 
-projects[entity][version] = "1.2"
+projects[entity][version] = "1.3"
 projects[entity][subdir] = contrib
 projects[entity][patch][] = "http://drupal.org/files/entity-node_access-1780646-256.diagnostic.patch"
 
@@ -113,7 +113,7 @@ projects[google_analytics][subdir] = contrib
 projects[htmlmail][version] = "2.65"
 projects[htmlmail][subdir] = contrib
 
-projects[httprl][version] = "1.13"
+projects[httprl][version] = "1.14"
 projects[httprl][subdir] = contrib
 
 projects[imagemagick][version] = "1.0"
@@ -125,7 +125,7 @@ projects[imce][subdir] = contrib
 projects[imce_wysiwyg][version] = "1.0"
 projects[imce_wysiwyg][subdir] = contrib
 
-projects[inline_entity_form][version] = "1.3"
+projects[inline_entity_form][version] = "1.4"
 projects[inline_entity_form][subdir] = contrib
 
 projects[insert][version] = "1.3"
@@ -205,10 +205,10 @@ projects[revisioning][subdir] = contrib
 projects[rules][version] = "2.6"
 projects[rules][subdir] = contrib
 
-projects[search_api][version] = "1.10"
+projects[search_api][version] = "1.11"
 projects[search_api][subdir] = contrib
 
-projects[search_api_solr][version] = "1.3"
+projects[search_api_solr][version] = "1.4"
 projects[search_api_solr][subdir] = contrib
 
 projects[securepages][version] = "1.0-beta2"
