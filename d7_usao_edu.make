@@ -161,7 +161,7 @@ projects[menu_block][subdir] = contrib
 projects[migrate][version] = "2.6-rc1"
 projects[migrate][subdir] = contrib
 
-projects[migrate_d2d][version] = "2.1-beta1"
+projects[migrate_d2d][version] = "2.x-dev"
 projects[migrate_d2d][subdir] = contrib
 projects[migrate_d2d][patch][] = "http://drupal.org/files/migrate_d2d-use-cck-image-alt-field-2021413-15.patch" 
 
