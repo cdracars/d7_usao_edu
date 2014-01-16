@@ -66,7 +66,6 @@ projects[email][subdir] = contrib
 
 projects[entity][version] = "1.3"
 projects[entity][subdir] = contrib
-projects[entity][patch][] = "http://drupal.org/files/entity-node_access-1780646-256.diagnostic.patch"
 
 projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = contrib
