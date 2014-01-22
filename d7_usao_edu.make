@@ -334,7 +334,7 @@ libraries[fullcalendar][download][subtree] = fullcalendar-1.6.4/fullcalendar/
 libraries[fullcalendar][type] = "library"
 
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_standard.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_full.zip"
 libraries[tinynav][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
 
