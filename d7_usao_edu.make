@@ -49,6 +49,10 @@ projects[calendar][subdir] = contrib
 projects[cleanpager][version] = "1.0"
 projects[cleanpager][subdir] = contrib
 
+projects[conditional_fields][version] = "3.0-alpha1"
+projects[conditional_fields][subdir] = contrib
+projects[migrate_d2d][patch][] = "http://drupal.org/files/issues/handle-required-on-form-submission-2180107-1.patch" 
+
 projects[colors][version] = "1.0-rc1"
 projects[colors][subdir] = contrib
 
@@ -70,6 +74,9 @@ projects[email][subdir] = contrib
 projects[entity][version] = "1.3"
 projects[entity][subdir] = contrib
 
+projects[entityform][version] = "2.0-beta2"
+projects[entityform][subdir] = contrib
+
 projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = contrib
 
@@ -87,6 +94,9 @@ projects[fences][subdir] = contrib
 
 projects[field_group][version] = "1.3"
 projects[field_group][subdir] = contrib
+
+projects[field_validation][version] = "2.4"
+projects[field_validation][subdir] = contrib
 
 projects[file_entity][version] = "2.0-alpha3"
 projects[file_entity][subdir] = contrib
