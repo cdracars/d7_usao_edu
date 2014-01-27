@@ -74,11 +74,17 @@ projects[email][subdir] = contrib
 projects[entity][version] = "1.3"
 projects[entity][subdir] = contrib
 
+projects[entity2text][version] = "1.0-alpha2"
+projects[entity2text][subdir] = contrib
+
 projects[entityform][version] = "2.0-beta2"
 projects[entityform][subdir] = contrib
 
 projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = contrib
+
+projects[entity_rules][version] = "1.0-alpha4"
+projects[entity_rules][subdir] = contrib
 
 projects[facetapi][version] = "1.3"
 projects[facetapi][subdir] = contrib
