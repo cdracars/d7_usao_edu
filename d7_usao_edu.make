@@ -53,6 +53,9 @@ projects[conditional_fields][version] = "3.0-alpha1"
 projects[conditional_fields][subdir] = contrib
 projects[migrate_d2d][patch][] = "http://drupal.org/files/issues/handle-required-on-form-submission-2180107-1.patch" 
 
+projects[colorbox][version] = "2.5"
+projects[colorbox][subdir] = contrib
+
 projects[colors][version] = "1.0-rc1"
 projects[colors][subdir] = contrib
 
@@ -169,6 +172,12 @@ projects[maxlength][subdir] = contrib
 
 projects[media][version] = "2.0-alpha3"
 projects[media][subdir] = contrib
+
+projects[media_vimeo][version] = "1.0-beta5"
+projects[media_vimeo][subdir] = contrib
+
+projects[media_youtube][version] = "2.0-rc4"
+projects[media_youtube][subdir] = contrib
 
 projects[metatag][version] = "1.0-beta7"
 projects[metatag][subdir] = contrib
