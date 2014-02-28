@@ -381,6 +381,11 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[tinynav][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
 
+libraries[colorbox][download][type] = "git"
+libraries[colorbox][destination] = "libraries"
+libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
+libraries[colorbox][directory_name] = "colorbox"
+
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
