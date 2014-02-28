@@ -152,6 +152,9 @@ projects[inline_entity_form][subdir] = contrib
 projects[insert][version] = "1.3"
 projects[insert][subdir] = contrib
 
+projects[job_scheduler][version] = "2.0-alpha"
+projects[job_scheduler][subdir] = contrib
+
 projects[jump_menu][version] = "1.4"
 projects[jump_menu][subdir] = contrib
 
@@ -160,6 +163,9 @@ projects[libraries][subdir] = contrib
 
 projects[link][version] = "1.2"
 projects[link][subdir] = contrib
+
+projects[logintoboggan][version] = "1.3"
+projects[logintoboggan][subdir] = contrib
 
 projects[mailsystem][version] = "2.34"
 projects[mailsystem][subdir] = contrib
@@ -197,6 +203,9 @@ projects[migrate_d2d][patch][] = "http://drupal.org/files/migrate_d2d-use-cck-im
 
 projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][subdir] = contrib
+
+projects[mime_mail][version] = "1.0-beta1"
+projects[mime_mail][subdir] = contrib
 
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = contrib
@@ -249,6 +258,9 @@ projects[select_or_other][subdir] = contrib
 
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = contrib
+
+projects[term_reference_tree][version] = "1.10"
+projects[term_reference_tree][subdir] = contrib
 
 projects[tinynav][version] = "1.2"
 projects[tinynav][subdir] = contrib
