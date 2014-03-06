@@ -37,6 +37,9 @@ projects[advagg][subdir] = contrib
 projects[ais][version] = "1.6"
 projects[ais][subdir] = contrib
 
+projects[auto_nodetitle][version] = "1.0"
+projects[auto_nodetitle][subdir] = contrib
+
 projects[block_class][version] = "2.1"
 projects[block_class][subdir] = contrib
 
