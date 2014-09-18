@@ -237,6 +237,7 @@ projects[quicktabs][patch][] = "http://drupal.org/files/894746-quicktabs-html-ta
 
 projects[redirect][version] = "1.0-rc1"
 projects[redirect][subdir] = contrib
+projects[redirect][patch][] = "git@bitbucket.org:cdracars/d7.usao.edu.git"
 
 projects[references][version] = "2.1"
 projects[references][subdir] = contrib
