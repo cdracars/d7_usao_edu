@@ -45,7 +45,6 @@ dependencies[] = migrate_extras
 dependencies[] = entity
 dependencies[] = search_api
 dependencies[] = facetapi
-dependencies[] = eck
 dependencies[] = features
 dependencies[] = rules_admin
 dependencies[] = rules_scheduler
@@ -66,9 +65,6 @@ dependencies[] = menu_block
 
 ; Custom
 ; --------
-dependencies[] = migrate_usaod6
-dependencies[] = usao_courses_node
-dependencies[] = usao_catalog_node
 dependencies[] = mission_respondable_footer
 dependencies[] = mission_respondable_news
 dependencies[] = mission_respondable_front_buttons
