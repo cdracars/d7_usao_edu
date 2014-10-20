@@ -1,4 +1,4 @@
-[d7.usao.edu](http://usao.edu) [![Build Status](https://travis-ci.org/cdracars/d7_usao_edu.svg?branch=master)](https://travis-ci.org/toedter/chatty)
+[d7.usao.edu](http://usao.edu) [![Build Status](https://travis-ci.org/cdracars/d7_usao_edu.svg?branch=master)](https://travis-ci.org/cdracars/d7_usao_edu)
 
 ==
 
