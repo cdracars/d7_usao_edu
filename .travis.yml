@@ -47,7 +47,7 @@ before_script:
   - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
   - echo "   CheckHostIP no" >> ~/.ssh/config
   - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
-  - git config --global user.email "travis@openmirage.org"
+  - git config --global user.email "travis@usao.edu"
   - git config --global user.name "Travis the Build Bot"
   - $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build ../d7_dev.usao.edu
   - cd ../d7_dev.usao.edu
