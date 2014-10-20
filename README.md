@@ -1,4 +1,4 @@
-[d7.usao.edu](http://usao.edu) [![Build Status](https://secure.travis-ci.org/cdracars/d7.usao.edu.png)](http://travis-ci.org/cdracars/d7.usao.edu)
+[d7.usao.edu](http://usao.edu) https://travis-ci.org/cdracars/d7_usao_edu.svg
 ==
 
 Installation profile for d7.usao.edu written for Drupal 7.
