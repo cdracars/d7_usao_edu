@@ -1,60 +1,61 @@
 language: php
-
 php:
-  - 5.3
-  
+- 5.3
 env:
   global:
-    - DATABASE='drupal'
-    - DB_USERNAME='root'
-    - DB_ENCODE='utf8'
-
+  - DATABASE='drupal'
+  - DB_USERNAME='root'
+  - DB_ENCODE='utf8'
   matrix:
-    - DRUPAL_3RD_PARTY='composer_manager'
-    - DRUPAL_3RD_PARTY='libraries'
-
+  - DRUPAL_3RD_PARTY='composer_manager'
+  - DRUPAL_3RD_PARTY='libraries'
 mysql:
   database: $DATABASE
   username: $DB_USERNAME
   encoding: $DB_ENCODE
-  
 before_install:
-  - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
-  - sudo apt-get update > /dev/null
-  - composer self-update
-  - composer install -n --prefer-source
-
+- openssl aes-256-cbc -K $encrypted_5b6ec1b8856b_key -iv $encrypted_5b6ec1b8856b_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+- curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
+- sudo apt-get update > /dev/null
+- composer self-update
+- composer install -n --prefer-source
 install:
-  - sudo apt-get install -y --force-yes php5-cgi php5-mysql php5-curl
-  - phpenv rehash
-
+- sudo apt-get install -y --force-yes php5-cgi php5-mysql php5-curl
+- phpenv rehash
 before_script:
-  - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'display_errors = stdout' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
-  - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'log_errors = 1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
-  - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'error_log = syslog' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
-  - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
-  - if [[ "$TRAVIS_PHP_VERSION" == hhvm* ]]; then echo -e 'sendmail_path = /bin/true' | sudo tee -a /etc/hhvm/php.ini; fi
-  - "mysql -e 'create database drupal;'"
-  - $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build ../d7_dev.usao.edu
-  - cd ../d7_dev.usao.edu
-  - sudo chmod _dev-R 777 sites/
-  - $TRAVIS_BUILD_DIR/vendor/bin/drush si d7_usao_edu --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=USAO@2012 --site-mail=admin@example.com --site-name="d7.usao.edu" --yes
-  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
-  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en $DRUPAL_3RD_PARTY
-  - if [[ "$DRUPAL_3RD_PARTY" == composer_manager ]]; then $TRAVIS_BUILD_DIR/vendor/bin/drush vset composer_manager_autobuild_file 0; fi
-  - if [[ "$DRUPAL_3RD_PARTY" == composer_manager ]]; then $TRAVIS_BUILD_DIR/vendor/bin/drush vset composer_manager_autobuild_packages 0; fi
-  - $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
-  - $TRAVIS_BUILD_DIR/vendor/bin/drush cron
-
+- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'display_errors = stdout' >>
+  ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
+- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'log_errors = 1' >> ~/.phpenv/versions/$(phpenv
+  version-name)/etc/conf.d/travis.ini; fi
+- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'error_log = syslog' >> ~/.phpenv/versions/$(phpenv
+  version-name)/etc/conf.d/travis.ini; fi
+- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'sendmail_path = /bin/true' >>
+  ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
+- if [[ "$TRAVIS_PHP_VERSION" == hhvm* ]]; then echo -e 'sendmail_path = /bin/true'
+  | sudo tee -a /etc/hhvm/php.ini; fi
+- mysql -e 'create database drupal;'
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build ../d7_dev.usao.edu
+- cd ../d7_dev.usao.edu
+- sudo chmod _dev-R 777 sites/
+- $TRAVIS_BUILD_DIR/vendor/bin/drush si d7_usao_edu --db-url=mysql://root:@127.0.0.1/drupal
+  --account-name=admin --account-pass=USAO@2012 --site-mail=admin@example.com --site-name="d7.usao.edu"
+  --yes
+- $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
+- $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en $DRUPAL_3RD_PARTY
+- if [[ "$DRUPAL_3RD_PARTY" == composer_manager ]]; then $TRAVIS_BUILD_DIR/vendor/bin/drush
+  vset composer_manager_autobuild_file 0; fi
+- if [[ "$DRUPAL_3RD_PARTY" == composer_manager ]]; then $TRAVIS_BUILD_DIR/vendor/bin/drush
+  vset composer_manager_autobuild_packages 0; fi
+- $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
+- $TRAVIS_BUILD_DIR/vendor/bin/drush cron
 script:
-  - test -d profiles/d7_usao_edu
-  - test -d profiles/d7_usao_edu/modules
-  - test -d profiles/d7_usao_edu/themes
-  - grep MemCacheDrupal sites/default/settings.php
-  - grep VarnishCache sites/default/settings.php
-  
+- test -d profiles/d7_usao_edu
+- test -d profiles/d7_usao_edu/modules
+- test -d profiles/d7_usao_edu/themes
+- grep MemCacheDrupal sites/default/settings.php
+- grep VarnishCache sites/default/settings.php
 after_failure:
-  - sudo cat /var/log/syslog
-  
+- sudo cat /var/log/syslog
 notifications:
   irc: irc.freenode.org#cdracars
