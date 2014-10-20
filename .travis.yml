@@ -41,6 +41,7 @@ before_script:
   - cd $TRAVIS_BUILD_DIR
   - ls -al
   - pwd
+  - mkdir -p $MODULE_PATH
   - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
   - ssh-keyscan -t rsa,dsa bitbucket.org 2>&1 | sort -u - ~/.ssh/known_hosts > ~/.ssh/tmp_hosts
     cat ~/.ssh/tmp_hosts >> ~/.ssh/known_hosts
