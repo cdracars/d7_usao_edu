@@ -52,7 +52,7 @@ before_script:
   - $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build ../d7_dev.usao.edu
   - cd ../d7_dev.usao.edu
   - sudo chmod _dev-R 777 sites/
-  - $TRAVIS_BUILD_DIR/vendor/bin/drush si d7_usao_edu --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=USAO@2012 --site-mail=admin@example.com --site-name="d7.usao.edu" --yes
+  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-intstall d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
   - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
   - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en $DRUPAL_3RD_PARTY
   - if [[ "$DRUPAL_3RD_PARTY" == composer_manager ]]; then $TRAVIS_BUILD_DIR/vendor/bin/drush vset composer_manager_autobuild_file 0; fi
