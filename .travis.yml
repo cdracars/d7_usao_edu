@@ -39,7 +39,6 @@ before_script:
   - "mysql -e 'create database drupal;'"
   - mkdir -p $MODULE_PATH
   - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
-  - mkdir -p ~/.ssh
   - chmod 600 $SSH_DEPLOY_KEY
   - echo "Host bitbucket.org" >> ~/.ssh/config
   - echo "   Hostname bitbucket.org" >> ~/.ssh/config
