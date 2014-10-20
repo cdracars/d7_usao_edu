@@ -5,3 +5,5 @@
 modules/*
 themes/*
 libraries/*
+*.iml
+.idea
