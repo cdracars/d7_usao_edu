@@ -47,14 +47,17 @@ before_script:
 - cd dev.usao.edu
 - sudo chmod -R 777 sites/
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
+- $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
 - $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
 - $TRAVIS_BUILD_DIR/vendor/bin/drush cron
+- mkdir -p $TRAVIS_BUILD_DIR/build/logs
 
 script:
  - test -d profiles/d7_usao_edu
  - test -d profiles/d7_usao_edu/modules
  - test -d profiles/d7_usao_edu/themes
+ - phpunit --coverage-clover $TRAVIS_BUILD_DIR/build/logs/clover.xml --verbose --debug
 
 after_script:
  - cd $TRAVIS_BUILD_DIR
