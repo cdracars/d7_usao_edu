@@ -43,7 +43,8 @@ before_script:
 - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 - git config --global user.email "travis@usao.edu"
 - git config --global user.name "Travis the Build Bot"
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build dev.usao.edu
+- cd build
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make ../d7_usao_edu.build dev.usao.edu
 - cd dev.usao.edu
 - sudo chmod -R 777 sites/
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
