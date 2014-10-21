@@ -155,9 +155,6 @@ projects[inline_entity_form][subdir] = contrib
 projects[insert][version] = "1.3"
 projects[insert][subdir] = contrib
 
-projects[job_scheduler][version] = "2.0-alpha"
-projects[job_scheduler][subdir] = contrib
-
 projects[jump_menu][version] = "1.4"
 projects[jump_menu][subdir] = contrib
 
@@ -368,7 +365,7 @@ projects[wec][subdir] = custom
 libraries[flexslider][type] = "library"
 libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][download][type] = "git"
-libraries[flexslider][download][url] = "git@github.com:woothemes/FlexSlider.git"
+libraries[flexslider][download][url] = "git://github.com/woothemes/FlexSlider.git"
 
 libraries[tinynav][download][type] = "git"
 libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
