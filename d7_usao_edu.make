@@ -386,7 +386,7 @@ libraries[colorbox][directory_name] = "colorbox"
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
-projects[mission_respondable][download][url] = "git@bitbucket.org:cdracars/mission_respondable.git"
+projects[mission_respondable][download][url] = "git://github.com/cdracars/mission_respondable.git"
 projects[mission_respondable][type] = "theme"
 projects[mission_respondable][version] = "1.0"
 
