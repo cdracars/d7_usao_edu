@@ -43,16 +43,13 @@ before_script:
 - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 - git config --global user.email "travis@usao.edu"
 - git config --global user.name "Travis the Build Bot"
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build ../d7_dev.usao.edu
-- cd ../d7_dev.usao.edu
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build dev.usao.edu
+- ls
+- cd dev.usao.edu
+- ls
 - sudo chmod -R 777 sites/
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-intstall d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
-- $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en $DRUPAL_3RD_PARTY
-- if [[ "$DRUPAL_3RD_PARTY" == composer_manager ]]; then $TRAVIS_BUILD_DIR/vendor/bin/drush
-  vset composer_manager_autobuild_file 0; fi
-- if [[ "$DRUPAL_3RD_PARTY" == composer_manager ]]; then $TRAVIS_BUILD_DIR/vendor/bin/drush
-  vset composer_manager_autobuild_packages 0; fi
 - $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
 - $TRAVIS_BUILD_DIR/vendor/bin/drush cron
 script:
