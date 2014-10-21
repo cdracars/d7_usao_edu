@@ -309,7 +309,7 @@ projects[wysiwyg][subdir] = contrib
 ; Custom Modules
 : --------
 projects[mission_respondable_header][download][type] = "git"
-projects[mission_respondable_header][download][url] = "git@bitbucket.org:cdracars/mission_respondable_header.git"
+projects[mission_respondable_header][download][url] = "git://bitbucket.org/cdracars/mission_respondable_header.git"
 projects[mission_respondable_header][type] = "module"
 projects[mission_respondable_header][version] = "1.0"
 projects[mission_respondable_header][subdir] = custom
