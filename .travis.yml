@@ -44,15 +44,14 @@ before_script:
 - git config --global user.email "travis@usao.edu"
 - git config --global user.name "Travis the Build Bot"
 - cd build
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make ../d7_usao_edu.build dev.usao.edu
-- ls
-- cd ..
-- ls
-- cd build
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make ../d7_usao_edu.core dev.usao.edu
 - cd dev.usao.edu
-- ls
-- cd profiles
-- ls
+- mkdir profiles/d7_usao_edu
+- cp -r ../../modules profiles/d7_usao_edu
+- cp -r ../../themes profiles/d7_usao_edu
+- cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
+- cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make --no-core --contrib-destination=projects/d7_usao_edu ../d7_usao_edu.make
 - sudo chmod -R 777 sites/
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
 - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
