@@ -45,7 +45,14 @@ before_script:
 - git config --global user.name "Travis the Build Bot"
 - cd build
 - $TRAVIS_BUILD_DIR/vendor/bin/drush make ../d7_usao_edu.build dev.usao.edu
+- ls
+- cd ..
+- ls
+- cd build
 - cd dev.usao.edu
+- ls
+- cd profiles
+- ls
 - sudo chmod -R 777 sites/
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
 - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
