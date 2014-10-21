@@ -9,5 +9,5 @@
  ; Modules
  projects[d7_usao_edu][type] = "profile"
  projects[d7_usao_edu][download][type] = "git"
- projects[d7_usao_edu][download][url] = "ssh://git@github.com/cdracars/d7.usao.edu.git"
+ projects[d7_usao_edu][download][url] = "ssh://git@github.com:cdracars/d7_usao_edu.git"
  projects[d7_usao_edu][download][branch] = "master"
