@@ -50,20 +50,22 @@ before_script:
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
 - $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
 - $TRAVIS_BUILD_DIR/vendor/bin/drush cron
+
 script:
-- test -d profiles/d7_usao_edu
-- test -d profiles/d7_usao_edu/modules
-- test -d profiles/d7_usao_edu/themes
-- grep MemCacheDrupal sites/default/settings.php
-- grep VarnishCache sites/default/settings.php
+ - test -d profiles/d7_usao_edu
+ - test -d profiles/d7_usao_edu/modules
+ - test -d profiles/d7_usao_edu/themes
+
 after_script:
-- cd $TRAVIS_BUILD_DIR
-- php $TRAVIS_BUILD_DIR/vendor/bin/coveralls -v
-- $TRAVIS_BUILD_DIR/vendor/bin/phpmd $TRAVIS_BUILD_DIR/$MODULE_PATH text codesize,naming,design
-- $TRAVIS_BUILD_DIR/vendor/bin/phpcpd $TRAVIS_BUILD_DIR/$MODULE_PATH
-- $TRAVIS_BUILD_DIR/vendor/bin/phpcs --standard=$TRAVIS_BUILD_DIR/vendor/drupal/coder/coder_sniffer/Drupal
-  $TRAVIS_BUILD_DIR/$MODULE_PATH
+ - cd $TRAVIS_BUILD_DIR
+ - php $TRAVIS_BUILD_DIR/vendor/bin/coveralls -v
+ - $TRAVIS_BUILD_DIR/vendor/bin/phpmd $TRAVIS_BUILD_DIR/$MODULE_PATH text codesize,naming,design
+ - $TRAVIS_BUILD_DIR/vendor/bin/phpcpd $TRAVIS_BUILD_DIR/$MODULE_PATH
+ - $TRAVIS_BUILD_DIR/vendor/bin/phpcs --standard=$TRAVIS_BUILD_DIR/vendor/drupal/coder/coder_sniffer/Drupal
+ - $TRAVIS_BUILD_DIR/$MODULE_PATH
+
 after_failure:
-- sudo cat /var/log/syslog
+ - sudo cat /var/log/syslog
+
 notifications:
-  irc: irc.freenode.org#cdracars
+ irc: irc.freenode.org#cdracars
