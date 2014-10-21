@@ -7,7 +7,7 @@ curl -L -o travisci_rsa.enc "$URL"
 openssl aes-256-cbc -k "$SECRET" -in travisci_rsa.enc -d -a -out ~/.ssh/id_rsa
 eval `ssh-agent -s`
 ssh-add -D
-chmod 600 id_rsa
+chmod 600 ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa
 ls ~/.ssh 
 
