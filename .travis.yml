@@ -21,8 +21,6 @@ install:
 - sudo apt-get install -y --force-yes php5-cgi php5-mysql php5-curl
 - phpenv rehash
 before_script:
-- ls ~/.ssh/
-- git clone -v git@github.com:cdracars/d7_usao_edu.git
 - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'display_errors = stdout' >>
   ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
 - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'log_errors = 1' >> ~/.phpenv/versions/$(phpenv
