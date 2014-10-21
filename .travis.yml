@@ -15,6 +15,7 @@ mysql:
   encoding: $DB_ENCODE
 before_install:
 - bash -v travis_before_install.sh
+- git clone git@bitbucket.org:cdracars/mission_respondable_header.git
 - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
 - sudo apt-get update > /dev/null
 - composer self-update
