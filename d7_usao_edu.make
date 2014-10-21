@@ -204,8 +204,8 @@ projects[migrate_d2d][patch][] = "http://drupal.org/files/migrate_d2d-use-cck-im
 projects[migrate_extras][version] = "2.5"
 projects[migrate_extras][subdir] = contrib
 
-projects[mime_mail][version] = "1.0-beta1"
-projects[mime_mail][subdir] = contrib
+projects[mimemail][version] = "1.0-beta3"
+projects[mimemail][subdir] = contrib
 
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = contrib
