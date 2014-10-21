@@ -54,7 +54,6 @@ projects[cleanpager][subdir] = contrib
 
 projects[conditional_fields][version] = "3.0-alpha1"
 projects[conditional_fields][subdir] = contrib
-projects[migrate_d2d][patch][] = "http://drupal.org/files/issues/handle-required-on-form-submission-2180107-1.patch" 
 
 projects[colorbox][version] = "2.5"
 projects[colorbox][subdir] = contrib
