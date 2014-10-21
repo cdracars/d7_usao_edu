@@ -43,7 +43,7 @@ before_script:
 - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 - git config --global user.email "travis@usao.edu"
 - git config --global user.name "Travis the Build Bot"
-- git clone git@bitbucket.org:cdracars/mission_respondable_header.git
+- git clone -v git@bitbucket.org:cdracars/mission_respondable_header.git
 - $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build ../d7_dev.usao.edu
 - cd ../d7_dev.usao.edu
 - sudo chmod -R 777 sites/
