@@ -15,7 +15,6 @@ mysql:
   encoding: $DB_ENCODE
 before_install:
 - bash -v travis_before_install.sh
-- git clone git@bitbucket.org:cdracars/mission_respondable_header.git
 - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
 - sudo apt-get update > /dev/null
 - composer self-update
@@ -44,6 +43,7 @@ before_script:
 - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 - git config --global user.email "travis@usao.edu"
 - git config --global user.name "Travis the Build Bot"
+- git clone git@bitbucket.org:cdracars/mission_respondable_header.git
 - $TRAVIS_BUILD_DIR/vendor/bin/drush make d7_usao_edu.build ../d7_dev.usao.edu
 - cd ../d7_dev.usao.edu
 - sudo chmod -R 777 sites/
