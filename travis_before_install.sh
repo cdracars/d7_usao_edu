@@ -9,7 +9,6 @@ eval `ssh-agent -s`
 ssh-add -D
 chmod 600 ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa
-ls ~/.ssh 
 
 # Init all submodules now that CI GitHub user's private key is added
 git submodule update --init --recursive
