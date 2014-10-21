@@ -305,7 +305,6 @@ projects[workflow][subdir] = contrib
 
 projects[wysiwyg][version] = "2.x-dev"
 projects[wysiwyg][subdir] = contrib
-projects[wysiwyg][patch][] = "http://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch" 
 
 ; Custom Modules
 : --------
