@@ -45,7 +45,7 @@ before_script:
  - git config --global user.email "travis@usao.edu"
  - git config --global user.name "Travis the Build Bot"
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core build
-- mkdir -p $MODULE_PATH
+ - mkdir -p $MODULE_PATH
  - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
  - cd build
  - cp -r ../../modules profiles/d7_usao_edu
