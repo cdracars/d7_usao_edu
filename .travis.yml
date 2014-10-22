@@ -50,12 +50,12 @@ before_script:
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes d7_usao_edu.core build
  - mkdir -p $MODULE_PATH
  - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
- - cd build
  - cp -r $TRAVIS_BUILD_DIR/modules $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/themes $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.profile $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.install $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.info $MODULE_PATH
+ - cd build
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$MODULE_PATH/modules ../d7_usao_edu.make
  - sudo chmod -R 777 sites/
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
