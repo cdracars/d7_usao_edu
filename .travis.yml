@@ -56,7 +56,7 @@ before_script:
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.install $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.info $MODULE_PATH
  - cd build
- - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=/home/travis/build/cdracars/d7_usao_edu/build/profiles/d7_usao_edu/modules ../d7_usao_edu.make
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=/home/travis/build/cdracars/d7_usao_edu/build/profiles/d7_usao_edu ../d7_usao_edu.make
  - ls $TRAVIS_BUILD_DIR/$MODULE_PATH/
  - cd ~
  - pwd
