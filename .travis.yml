@@ -53,7 +53,7 @@ before_script:
 - cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
 - cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
 - ls profiles/d7_usao_edu
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=projects/d7_usao_edu/modules ../../d7_usao_edu.make
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/dev.usao.edu/projects/d7_usao_edu/modules ../../d7_usao_edu.make
 - sudo chmod -R 777 sites/
 - ls profiles/d7_usao_edu/modules
 - ls profiles/d7_usao_edu/modules/contrib
