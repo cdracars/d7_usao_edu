@@ -54,6 +54,7 @@ before_script:
 - cp -r ../../themes profiles/d7_usao_edu
 - cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
 - cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
+- cp -r ../../d7_usao_edu.info profiles/d7_usao_edu
 - ls profiles/d7_usao_edu
 - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$INSTALL_DIR/projects/d7_usao_edu/modules ../../d7_usao_edu.make
 - sudo chmod -R 777 sites/
