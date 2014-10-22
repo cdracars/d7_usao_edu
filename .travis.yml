@@ -51,7 +51,7 @@ before_script:
 - cp -r ../../themes profiles/d7_usao_edu
 - cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
 - cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=projects/d7_usao_edu ../../d7_usao_edu.make
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=projects/d7_usao_edu/modules/contrib ../../d7_usao_edu.make
 - sudo chmod -R 777 sites/
 - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
 - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
