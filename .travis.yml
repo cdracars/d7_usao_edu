@@ -9,6 +9,8 @@ env:
   - MODULE_PATH='build/profiles/d7_usao_edu'
   - secure: S4sWH3Ov7j3r700JBa4cFmohDQOX45fUFlzxxVI2z7EVXiIXBeh6bu1LoMYpdpgtf+sIc6Q3gR2QYeuyaS0Lf8BTAQ+0YCla6SHL2nJPKO2YEz/v8t1VkAgu51d/2LB37/U0xAyxXN/6cxJAn1YTdeGFz7TXD1mJvlaF7J5Y6xU=
   - secure: aHMiT+r9f5UssrKLFOlyBnOfLOpbbQjkWgRy1xqrROhf5dReUY7gdLqHvRw4J+tmcFlp4K/1/MjFVLb1fgha4DxKng9bQmqxGTS9YMuakAoz4Zhce6bXYF2I/aIchj0AR7zQFzAdTh1mW7vGkUfPFdNyjQCUrExm55LeTeNISY0=
+  - INSTALL_DIR='$TRAVIS_BUILD_DIR/build/dev.usao.edu'
+
 mysql:
   database: $DATABASE
   username: $DB_USERNAME
@@ -44,8 +46,8 @@ before_script:
 - git config --global user.email "travis@usao.edu"
 - git config --global user.name "Travis the Build Bot"
 - cd build
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core dev.usao.edu
-- cd dev.usao.edu
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core $INSTALL_DIR
+- cd $INSTALL_DIR
 - ls
 - mkdir profiles/d7_usao_edu
 - cp -r ../../modules profiles/d7_usao_edu
@@ -53,7 +55,7 @@ before_script:
 - cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
 - cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
 - ls profiles/d7_usao_edu
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/dev.usao.edu/projects/d7_usao_edu/modules ../../d7_usao_edu.make
+- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$INSTALL_DIR/projects/d7_usao_edu/modules ../../d7_usao_edu.make
 - sudo chmod -R 777 sites/
 - ls profiles/d7_usao_edu/modules
 - ls profiles/d7_usao_edu/modules/contrib
