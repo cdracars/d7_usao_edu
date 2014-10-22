@@ -6,8 +6,7 @@ env:
   - DATABASE='drupal'
   - DB_USERNAME='root'
   - DB_ENCODE='utf8'
-  - INSTALL_DIR='/home/travis/build/cdracars/d7_usao_edu/build/dev.usao.edu'
-  - MODULE_PATH='/home/travis/build/cdracars/d7_usao_edu/build/dev.usao.edu/profiles/d7_usao_edu'
+  - MODULE_PATH='build/dev.usao.edu/profiles/d7_usao_edu'
   - secure: S4sWH3Ov7j3r700JBa4cFmohDQOX45fUFlzxxVI2z7EVXiIXBeh6bu1LoMYpdpgtf+sIc6Q3gR2QYeuyaS0Lf8BTAQ+0YCla6SHL2nJPKO2YEz/v8t1VkAgu51d/2LB37/U0xAyxXN/6cxJAn1YTdeGFz7TXD1mJvlaF7J5Y6xU=
   - secure: aHMiT+r9f5UssrKLFOlyBnOfLOpbbQjkWgRy1xqrROhf5dReUY7gdLqHvRw4J+tmcFlp4K/1/MjFVLb1fgha4DxKng9bQmqxGTS9YMuakAoz4Zhce6bXYF2I/aIchj0AR7zQFzAdTh1mW7vGkUfPFdNyjQCUrExm55LeTeNISY0=
   
@@ -45,18 +44,16 @@ before_script:
  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
  - git config --global user.email "travis@usao.edu"
  - git config --global user.name "Travis the Build Bot"
- - mkdir build
- - cd build
- - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core $INSTALL_DIR
- - cd $INSTALL_DIR
- - mkdir -p $MODULE_PATH
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core build
+- mkdir -p $MODULE_PATH
  - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
+ - cd build
  - cp -r ../../modules profiles/d7_usao_edu
  - cp -r ../../themes profiles/d7_usao_edu
  - cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
  - cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
  - cp -r ../../d7_usao_edu.info profiles/d7_usao_edu
- - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$INSTALL_DIR/projects/d7_usao_edu/modules ../../d7_usao_edu.make
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$MODULE_PATH/modules ../../d7_usao_edu.make
  - sudo chmod -R 777 sites/
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
  - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
