@@ -47,7 +47,7 @@ before_script:
  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
  - git config --global user.email "travis@usao.edu"
  - git config --global user.name "Travis the Build Bot"
- - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core build
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes d7_usao_edu.core build
  - mkdir -p $MODULE_PATH
  - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
  - cd build
@@ -56,7 +56,7 @@ before_script:
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.profile $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.install $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.info $MODULE_PATH
- - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$MODULE_PATH/modules ../../d7_usao_edu.make
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$MODULE_PATH/modules ../d7_usao_edu.make
  - sudo chmod -R 777 sites/
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
  - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
