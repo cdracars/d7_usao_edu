@@ -6,8 +6,6 @@ env:
   - DATABASE='drupal'
   - DB_USERNAME='root'
   - DB_ENCODE='utf8'
-  - TEST= @test '/home/'
-  - TEST2= *test'/morestuff/'
   - INSTALL_DIR='/home/travis/build/cdracars/d7_usao_edu/build/dev.usao.edu'
   - MODULE_PATH='/home/travis/build/cdracars/d7_usao_edu/build/dev.usao.edu/profiles/d7_usao_edu'
   - secure: S4sWH3Ov7j3r700JBa4cFmohDQOX45fUFlzxxVI2z7EVXiIXBeh6bu1LoMYpdpgtf+sIc6Q3gR2QYeuyaS0Lf8BTAQ+0YCla6SHL2nJPKO2YEz/v8t1VkAgu51d/2LB37/U0xAyxXN/6cxJAn1YTdeGFz7TXD1mJvlaF7J5Y6xU=
@@ -18,13 +16,6 @@ mysql:
   username: $DB_USERNAME
   encoding: $DB_ENCODE
 before_install:
- - mkdir -p $MODULE_PATH
- - ls
- - echo $TEST
- - echo $TEST2
- - echo $MODULE_PATH
- - echo $INSTALL_DIR
- - echo $TRAVIS_BUILD_DIR
  - bash -v travis_before_install.sh
  - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
  - sudo apt-get update > /dev/null
@@ -55,25 +46,18 @@ before_script:
  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
  - git config --global user.email "travis@usao.edu"
  - git config --global user.name "Travis the Build Bot"
+ - mkdir build
  - cd build
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core $INSTALL_DIR
- #- cd $INSTALL_DIR
- - cd dev.usao.edu
- - pwd
- - ls
- - mkdir profiles/d7_usao_edu
+ - cd $INSTALL_DIR
+ - mkdir -p $MODULE_PATH
  - cp -r ../../modules profiles/d7_usao_edu
  - cp -r ../../themes profiles/d7_usao_edu
  - cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
  - cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
  - cp -r ../../d7_usao_edu.info profiles/d7_usao_edu
- - ls profiles/d7_usao_edu
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$INSTALL_DIR/projects/d7_usao_edu/modules ../../d7_usao_edu.make
  - sudo chmod -R 777 sites/
- - ls profiles/d7_usao_edu/modules
- - ls profiles/d7_usao_edu/modules/contrib
- - ls profiles/d7_usao_edu/modules/custom
- - ls -al
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
  - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
