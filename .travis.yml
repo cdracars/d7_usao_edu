@@ -6,8 +6,8 @@ env:
   - DATABASE='drupal'
   - DB_USERNAME='root'
   - DB_ENCODE='utf8'
-  - INSTALL_DIR='build/dev.usao.edu'
-  - MODULE_PATH='build/$INSTALL_DIR/profiles/d7_usao_edu'
+  - INSTALL_DIR='$TRAVIS_BUILD_DIR/dev.usao.edu'
+  - MODULE_PATH='$INSTALL_DIR/profiles/d7_usao_edu'
   - secure: S4sWH3Ov7j3r700JBa4cFmohDQOX45fUFlzxxVI2z7EVXiIXBeh6bu1LoMYpdpgtf+sIc6Q3gR2QYeuyaS0Lf8BTAQ+0YCla6SHL2nJPKO2YEz/v8t1VkAgu51d/2LB37/U0xAyxXN/6cxJAn1YTdeGFz7TXD1mJvlaF7J5Y6xU=
   - secure: aHMiT+r9f5UssrKLFOlyBnOfLOpbbQjkWgRy1xqrROhf5dReUY7gdLqHvRw4J+tmcFlp4K/1/MjFVLb1fgha4DxKng9bQmqxGTS9YMuakAoz4Zhce6bXYF2I/aIchj0AR7zQFzAdTh1mW7vGkUfPFdNyjQCUrExm55LeTeNISY0=
   
