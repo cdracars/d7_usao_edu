@@ -16,58 +16,62 @@ mysql:
   username: $DB_USERNAME
   encoding: $DB_ENCODE
 before_install:
-- bash -v travis_before_install.sh
-- curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
-- sudo apt-get update > /dev/null
-- composer self-update
+ - cd $TRAVIS_BUILD_DIR
+ - ls
+ - bash -v travis_before_install.sh
+ - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
+ - sudo apt-get update > /dev/null
+ - composer self-update
+
 install:
-- sudo apt-get install -y --force-yes php5-cgi php5-mysql php5-curl
-- composer install --prefer-source
-- phpenv rehash
+ - sudo apt-get install -y --force-yes php5-cgi php5-mysql php5-curl
+ - composer install --prefer-source
+ - phpenv rehash
+
 before_script:
-- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'display_errors = stdout' >>
-  ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
-- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'log_errors = 1' >> ~/.phpenv/versions/$(phpenv
-  version-name)/etc/conf.d/travis.ini; fi
-- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'error_log = syslog' >> ~/.phpenv/versions/$(phpenv
-  version-name)/etc/conf.d/travis.ini; fi
-- if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'sendmail_path = /bin/true' >>
-  ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
-- if [[ "$TRAVIS_PHP_VERSION" == hhvm* ]]; then echo -e 'sendmail_path = /bin/true'
-  | sudo tee -a /etc/hhvm/php.ini; fi
-- mysql -e 'create database drupal;'
-- mkdir -p $MODULE_PATH
-- git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
-- echo "Host bitbucket.org" >> ~/.ssh/config
-- echo "   Hostname bitbucket.org" >> ~/.ssh/config
-- echo "   StrictHostKeyChecking no" >> ~/.ssh/config
-- echo "   CheckHostIP no" >> ~/.ssh/config
-- echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
-- git config --global user.email "travis@usao.edu"
-- git config --global user.name "Travis the Build Bot"
-- cd build
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core $INSTALL_DIR
-- cd $INSTALL_DIR
-- ls
-- mkdir profiles/d7_usao_edu
-- cp -r ../../modules profiles/d7_usao_edu
-- cp -r ../../themes profiles/d7_usao_edu
-- cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
-- cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
-- cp -r ../../d7_usao_edu.info profiles/d7_usao_edu
-- ls profiles/d7_usao_edu
-- $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$INSTALL_DIR/projects/d7_usao_edu/modules ../../d7_usao_edu.make
-- sudo chmod -R 777 sites/
-- ls profiles/d7_usao_edu/modules
-- ls profiles/d7_usao_edu/modules/contrib
-- ls profiles/d7_usao_edu/modules/custom
-- ls -al
-- $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
-- $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
-- $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
-- $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
-- $TRAVIS_BUILD_DIR/vendor/bin/drush cron
-- mkdir -p $TRAVIS_BUILD_DIR/build/logs
+ - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'display_errors = stdout' >>
+   ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
+ - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'log_errors = 1' >> ~/.phpenv/versions/$(phpenv
+   version-name)/etc/conf.d/travis.ini; fi
+ - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'error_log = syslog' >> ~/.phpenv/versions/$(phpenv
+   version-name)/etc/conf.d/travis.ini; fi
+ - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'sendmail_path = /bin/true' >>
+   ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
+ - if [[ "$TRAVIS_PHP_VERSION" == hhvm* ]]; then echo -e 'sendmail_path = /bin/true'
+   | sudo tee -a /etc/hhvm/php.ini; fi
+ - mysql -e 'create database drupal;'
+ - mkdir -p $MODULE_PATH
+ - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
+ - echo "Host bitbucket.org" >> ~/.ssh/config
+ - echo "   Hostname bitbucket.org" >> ~/.ssh/config
+ - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
+ - echo "   CheckHostIP no" >> ~/.ssh/config
+ - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+ - git config --global user.email "travis@usao.edu"
+ - git config --global user.name "Travis the Build Bot"
+ - cd build
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core $INSTALL_DIR
+ - cd $INSTALL_DIR
+ - ls
+ - mkdir profiles/d7_usao_edu
+ - cp -r ../../modules profiles/d7_usao_edu
+ - cp -r ../../themes profiles/d7_usao_edu
+ - cp -r ../../d7_usao_edu.profile profiles/d7_usao_edu
+ - cp -r ../../d7_usao_edu.install profiles/d7_usao_edu
+ - cp -r ../../d7_usao_edu.info profiles/d7_usao_edu
+ - ls profiles/d7_usao_edu
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$INSTALL_DIR/projects/d7_usao_edu/modules ../../d7_usao_edu.make
+ - sudo chmod -R 777 sites/
+ - ls profiles/d7_usao_edu/modules
+ - ls profiles/d7_usao_edu/modules/contrib
+ - ls profiles/d7_usao_edu/modules/custom
+ - ls -al
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush cron
+ - mkdir -p $TRAVIS_BUILD_DIR/build/logs
 
 script:
  - test -d profiles/d7_usao_edu
