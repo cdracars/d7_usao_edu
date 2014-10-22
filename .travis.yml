@@ -57,6 +57,8 @@ before_script:
  - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.info $MODULE_PATH
  - cd build
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=$TRAVIS_BUILD_DIR/$MODULE_PATH/modules ../d7_usao_edu.make
+ - ls $TRAVIS_BUILD_DIR/$MODULE_PATH
+ - ls $TRAVIS_BUILD_DIR/$MODULE_PATH/modules
  - sudo chmod -R 777 sites/
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
  - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
