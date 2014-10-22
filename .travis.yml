@@ -58,7 +58,6 @@ before_script:
  - cd $MODULE_PATH
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=. ../d7_usao_edu.make
  - ls modules
- - cd ../..
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
  - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
  - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
