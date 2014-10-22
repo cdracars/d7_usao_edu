@@ -19,6 +19,7 @@ before_install:
  - cd $TRAVIS_BUILD_DIR
  - cd ..
  - ls
+ - cd $TRAVIS_BUILD_DIR
  - bash -v travis_before_install.sh
  - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
  - sudo apt-get update > /dev/null
