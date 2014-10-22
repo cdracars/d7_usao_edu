@@ -17,6 +17,7 @@ mysql:
   encoding: $DB_ENCODE
 before_install:
  - mkdir -p $MODULE_PATH
+ - echo $TRAVIS_BUILD_DIR
  - bash -v travis_before_install.sh
  - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
  - sudo apt-get update > /dev/null
