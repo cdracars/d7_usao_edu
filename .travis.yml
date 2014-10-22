@@ -16,8 +16,6 @@ mysql:
   username: $DB_USERNAME
   encoding: $DB_ENCODE
 before_install:
- - cd $TRAVIS_BUILD_DIR
- - ls
  - bash -v travis_before_install.sh
  - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
  - sudo apt-get update > /dev/null
@@ -49,6 +47,7 @@ before_script:
  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
  - git config --global user.email "travis@usao.edu"
  - git config --global user.name "Travis the Build Bot"
+ - ls
  - cd build
  - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes ../d7_usao_edu.core $INSTALL_DIR
  - cd $INSTALL_DIR
