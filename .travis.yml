@@ -70,7 +70,7 @@ script:
  - test -d profiles/d7_usao_edu
  - test -d profiles/d7_usao_edu/modules
  - test -d profiles/d7_usao_edu/themes
- - phpunit --coverage-clover $TRAVIS_BUILD_DIR/build/logs/clover.xml --verbose --debug
+ # - phpunit --coverage-clover $TRAVIS_BUILD_DIR/build/logs/clover.xml --verbose --debug
 
 after_script:
  - cd $TRAVIS_BUILD_DIR
