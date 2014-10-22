@@ -6,6 +6,8 @@ env:
   - DATABASE='drupal'
   - DB_USERNAME='root'
   - DB_ENCODE='utf8'
+  - TEST= @test '/home/'
+  - TEST2= *test'/morestuff/'
   - INSTALL_DIR='/home/travis/build/cdracars/d7_usao_edu/build/dev.usao.edu'
   - MODULE_PATH='/home/travis/build/cdracars/d7_usao_edu/build/dev.usao.edu/profiles/d7_usao_edu'
   - secure: S4sWH3Ov7j3r700JBa4cFmohDQOX45fUFlzxxVI2z7EVXiIXBeh6bu1LoMYpdpgtf+sIc6Q3gR2QYeuyaS0Lf8BTAQ+0YCla6SHL2nJPKO2YEz/v8t1VkAgu51d/2LB37/U0xAyxXN/6cxJAn1YTdeGFz7TXD1mJvlaF7J5Y6xU=
@@ -18,6 +20,8 @@ mysql:
 before_install:
  - mkdir -p $MODULE_PATH
  - ls
+ - echo $TEST
+ - echo $TEST2
  - echo $MODULE_PATH
  - echo $INSTALL_DIR
  - echo $TRAVIS_BUILD_DIR
