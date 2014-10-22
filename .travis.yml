@@ -1,6 +1,8 @@
 language: php
+
 php:
-- 5.3
+ - 5.3
+
 env:
   global:
   - DATABASE='drupal'
@@ -14,6 +16,7 @@ mysql:
   database: $DATABASE
   username: $DB_USERNAME
   encoding: $DB_ENCODE
+
 before_install:
  - bash -v travis_before_install.sh
  - curl -I http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz --verbose
