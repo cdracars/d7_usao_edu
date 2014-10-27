@@ -222,6 +222,7 @@ projects[panels][subdir] = contrib
 
 projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = contrib
+projects[pathauto][patch][] = "http://drupal.org/files/pathauto-1847444-34.patch" 
 
 projects[pathologic][version] = "2.12"
 projects[pathologic][subdir] = contrib
