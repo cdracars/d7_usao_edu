@@ -522,8 +522,13 @@ libraries[fullcalendar][type] = "library"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_full.zip"
-libraries[tinynav][directory_name] = "ckeditor"
+libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
+
+libraries[htmlpurifier][download][type] = "get"
+libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.6.0.tar.gz"
+libraries[htmlpurifier][directory_name] = "htmlpurifier"
+libraries[htmlpurifier][type] = "library"
 
 libraries[colorbox][download][type] = "git"
 libraries[colorbox][destination] = "libraries"
