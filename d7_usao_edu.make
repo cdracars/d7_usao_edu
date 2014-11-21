@@ -389,7 +389,7 @@ projects[mr_accordian_links][type] = "module"
 projects[mr_accordian_links][subdir] = custom
 
 projects[mission_respondable_academics][download][type] = "git"
-projects[mission_respondable_academics][download][url] = "git@bitbucket.org:cdracars/mission_respondable_academics.git"
+projects[mission_respondable_academics][download][url] = "git@bitbucket.org:cdracars/mr_academics.git"
 projects[mission_respondable_academics][type] = "module"
 projects[mission_respondable_academics][subdir] = custom
 
@@ -419,17 +419,17 @@ projects[mr_current_students][type] = "module"
 projects[mr_current_students][subdir] = custom
 
 projects[mission_respondable_directory][download][type] = "git"
-projects[mission_respondable_directory][download][url] = "git@bitbucket.org:cdracars/mission_respondable_directory.git"
+projects[mission_respondable_directory][download][url] = "git@bitbucket.org:cdracars/mr_directory.git"
 projects[mission_respondable_directory][type] = "module"
 projects[mission_respondable_directory][subdir] = custom
 
 projects[mission_respondable_events][download][type] = "git"
-projects[mission_respondable_events][download][url] = "git@bitbucket.org:cdracars/mission_respondable_events.git"
+projects[mission_respondable_events][download][url] = "git@bitbucket.org:cdracars/mr_events.git"
 projects[mission_respondable_events][type] = "module"
 projects[mission_respondable_events][subdir] = custom
 
 projects[mission_respondable_divisions][download][type] = "git"
-projects[mission_respondable_divisions][download][url] = "git@bitbucket.org:cdracars/mission_respondable_divisions.git"
+projects[mission_respondable_divisions][download][url] = "git@bitbucket.org:cdracars/mr_divisions.git"
 projects[mission_respondable_divisions][type] = "module"
 projects[mission_respondable_divisions][subdir] = custom
 
@@ -459,12 +459,12 @@ projects[mission_respondable_frontpage][type] = "module"
 projects[mission_respondable_frontpage][subdir] = custom
 
 projects[mission_respondable_future_students][download][type] = "git"
-projects[mission_respondable_future_students][download][url] = "git@bitbucket.org:cdracars/mission_respondable_future_students.git"
+projects[mission_respondable_future_students][download][url] = "git@bitbucket.org:cdracars/mr_future_students.git"
 projects[mission_respondable_future_students][type] = "module"
 projects[mission_respondable_future_students][subdir] = custom
 
 projects[mission_respondable_majors][download][type] = "git"
-projects[mission_respondable_majors][download][url] = "git@bitbucket.org:cdracars/mission_respondable_majors.git"
+projects[mission_respondable_majors][download][url] = "git@bitbucket.org:cdracars/mr_majors.git"
 projects[mission_respondable_majors][type] = "module"
 projects[mission_respondable_majors][subdir] = custom
 
@@ -494,7 +494,7 @@ projects[mission_respondable_viewbook][type] = "module"
 projects[mission_respondable_viewbook][subdir] = custom
 
 projects[paranoia_user1][download][type] = "git"
-projects[paranoia_user1][download][url] = "git@bitbucket.org:cdracars/paranoia_user1.git"
+projects[paranoia_user1][download][url] = "git@github.com:cdracars/paranoia_user1.git"
 projects[paranoia_user1][type] = "module"
 projects[paranoia_user1][subdir] = custom
 
