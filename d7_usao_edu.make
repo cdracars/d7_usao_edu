@@ -404,7 +404,7 @@ projects[mr_alumni][type] = "module"
 projects[mr_alumni][subdir] = custom
 
 projects[mission_respondable_announcements][download][type] = "git"
-projects[mission_respondable_announcements][download][url] = "git@bitbucket.org:cdracars/mission_respondable_announcements.git"
+projects[mission_respondable_announcements][download][url] = "git@bitbucket.org:cdracars/mr_announcements.git"
 projects[mission_respondable_announcements][type] = "module"
 projects[mission_respondable_announcements][subdir] = custom
 
