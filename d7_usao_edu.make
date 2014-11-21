@@ -255,7 +255,7 @@ projects[pathologic][version] = "2.12"
 projects[pathologic][subdir] = contrib
 
 projects[publication_date][version] = "1.0"
-projects[publi]cation_date[subdir] = contrib
+projects[publication_date][subdir] = contrib
 
 projects[quicktabs][version] = "3.6"
 projects[quicktabs][subdir] = contrib
