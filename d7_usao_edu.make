@@ -515,6 +515,11 @@ libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
 libraries[tinynav][directory_name] = "tinynav"
 libraries[tinynav][type] = "library"
 
+libraries[fitvids][download][type] = "git"
+libraries[fitvids][download][url] = "git@github.com:davatron5000/FitVids.js.git"
+libraries[fitvids][directory_name] = "jquery.fitvids.js"
+libraries[fitvids][type] = "library"
+
 libraries[fullcalendar][download][type] = "get"
 libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
 libraries[fullcalendar][download][subtree] = fullcalendar-1.6.4/fullcalendar/
