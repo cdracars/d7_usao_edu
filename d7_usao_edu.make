@@ -506,6 +506,11 @@ projects[wec][download][url] = "git@bitbucket.org:drakythe/wec.git"
 projects[wec][type] = "module"
 projects[wec][subdir] = custom
 
+projects[usao_deploy][download][type] = "git"
+projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
+projects[usao_deploy][type] = "module"
+projects[usao_deploy][subdir] = custom
+
 ; Libraries
 ; --------
 libraries[flexslider][type] = "library"
