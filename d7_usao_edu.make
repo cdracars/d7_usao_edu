@@ -229,8 +229,8 @@ projects[migrate_extras][subdir] = contrib
 projects[mimemail][version] = "1.0-beta3"
 projects[mimemail][subdir] = contrib
 
-+projects[mmenu][version] = "2.0"
-+projects[mmenu][subdir] = contrib
+projects[mmenu][version] = "2.0"
+projects[mmenu][subdir] = contrib
 
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = contrib
