@@ -229,6 +229,9 @@ projects[migrate_extras][subdir] = contrib
 projects[mimemail][version] = "1.0-beta3"
 projects[mimemail][subdir] = contrib
 
+projects[mmenu][version] = "2.0"
+projects[mmenu][subdir] = contrib
+
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = contrib
 
@@ -502,6 +505,11 @@ projects[wec][download][type] = "git"
 projects[wec][download][url] = "git@bitbucket.org:drakythe/wec.git"
 projects[wec][type] = "module"
 projects[wec][subdir] = custom
+
+projects[usao_deploy][download][type] = "git"
+projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
+projects[usao_deploy][type] = "module"
+projects[usao_deploy][subdir] = custom
 
 ; Libraries
 ; --------
