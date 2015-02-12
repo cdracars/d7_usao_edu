@@ -548,6 +548,30 @@ libraries[colorbox][destination] = "libraries"
 libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
 libraries[colorbox][directory_name] = "colorbox"
 
+libraries[mmenu][download][type] = "get"
+libraries[mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu/archive/master.zip"
+libraries[mmenu][destination] = "libraries/mmenu/"
+libraries[mmenu][directory_name] = "main"
+libraries[mmenu][type] = "library"
+
+libraries[hammerjs][download][type] = "get"
+libraries[hammerjs][download][url] = "https://github.com/hammerjs/hammer.js/archive/master.zip"
+libraries[hammerjs][destination] = "libraries/mmenu/"
+libraries[hammerjs][directory_name] = "hammer"
+libraries[hammerjs][type] = "library"
+
+libraries[jqueryhammerjs][download][type] = "get"
+libraries[jqueryhammerjs][download][url] = "https://github.com/hammerjs/jquery.hammer.js/archive/master.zip"
+libraries[jqueryhammerjs][destination] = "libraries/mmenu/"
+libraries[jqueryhammerjs][directory_name] = "jquery.hammer"
+libraries[jqueryhammerjs][type] = "library"
+
+libraries[icomoon][download][type] = "get"
+libraries[icomoon][download][url] = "https://www.drupal.org/files/mmenu-icomoon.tar_.gz"
+libraries[icomoon][destination] = "libraries/mmenu/"
+libraries[icomoon][directory_name] = "icomoon"
+libraries[icomoon][type] = "library"
+
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
