@@ -576,7 +576,7 @@ libraries[icomoon][directory_name] = "icomoon"
 libraries[icomoon][type] = "library"
 
 libraries[backbonejs][download][type] = "get"
-libraries[backbonejs][download][url] = "http://backbonejs.org/backbone-min.js"
+libraries[backbonejs][download][url] = "https://github.com/jashkenas/backbone/archive/master.zip"
 libraries[backbonejs][directory_name] = "backbone"
 libraries[backbonejs][type] = "library"
 
