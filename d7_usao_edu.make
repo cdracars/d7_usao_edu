@@ -235,6 +235,12 @@ projects[mmenu][subdir] = contrib
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = contrib
 
+projects[navbar][version] = "1.5"
+projects[navbar][subdir] = contrib
+
+projects[navbar_flush_cache][version] = "1.x-dev"
+projects[navbar_flush_cache][subdir] = contrib
+
 projects[node_export][version] = "3.0"
 projects[node_export][subdir] = contrib
 
@@ -571,6 +577,22 @@ libraries[icomoon][download][url] = "https://www.drupal.org/files/mmenu-icomoon.
 libraries[icomoon][destination] = "libraries/mmenu/"
 libraries[icomoon][directory_name] = "icomoon"
 libraries[icomoon][type] = "library"
+
+libraries[backbonejs][download][type] = "get"
+libraries[backbonejs][download][url] = "https://github.com/jashkenas/backbone/archive/master.zip"
+libraries[backbonejs][directory_name] = "backbone"
+libraries[backbonejs][type] = "library"
+
+libraries[underscorejs][download][type] = "get"
+libraries[underscorejs][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
+libraries[underscorejs][directory_name] = "underscore"
+libraries[underscorejs][type] = "library"
+
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.8.3.zip"
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"
+
 
 ; Themes
 ; --------
