@@ -238,6 +238,9 @@ projects[module_filter][subdir] = contrib
 projects[navbar][version] = "1.5"
 projects[navbar][subdir] = contrib
 
+projects[navbar_flush_cache][version] = "1.x-dev"
+projects[navbar_flush_cache][subdir] = contrib
+
 projects[node_export][version] = "3.0"
 projects[node_export][subdir] = contrib
 
