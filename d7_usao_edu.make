@@ -517,6 +517,16 @@ projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.g
 projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
 
+projects[usao-gallery-rotator][download][type] = "git"
+projects[usao-gallery-rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
+projects[usao-gallery-rotator][type] = "module"
+projects[usao-gallery-rotator][subdir] = custom
+
+projects[usao_panels_layouts][download][type] = "git"
+projects[usao_panels_layouts][download][url] = "git@bitbucket.org:cdracars/usao_panels_layouts.git"
+projects[usao_panels_layouts][type] = "module"
+projects[usao_panels_layouts][subdir] = custom
+
 ; Libraries
 ; --------
 libraries[flexslider][type] = "library"
@@ -598,7 +608,7 @@ libraries[modernizr][type] = "library"
 ; --------
 projects[mission_respondable][download][type] = "git"
 projects[mission_respondable][download][url] = "git://github.com/cdracars/mission_respondable.git"
+projects[mission_respondable][download][branch] = "gallery"
 projects[mission_respondable][type] = "theme"
-projects[mission_respondable][version] = "1.0"
 
 projects[zen][version] = "5.4"
