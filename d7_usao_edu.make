@@ -517,9 +517,15 @@ projects[wec][subdir] = custom
 
 projects[usao_deploy][download][type] = "git"
 projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
-projects[usao_deploy][download][branch] = "feature/nav_bar"
+projects[usao_deploy][download][branch] = "feature/gallery"
 projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
+
+projects[gallery_rotator][download][type] = "git"
+projects[gallery_rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
+projects[gallery_rotator][directory_name] = "gallery_rotator"
+projects[gallery_rotator][type] = "module"
+projects[gallery_rotator][subdir] = custom
 
 projects[usao-gallery-rotator][download][type] = "git"
 projects[usao-gallery-rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
