@@ -175,6 +175,9 @@ projects[insert][subdir] = contrib
 projects[jump_menu][version] = "1.4"
 projects[jump_menu][subdir] = contrib
 
+projects[jquery_update][version] = "2.4"
+projects[jquery_update][subdir] = contrib
+
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = contrib
 
@@ -514,6 +517,7 @@ projects[wec][subdir] = custom
 
 projects[usao_deploy][download][type] = "git"
 projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
+projects[usao_deploy][download][branch] = "feature/nav_bar"
 projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
 
@@ -603,12 +607,16 @@ libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/ar
 libraries[modernizr][directory_name] = "modernizr"
 libraries[modernizr][type] = "library"
 
+libraries[slick][download][type] = "get"
+libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.3.11.zip"
+libraries[slick][directory_name] = "slick-master"
+libraries[slick][type] = "library"
 
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
 projects[mission_respondable][download][url] = "git://github.com/cdracars/mission_respondable.git"
-projects[mission_respondable][download][branch] = "gallery"
+projects[mission_respondable][download][branch] = "develop"
 projects[mission_respondable][type] = "theme"
 
 projects[zen][version] = "5.4"
