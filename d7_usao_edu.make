@@ -517,7 +517,7 @@ projects[wec][subdir] = custom
 
 projects[usao_deploy][download][type] = "git"
 projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
-projects[usao_deploy][download][branch] = "feature/gallery"
+projects[usao_deploy][download][branch] = "develop"
 projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
 
@@ -539,25 +539,23 @@ projects[usao_panels_layouts][subdir] = custom
 
 ; Libraries
 ; --------
-libraries[flexslider][type] = "library"
-libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][download][type] = "git"
 libraries[flexslider][download][url] = "git://github.com/woothemes/FlexSlider.git"
+libraries[flexslider][download][tag] = "version/2.3.0"
+libraries[flexslider][directory_name] = "flexslider"
+libraries[flexslider][type] = "library"
 
 libraries[tinynav][download][type] = "git"
-libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
+libraries[tinynav][download][url] = "git@github.com:viljamis/TinyNav.js.git"
+libraries[tinynav][download][tag] = "v1.0.5"
 libraries[tinynav][directory_name] = "tinynav"
 libraries[tinynav][type] = "library"
 
 libraries[fitvids][download][type] = "git"
 libraries[fitvids][download][url] = "git@github.com:davatron5000/FitVids.js.git"
+libraries[fitvids][download][tag] = "1.1.0"
 libraries[fitvids][directory_name] = "jquery.fitvids.js"
 libraries[fitvids][type] = "library"
-
-libraries[fullcalendar][download][type] = "get"
-libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
-libraries[fullcalendar][download][subtree] = fullcalendar-1.6.4/fullcalendar/
-libraries[fullcalendar][type] = "library"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_full.zip"
@@ -574,20 +572,24 @@ libraries[colorbox][destination] = "libraries"
 libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
 libraries[colorbox][directory_name] = "colorbox"
 
-libraries[mmenu][download][type] = "get"
-libraries[mmenu][download][url] = "https://github.com/BeSite/jQuery.mmenu/archive/master.zip"
+libraries[mmenu][download][type] = "git"
+libraries[mmenu][download][url] = "git@github.com:BeSite/jQuery.mmenu.git"
+libraries[mmenu][download][tag] = "v4.7.5"
 libraries[mmenu][destination] = "libraries/mmenu/"
 libraries[mmenu][directory_name] = "main"
 libraries[mmenu][type] = "library"
 
-libraries[hammerjs][download][type] = "get"
-libraries[hammerjs][download][url] = "https://github.com/hammerjs/hammer.js/archive/master.zip"
+libraries[hammerjs][download][type] = "git"
+libraries[hammerjs][download][url] = "git@github.com:hammerjs/hammer.js.git"
+libraries[hammerjs][download][tag] = "2.0.4"
 libraries[hammerjs][destination] = "libraries/mmenu/"
 libraries[hammerjs][directory_name] = "hammer"
 libraries[hammerjs][type] = "library"
 
-libraries[jqueryhammerjs][download][type] = "get"
-libraries[jqueryhammerjs][download][url] = "https://github.com/hammerjs/jquery.hammer.js/archive/master.zip"
+libraries[jqueryhammerjs][download][type] = "git"
+libraries[jqueryhammerjs][download][url] = "git@github.com:hammerjs/jquery.hammer.js.git"
+libraries[jqueryhammerjs][download][tag] = "2.0.0"
+libraries[jqueryhammerjs][download][url] = "git@github.com:hammerjs/jquery.hammer.js.git"
 libraries[jqueryhammerjs][destination] = "libraries/mmenu/"
 libraries[jqueryhammerjs][directory_name] = "jquery.hammer"
 libraries[jqueryhammerjs][type] = "library"
@@ -598,8 +600,9 @@ libraries[icomoon][destination] = "libraries/mmenu/"
 libraries[icomoon][directory_name] = "icomoon"
 libraries[icomoon][type] = "library"
 
-libraries[backbonejs][download][type] = "get"
-libraries[backbonejs][download][url] = "https://github.com/jashkenas/backbone/archive/master.zip"
+libraries[backbonejs][download][type] = "git"
+libraries[backbonejs][download][url] = "git@github.com:jashkenas/backbone.git"
+libraries[backbonejs][download][tag] = "1.1.2"
 libraries[backbonejs][directory_name] = "backbone"
 libraries[backbonejs][type] = "library"
 
