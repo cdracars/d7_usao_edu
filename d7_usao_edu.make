@@ -537,6 +537,12 @@ projects[usao_panels_layouts][download][url] = "git@bitbucket.org:cdracars/usao_
 projects[usao_panels_layouts][type] = "module"
 projects[usao_panels_layouts][subdir] = custom
 
+projects[mr_alerts][download][type] = "git"
+projects[mr_alerts][download][url] = "git@bitbucket.org:cdracars/mr_alerts.git"
+projects[mr_alerts][type] = "module"
+projects[mr_alerts][subdir] = custom
+
+
 ; Libraries
 ; --------
 libraries[flexslider][download][type] = "git"
