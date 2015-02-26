@@ -547,13 +547,13 @@ libraries[flexslider][type] = "library"
 
 libraries[tinynav][download][type] = "git"
 libraries[tinynav][download][url] = "git@github.com:viljamis/TinyNav.js.git"
-libraries[tinynav][download][tag] = "v1.0.5"
+libraries[tinynav][download][tag] = "v1.05"
 libraries[tinynav][directory_name] = "tinynav"
 libraries[tinynav][type] = "library"
 
 libraries[fitvids][download][type] = "git"
 libraries[fitvids][download][url] = "git@github.com:davatron5000/FitVids.js.git"
-libraries[fitvids][download][tag] = "1.1.0"
+libraries[fitvids][download][tag] = "v1.1.0"
 libraries[fitvids][directory_name] = "jquery.fitvids.js"
 libraries[fitvids][type] = "library"
 
