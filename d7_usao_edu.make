@@ -175,6 +175,9 @@ projects[insert][subdir] = contrib
 projects[jump_menu][version] = "1.4"
 projects[jump_menu][subdir] = contrib
 
+projects[jquery_update][version] = "2.4"
+projects[jquery_update][subdir] = contrib
+
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = contrib
 
@@ -229,8 +232,17 @@ projects[migrate_extras][subdir] = contrib
 projects[mimemail][version] = "1.0-beta3"
 projects[mimemail][subdir] = contrib
 
+projects[mmenu][version] = "2.0"
+projects[mmenu][subdir] = contrib
+
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = contrib
+
+projects[navbar][version] = "1.5"
+projects[navbar][subdir] = contrib
+
+projects[navbar_flush_cache][version] = "1.x-dev"
+projects[navbar_flush_cache][subdir] = contrib
 
 projects[node_export][version] = "3.0"
 projects[node_export][subdir] = contrib
@@ -503,27 +515,47 @@ projects[wec][download][url] = "git@bitbucket.org:drakythe/wec.git"
 projects[wec][type] = "module"
 projects[wec][subdir] = custom
 
+projects[usao_deploy][download][type] = "git"
+projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
+projects[usao_deploy][download][branch] = "develop"
+projects[usao_deploy][type] = "module"
+projects[usao_deploy][subdir] = custom
+
+projects[gallery_rotator][download][type] = "git"
+projects[gallery_rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
+projects[gallery_rotator][directory_name] = "gallery_rotator"
+projects[gallery_rotator][type] = "module"
+projects[gallery_rotator][subdir] = custom
+
+projects[usao-gallery-rotator][download][type] = "git"
+projects[usao-gallery-rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
+projects[usao-gallery-rotator][type] = "module"
+projects[usao-gallery-rotator][subdir] = custom
+
+projects[usao_panels_layouts][download][type] = "git"
+projects[usao_panels_layouts][download][url] = "git@bitbucket.org:cdracars/usao_panels_layouts.git"
+projects[usao_panels_layouts][type] = "module"
+projects[usao_panels_layouts][subdir] = custom
+
 ; Libraries
 ; --------
-libraries[flexslider][type] = "library"
-libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][download][type] = "git"
 libraries[flexslider][download][url] = "git://github.com/woothemes/FlexSlider.git"
+libraries[flexslider][download][tag] = "version/2.3.0"
+libraries[flexslider][directory_name] = "flexslider"
+libraries[flexslider][type] = "library"
 
 libraries[tinynav][download][type] = "git"
-libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
+libraries[tinynav][download][url] = "git@github.com:viljamis/TinyNav.js.git"
+libraries[tinynav][download][tag] = "v1.05"
 libraries[tinynav][directory_name] = "tinynav"
 libraries[tinynav][type] = "library"
 
 libraries[fitvids][download][type] = "git"
 libraries[fitvids][download][url] = "git@github.com:davatron5000/FitVids.js.git"
+libraries[fitvids][download][tag] = "v1.1.0"
 libraries[fitvids][directory_name] = "jquery.fitvids.js"
 libraries[fitvids][type] = "library"
-
-libraries[fullcalendar][download][type] = "get"
-libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
-libraries[fullcalendar][download][subtree] = fullcalendar-1.6.4/fullcalendar/
-libraries[fullcalendar][type] = "library"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_full.zip"
@@ -540,11 +572,60 @@ libraries[colorbox][destination] = "libraries"
 libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
 libraries[colorbox][directory_name] = "colorbox"
 
+libraries[mmenu][download][type] = "git"
+libraries[mmenu][download][url] = "git@github.com:BeSite/jQuery.mmenu.git"
+libraries[mmenu][download][tag] = "v4.7.5"
+libraries[mmenu][destination] = "libraries/mmenu/"
+libraries[mmenu][directory_name] = "main"
+libraries[mmenu][type] = "library"
+
+libraries[hammerjs][download][type] = "git"
+libraries[hammerjs][download][url] = "git@github.com:hammerjs/hammer.js.git"
+libraries[hammerjs][download][tag] = "2.0.4"
+libraries[hammerjs][destination] = "libraries/mmenu/"
+libraries[hammerjs][directory_name] = "hammer"
+libraries[hammerjs][type] = "library"
+
+libraries[jqueryhammerjs][download][type] = "git"
+libraries[jqueryhammerjs][download][url] = "git@github.com:hammerjs/jquery.hammer.js.git"
+libraries[jqueryhammerjs][download][tag] = "2.0.0"
+libraries[jqueryhammerjs][download][url] = "git@github.com:hammerjs/jquery.hammer.js.git"
+libraries[jqueryhammerjs][destination] = "libraries/mmenu/"
+libraries[jqueryhammerjs][directory_name] = "jquery.hammer"
+libraries[jqueryhammerjs][type] = "library"
+
+libraries[icomoon][download][type] = "get"
+libraries[icomoon][download][url] = "https://www.drupal.org/files/mmenu-icomoon.tar_.gz"
+libraries[icomoon][destination] = "libraries/mmenu/"
+libraries[icomoon][directory_name] = "icomoon"
+libraries[icomoon][type] = "library"
+
+libraries[backbonejs][download][type] = "git"
+libraries[backbonejs][download][url] = "git@github.com:jashkenas/backbone.git"
+libraries[backbonejs][download][tag] = "1.1.2"
+libraries[backbonejs][directory_name] = "backbone"
+libraries[backbonejs][type] = "library"
+
+libraries[underscorejs][download][type] = "get"
+libraries[underscorejs][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
+libraries[underscorejs][directory_name] = "underscore"
+libraries[underscorejs][type] = "library"
+
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.8.3.zip"
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"
+
+libraries[slick][download][type] = "get"
+libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.3.11.zip"
+libraries[slick][directory_name] = "slick-master"
+libraries[slick][type] = "library"
+
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
 projects[mission_respondable][download][url] = "git://github.com/cdracars/mission_respondable.git"
+projects[mission_respondable][download][branch] = "develop"
 projects[mission_respondable][type] = "theme"
-projects[mission_respondable][version] = "1.0"
 
 projects[zen][version] = "5.4"
