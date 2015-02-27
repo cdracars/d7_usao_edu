@@ -341,7 +341,7 @@ projects[views_bulk_operations][subdir] = contrib
 projects[views_slideshow][version] = "3.1"
 projects[views_slideshow][subdir] = contrib
 
-projects[webform][version] = "4.0-beta1"
+projects[webform][version] = "4.3"
 projects[webform][subdir] = contrib
 
 projects[webform_accordion][version] = "2.0-alpha1"
