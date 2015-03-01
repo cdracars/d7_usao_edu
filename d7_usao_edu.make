@@ -635,3 +635,4 @@ projects[mission_respondable][download][tag] = "1.4.0"
 projects[mission_respondable][type] = "theme"
 
 projects[zen][version] = "5.4"
+projects[ember][version] = "2.0-alpha2"
