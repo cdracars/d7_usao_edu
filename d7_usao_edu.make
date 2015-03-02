@@ -341,7 +341,7 @@ projects[varnish][subdir] = contrib
 projects[views][version] = "3.7"
 projects[views][subdir] = contrib
 
-projects[views_accordion][version] = "1.0-rc2"
+projects[views_accordion][version] = "1.1"
 projects[views_accordion][subdir] = contrib
 
 projects[views_bulk_operations][version] = "3.2"
