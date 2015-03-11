@@ -55,6 +55,9 @@ projects[bu][subdir] = contrib
 projects[calendar][version] = "3.4"
 projects[calendar][subdir] = contrib
 
+projects[captcha][version] = "1.2"
+projects[captcha][subdir] = contrib
+
 projects[cleanpager][version] = "1.0"
 projects[cleanpager][subdir] = contrib
 
@@ -272,6 +275,9 @@ projects[publication_date][subdir] = contrib
 projects[quicktabs][version] = "3.6"
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][patch][] = "http://drupal.org/files/894746-quicktabs-html-tab-title-33.patch" 
+
+projects[recaptcha][version] = "2.0-alpha1"
+projects[recaptcha][subdir] = contrib
 
 projects[redirect][version] = "1.0-rc1"
 projects[redirect][subdir] = contrib
