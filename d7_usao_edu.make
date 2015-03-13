@@ -627,6 +627,16 @@ libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1
 libraries[slick][directory_name] = "slick-master"
 libraries[slick][type] = "library"
 
+libraries[tcpdf][download][type] = "get"
+libraries[tcpdf][download][url] = "http://downloads.sourceforge.net/project/tcpdf/tcpdf_6_2_6.zip"
+libraries[tcpdf][directory_name] = "tcpdf"
+libraries[tcpdf][type] = "library"
+
+libraries[fpdi][download][type] = "get"
+libraries[fpdi][download][url] = "http://www.setasign.com/supra/kon2_dl/80506/FPDI-1.5.2.zip"
+libraries[fpdi][directory_name] = "fpdi"
+libraries[fpdi][type] = "library"
+
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
