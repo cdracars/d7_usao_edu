@@ -22,12 +22,6 @@ projects[diff][subdir] = contrib
 
 ; Modules
 ; --------
-projects[admin][version] = "2.0-beta3"
-projects[admin][subdir] = contrib
-
-projects[admin_tools][version] = "1.1"
-projects[admin_tools][subdir] = contrib
-
 projects[admin_views][version] = "1.2"
 projects[admin_views][subdir] = contrib
 
@@ -259,6 +253,9 @@ projects[page_title][subdir] = contrib
 projects[panels][version] = "3.3"
 projects[panels][subdir] = contrib
 
+projects[panels_custom_title_tag][version] = "1.0-alpha1"
+projects[panels_custom_title_tag][subdir] = contrib
+
 projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = contrib
 projects[pathauto][patch][] = "https://www.drupal.org/files/issues/pathauto-1847444-34.patch" 
@@ -279,12 +276,18 @@ projects[redirect][subdir] = contrib
 projects[references][version] = "2.1"
 projects[references][subdir] = contrib
 
+projects[references][version] = "2.1"
+projects[references][subdir] = contrib
+
 ; Sandbox module
 projects[refnav][type] = module
 projects[refnav][download][type] = git
 projects[refnav][download][branch] = "7.x-1.x"
 projects[refnav][download][url] = http://git.drupal.org/sandbox/dman/2209055.git
 projects[refnav][subdir] = contrib
+
+projects[responsive_tables][version] = "2.x-dev"
+projects[responsive_tables][subdir] = contrib
 
 projects[revisioning][version] = "1.4"
 projects[revisioning][subdir] = contrib
@@ -344,6 +347,9 @@ projects[views_bulk_operations][subdir] = contrib
 projects[views_slideshow][version] = "3.1"
 projects[views_slideshow][subdir] = contrib
 
+projects[views_pdf][version] = "1.4"
+projects[views_pdf][subdir] = contrib
+
 projects[webform][version] = "4.3"
 projects[webform][subdir] = contrib
 
@@ -367,6 +373,9 @@ projects[workbench_moderation][subdir] = contrib
 
 projects[wysiwyg][version] = "2.x-dev"
 projects[wysiwyg][subdir] = contrib
+
+projects[youtube][version] = "1.3"
+projects[youtube][subdir] = contrib
 
 ; Custom Modules
 : --------
@@ -541,6 +550,31 @@ projects[mr_alerts][download][type] = "git"
 projects[mr_alerts][download][url] = "git@bitbucket.org:cdracars/mr_alerts.git"
 projects[mr_alerts][type] = "module"
 projects[mr_alerts][subdir] = custom
+
+projects[athletics][download][type] = "git"
+projects[athletics][download][url] = "git@bitbucket.org:cdracars/athletics.git"
+projects[athletics][type] = "module"
+projects[athletics][subdir] = custom
+
+projects[athletics_layouts][download][type] = "git"
+projects[athletics_layouts][download][url] = "git@bitbucket.org:cdracars/athletics_layouts.git"
+projects[athletics_layouts][type] = "module"
+projects[athletics_layouts][subdir] = custom
+
+projects[athletics_secondary_menus][download][type] = "git"
+projects[athletics_secondary_menus][download][url] = "git@bitbucket.org:cdracars/athletics_secondary_menus.git"
+projects[athletics_secondary_menus][type] = "module"
+projects[athletics_secondary_menus][subdir] = custom
+
+projects[athletics_schedule_results][download][type] = "git"
+projects[athletics_schedule_results][download][url] = "git@bitbucket.org:cdracars/athletics_schedule_results.git"
+projects[athletics_schedule_results][type] = "module"
+projects[athletics_schedule_results][subdir] = custom
+
+projects[athletics_roster][download][type] = "git"
+projects[athletics_roster][download][url] = "git@bitbucket.org:cdracars/athletics_roster.git"
+projects[athletics_roster][type] = "module"
+projects[athletics_roster][subdir] = custom
 
 
 ; Libraries
