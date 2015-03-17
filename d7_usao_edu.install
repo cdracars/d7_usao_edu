@@ -28,15 +28,6 @@ function d7_usao_edu_install() {
     ->execute();
   variable_set('theme_default', 'mission_respondable');
 
-  // Set Admin Theme
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'rubik')
-    ->execute();
-  variable_set('admin_theme', 'rubik');
-  variable_set('node_admin_theme', '1');
-
   $filtered_html_format = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
@@ -92,14 +83,9 @@ function d7_usao_edu_install() {
   $full_html_format = (object) $full_html_format;
   filter_format_save($full_html_format);
 
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'dingus')
-    ->execute();
-
   // Enable some standard blocks.
   $default_theme = variable_get('theme_default', 'mission_respondable');
+  $admin_theme = 'seven';
   $values = array(
     array(
       'module' => 'system',
