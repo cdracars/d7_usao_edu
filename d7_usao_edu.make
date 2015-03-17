@@ -680,4 +680,4 @@ projects[mission_respondable][download][branch] = "release/1.5.0"
 projects[mission_respondable][type] = "theme"
 
 projects[zen][version] = "5.4"
-projects[ember][version] = "2.0-alpha2"
+projects[ember][version] = "2.0-alpha3"
