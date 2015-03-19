@@ -37,6 +37,13 @@ projects[auto_entitylabel][subdir] = contrib
 projects[auto_nodetitle][version] = "1.0"
 projects[auto_nodetitle][subdir] = contrib
 
+; Sandbox module
+projects[better_views_tables][type] = module
+projects[better_views_tables][download][type] = git
+projects[better_views_tables][download][branch] = "7.x-1.x"
+projects[better_views_tables][download][url] = http://git.drupal.org/sandbox/minorOffense/1793630.git
+projects[better_views_tables][subdir] = contrib
+
 projects[block_class][version] = "2.1"
 projects[block_class][subdir] = contrib
 
@@ -399,120 +406,125 @@ projects[wysiwyg][subdir] = contrib
 
 ; Custom Modules
 : --------
+projects[d6_migration][download][type] = "git"
+projects[d6_migration][download][url] = "git@bitbucket.org:cdracars/d6_migration.git"
+projects[d6_migration][type] = "module"
+projects[d6_migration][subdir] = custom
+
 projects[mr_about_us][download][type] = "git"
 projects[mr_about_us][download][url] = "git@bitbucket.org:cdracars/mr_about_us.git"
 projects[mr_about_us][type] = "module"
-projects[mr_about_us][subdir] = custom
+projects[mr_about_us][subdir] = features
 
 projects[mr_accordian_links][download][type] = "git"
 projects[mr_accordian_links][download][url] = "git@bitbucket.org:cdracars/mr_accordian_links.git"
 projects[mr_accordian_links][type] = "module"
-projects[mr_accordian_links][subdir] = custom
+projects[mr_accordian_links][subdir] = features
 
 projects[mission_respondable_academics][download][type] = "git"
 projects[mission_respondable_academics][download][url] = "git@bitbucket.org:cdracars/mr_academics.git"
 projects[mission_respondable_academics][type] = "module"
-projects[mission_respondable_academics][subdir] = custom
+projects[mission_respondable_academics][subdir] = features
 
 projects[mr_alerts][download][type] = "git"
 projects[mr_alerts][download][url] = "git@bitbucket.org:cdracars/mr_alerts.git"
 projects[mr_alerts][type] = "module"
-projects[mr_alerts][subdir] = custom
+projects[mr_alerts][subdir] = features
 
 projects[mr_alumni][download][type] = "git"
 projects[mr_alumni][download][url] = "git@bitbucket.org:cdracars/mr_alumni.git"
 projects[mr_alumni][type] = "module"
-projects[mr_alumni][subdir] = custom
+projects[mr_alumni][subdir] = features
 
 projects[mission_respondable_announcements][download][type] = "git"
 projects[mission_respondable_announcements][download][url] = "git@bitbucket.org:cdracars/mr_announcements.git"
 projects[mission_respondable_announcements][type] = "module"
-projects[mission_respondable_announcements][subdir] = custom
+projects[mission_respondable_announcements][subdir] = features
 
 projects[mr_controller][download][type] = "git"
 projects[mr_controller][download][url] = "git@bitbucket.org:cdracars/mr_controller.git"
 projects[mr_controller][type] = "module"
-projects[mr_controller][subdir] = custom
+projects[mr_controller][subdir] = features
 
 projects[mr_current_students][download][type] = "git"
 projects[mr_current_students][download][url] = "git@bitbucket.org:cdracars/mr_current_students.git"
 projects[mr_current_students][type] = "module"
-projects[mr_current_students][subdir] = custom
+projects[mr_current_students][subdir] = features
 
 projects[mission_respondable_directory][download][type] = "git"
 projects[mission_respondable_directory][download][url] = "git@bitbucket.org:cdracars/mr_directory.git"
 projects[mission_respondable_directory][type] = "module"
-projects[mission_respondable_directory][subdir] = custom
+projects[mission_respondable_directory][subdir] = features
 
 projects[mission_respondable_events][download][type] = "git"
 projects[mission_respondable_events][download][url] = "git@bitbucket.org:cdracars/mr_events.git"
 projects[mission_respondable_events][type] = "module"
-projects[mission_respondable_events][subdir] = custom
+projects[mission_respondable_events][subdir] = features
 
 projects[mission_respondable_divisions][download][type] = "git"
 projects[mission_respondable_divisions][download][url] = "git@bitbucket.org:cdracars/mr_divisions.git"
 projects[mission_respondable_divisions][type] = "module"
-projects[mission_respondable_divisions][subdir] = custom
+projects[mission_respondable_divisions][subdir] = features
 
 projects[mr_giving][download][type] = "git"
 projects[mr_giving][download][url] = "git@bitbucket.org:cdracars/mr_giving.git"
 projects[mr_giving][type] = "module"
-projects[mr_giving][subdir] = custom
+projects[mr_giving][subdir] = features
 
 projects[mission_respondable_header][download][type] = "git"
 projects[mission_respondable_header][download][url] = "git@bitbucket.org:cdracars/mission_respondable_header.git"
 projects[mission_respondable_header][type] = "module"
-projects[mission_respondable_header][subdir] = custom
+projects[mission_respondable_header][subdir] = features
 
 projects[mission_respondable_footer][download][type] = "git"
 projects[mission_respondable_footer][download][url] = "git@bitbucket.org:cdracars/mission_respondable_footer.git"
 projects[mission_respondable_footer][type] = "module"
-projects[mission_respondable_footer][subdir] = custom
+projects[mission_respondable_footer][subdir] = features
 
 projects[mission_respondable_front_buttons][download][type] = "git"
 projects[mission_respondable_front_buttons][download][url] = "git@bitbucket.org:cdracars/mission_respondable_front_buttons.git"
 projects[mission_respondable_front_buttons][type] = "module"
-projects[mission_respondable_front_buttons][subdir] = custom
+projects[mission_respondable_front_buttons][subdir] = features
 
 projects[mission_respondable_frontpage][download][type] = "git"
 projects[mission_respondable_frontpage][download][url] = "git@bitbucket.org:cdracars/mission_respondable_frontpage.git"
 projects[mission_respondable_frontpage][type] = "module"
-projects[mission_respondable_frontpage][subdir] = custom
+projects[mission_respondable_frontpage][subdir] = features
 
 projects[mission_respondable_future_students][download][type] = "git"
 projects[mission_respondable_future_students][download][url] = "git@bitbucket.org:cdracars/mr_future_students.git"
 projects[mission_respondable_future_students][type] = "module"
-projects[mission_respondable_future_students][subdir] = custom
+projects[mission_respondable_future_students][subdir] = features
 
 projects[mission_respondable_majors][download][type] = "git"
 projects[mission_respondable_majors][download][url] = "git@bitbucket.org:cdracars/mr_majors.git"
 projects[mission_respondable_majors][type] = "module"
-projects[mission_respondable_majors][subdir] = custom
+projects[mission_respondable_majors][subdir] = features
 
 projects[mission_respondable_news][download][type] = "git"
 projects[mission_respondable_news][download][url] = "git@bitbucket.org:cdracars/mission_respondable_news.git"
 projects[mission_respondable_news][type] = "module"
-projects[mission_respondable_news][subdir] = custom
+projects[mission_respondable_news][subdir] = features
 
 projects[mr_quicktab_blocks][download][type] = "git"
 projects[mr_quicktab_blocks][download][url] = "git@bitbucket.org:cdracars/mr_quicktab_blocks.git"
 projects[mr_quicktab_blocks][type] = "module"
-projects[mr_quicktab_blocks][subdir] = custom
+projects[mr_quicktab_blocks][subdir] = features
 
 projects[mr_search][download][type] = "git"
 projects[mr_search][download][url] = "git@bitbucket.org:cdracars/mr_search.git"
 projects[mr_search][type] = "module"
-projects[mr_search][subdir] = custom
+projects[mr_search][subdir] = features
 
 projects[mission_respondable_testimonials][download][type] = "git"
 projects[mission_respondable_testimonials][download][url] = "git@bitbucket.org:cdracars/mission_respondable_testimonials.git"
 projects[mission_respondable_testimonials][type] = "module"
-projects[mission_respondable_testimonials][subdir] = custom
+projects[mission_respondable_testimonials][subdir] = features
 
 projects[mission_respondable_viewbook][download][type] = "git"
 projects[mission_respondable_viewbook][download][url] = "git@bitbucket.org:cdracars/mission_respondable_viewbook.git"
 projects[mission_respondable_viewbook][type] = "module"
-projects[mission_respondable_viewbook][subdir] = custom
+projects[mission_respondable_viewbook][subdir] = features
 
 projects[paranoia_user1][download][type] = "git"
 projects[paranoia_user1][download][url] = "git@github.com:cdracars/paranoia_user1.git"
@@ -531,16 +543,10 @@ projects[usao_deploy][download][branch] = "release/1.5.0"
 projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
 
-projects[gallery_rotator][download][type] = "git"
-projects[gallery_rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
-projects[gallery_rotator][directory_name] = "gallery_rotator"
-projects[gallery_rotator][type] = "module"
-projects[gallery_rotator][subdir] = custom
-
 projects[usao-gallery-rotator][download][type] = "git"
 projects[usao-gallery-rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
 projects[usao-gallery-rotator][type] = "module"
-projects[usao-gallery-rotator][subdir] = custom
+projects[usao-gallery-rotator][subdir] = features
 
 projects[usao_panels_layouts][download][type] = "git"
 projects[usao_panels_layouts][download][url] = "git@bitbucket.org:cdracars/usao_panels_layouts.git"
@@ -550,12 +556,12 @@ projects[usao_panels_layouts][subdir] = custom
 projects[mr_alerts][download][type] = "git"
 projects[mr_alerts][download][url] = "git@bitbucket.org:cdracars/mr_alerts.git"
 projects[mr_alerts][type] = "module"
-projects[mr_alerts][subdir] = custom
+projects[mr_alerts][subdir] = features
 
 projects[athletics][download][type] = "git"
 projects[athletics][download][url] = "git@bitbucket.org:cdracars/athletics.git"
 projects[athletics][type] = "module"
-projects[athletics][subdir] = custom
+projects[athletics][subdir] = features
 
 projects[athletics_layouts][download][type] = "git"
 projects[athletics_layouts][download][url] = "git@bitbucket.org:cdracars/athletics_layouts.git"
@@ -575,7 +581,7 @@ projects[athletics_schedule_results][subdir] = custom
 projects[athletics_roster][download][type] = "git"
 projects[athletics_roster][download][url] = "git@bitbucket.org:cdracars/athletics_roster.git"
 projects[athletics_roster][type] = "module"
-projects[athletics_roster][subdir] = custom
+projects[athletics_roster][subdir] = features
 
 
 ; Libraries
