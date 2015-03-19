@@ -526,7 +526,8 @@ projects[wec][subdir] = custom
 
 projects[usao_deploy][download][type] = "git"
 projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
-projects[usao_deploy][download][tag] = "1.4.0"
+;projects[usao_deploy][download][tag] = "1.4.0"
+projects[usao_deploy][download][branch] = "release/1.5.0"
 projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
 
@@ -581,7 +582,7 @@ projects[athletics_roster][subdir] = custom
 ; --------
 libraries[flexslider][download][type] = "git"
 libraries[flexslider][download][url] = "git://github.com/woothemes/FlexSlider.git"
-libraries[flexslider][download][tag] = "version/2.3.0"
+libraries[flexslider][download][tag] = "version/2.4.0"
 libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][type] = "library"
 
