@@ -38,11 +38,11 @@ projects[auto_nodetitle][version] = "1.0"
 projects[auto_nodetitle][subdir] = contrib
 
 ; Sandbox module
-projects[better_views_tables][type] = module
-projects[better_views_tables][download][type] = git
-projects[better_views_tables][download][branch] = "7.x-1.x"
-projects[better_views_tables][download][url] = http://git.drupal.org/sandbox/minorOffense/1793630.git
-projects[better_views_tables][subdir] = contrib
+projects[bvt][type] = module
+projects[bvt][download][type] = git
+projects[bvt][download][branch] = "7.x-1.x"
+projects[bvt][download][url] = http://git.drupal.org/sandbox/minorOffense/1793630.git
+projects[bvt][subdir] = contrib
 
 projects[block_class][version] = "2.1"
 projects[block_class][subdir] = contrib
