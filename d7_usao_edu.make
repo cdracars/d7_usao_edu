@@ -384,32 +384,8 @@ projects[wysiwyg][subdir] = contrib
 projects[youtube][version] = "1.3"
 projects[youtube][subdir] = contrib
 
-; Custom Modules
+; Features
 : --------
-projects[mr_about_us][download][type] = "git"
-projects[mr_about_us][download][url] = "git@bitbucket.org:cdracars/mr_about_us.git"
-projects[mr_about_us][type] = "module"
-projects[mr_about_us][subdir] = custom
-
-projects[mr_accordian_links][download][type] = "git"
-projects[mr_accordian_links][download][url] = "git@bitbucket.org:cdracars/mr_accordian_links.git"
-projects[mr_accordian_links][type] = "module"
-projects[mr_accordian_links][subdir] = custom
-
-projects[mission_respondable_academics][download][type] = "git"
-projects[mission_respondable_academics][download][url] = "git@bitbucket.org:cdracars/mission_respondable_academics.git"
-projects[mission_respondable_academics][type] = "module"
-projects[mission_respondable_academics][subdir] = custom
-
-projects[wysiwyg][version] = "2.x-dev"
-projects[wysiwyg][subdir] = contrib
-
-; Custom Modules
-: --------
-projects[d6_migration][download][type] = "git"
-projects[d6_migration][download][url] = "git@bitbucket.org:cdracars/d6_migration.git"
-projects[d6_migration][type] = "module"
-projects[d6_migration][subdir] = custom
 
 projects[mr_about_us][download][type] = "git"
 projects[mr_about_us][download][url] = "git@bitbucket.org:cdracars/mr_about_us.git"
@@ -526,32 +502,10 @@ projects[mission_respondable_viewbook][download][url] = "git@bitbucket.org:cdrac
 projects[mission_respondable_viewbook][type] = "module"
 projects[mission_respondable_viewbook][subdir] = features
 
-projects[paranoia_user1][download][type] = "git"
-projects[paranoia_user1][download][url] = "git@github.com:cdracars/paranoia_user1.git"
-projects[paranoia_user1][type] = "module"
-projects[paranoia_user1][subdir] = custom
-
-projects[wec][download][type] = "git"
-projects[wec][download][url] = "git@bitbucket.org:drakythe/wec.git"
-projects[wec][type] = "module"
-projects[wec][subdir] = custom
-
-projects[usao_deploy][download][type] = "git"
-projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
-;projects[usao_deploy][download][tag] = "1.4.0"
-projects[usao_deploy][download][branch] = "release/1.5.0"
-projects[usao_deploy][type] = "module"
-projects[usao_deploy][subdir] = custom
-
 projects[usao-gallery-rotator][download][type] = "git"
 projects[usao-gallery-rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
 projects[usao-gallery-rotator][type] = "module"
 projects[usao-gallery-rotator][subdir] = features
-
-projects[usao_panels_layouts][download][type] = "git"
-projects[usao_panels_layouts][download][url] = "git@bitbucket.org:cdracars/usao_panels_layouts.git"
-projects[usao_panels_layouts][type] = "module"
-projects[usao_panels_layouts][subdir] = custom
 
 projects[mr_alerts][download][type] = "git"
 projects[mr_alerts][download][url] = "git@bitbucket.org:cdracars/mr_alerts.git"
@@ -562,6 +516,40 @@ projects[athletics][download][type] = "git"
 projects[athletics][download][url] = "git@bitbucket.org:cdracars/athletics.git"
 projects[athletics][type] = "module"
 projects[athletics][subdir] = features
+
+projects[athletics_roster][download][type] = "git"
+projects[athletics_roster][download][url] = "git@bitbucket.org:cdracars/athletics_roster.git"
+projects[athletics_roster][type] = "module"
+projects[athletics_roster][subdir] = features
+
+; Custom Modules
+: --------
+projects[usao_deploy][download][type] = "git"
+projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
+;projects[usao_deploy][download][tag] = "1.4.0"
+projects[usao_deploy][download][branch] = "release/1.5.0"
+projects[usao_deploy][type] = "module"
+projects[usao_deploy][subdir] = custom
+
+projects[d6_migration][download][type] = "git"
+projects[d6_migration][download][url] = "git@bitbucket.org:cdracars/d6_migration.git"
+projects[d6_migration][type] = "module"
+projects[d6_migration][subdir] = custom
+
+projects[paranoia_user1][download][type] = "git"
+projects[paranoia_user1][download][url] = "git@github.com:cdracars/paranoia_user1.git"
+projects[paranoia_user1][type] = "module"
+projects[paranoia_user1][subdir] = custom
+
+projects[wec][download][type] = "git"
+projects[wec][download][url] = "git@bitbucket.org:drakythe/wec.git"
+projects[wec][type] = "module"
+projects[wec][subdir] = custom
+
+projects[usao_panels_layouts][download][type] = "git"
+projects[usao_panels_layouts][download][url] = "git@bitbucket.org:cdracars/usao_panels_layouts.git"
+projects[usao_panels_layouts][type] = "module"
+projects[usao_panels_layouts][subdir] = custom
 
 projects[athletics_layouts][download][type] = "git"
 projects[athletics_layouts][download][url] = "git@bitbucket.org:cdracars/athletics_layouts.git"
@@ -577,12 +565,6 @@ projects[athletics_schedule_results][download][type] = "git"
 projects[athletics_schedule_results][download][url] = "git@bitbucket.org:cdracars/athletics_schedule_results.git"
 projects[athletics_schedule_results][type] = "module"
 projects[athletics_schedule_results][subdir] = custom
-
-projects[athletics_roster][download][type] = "git"
-projects[athletics_roster][download][url] = "git@bitbucket.org:cdracars/athletics_roster.git"
-projects[athletics_roster][type] = "module"
-projects[athletics_roster][subdir] = features
-
 
 ; Libraries
 ; --------
