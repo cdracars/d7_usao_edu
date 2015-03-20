@@ -526,8 +526,8 @@ projects[athletics_roster][subdir] = features
 : --------
 projects[usao_deploy][download][type] = "git"
 projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
-;projects[usao_deploy][download][tag] = "1.4.0"
-projects[usao_deploy][download][branch] = "release/1.5.0"
+projects[usao_deploy][download][tag] = "1.5.0"
+;projects[usao_deploy][download][branch] = "release/1.5.0"
 projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
 
@@ -664,8 +664,8 @@ libraries[fpdi][type] = "library"
 ; --------
 projects[mission_respondable][download][type] = "git"
 projects[mission_respondable][download][url] = "git://github.com/cdracars/mission_respondable.git"
-;projects[mission_respondable][download][tag] = "1.4.0"
-projects[mission_respondable][download][branch] = "release/1.5.0"
+projects[mission_respondable][download][tag] = "1.5.0"
+;projects[mission_respondable][download][branch] = "release/1.5.0"
 projects[mission_respondable][type] = "theme"
 
 projects[zen][version] = "5.4"
