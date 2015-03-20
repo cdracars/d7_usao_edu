@@ -22,12 +22,6 @@ projects[diff][subdir] = contrib
 
 ; Modules
 ; --------
-projects[admin][version] = "2.0-beta3"
-projects[admin][subdir] = contrib
-
-projects[admin_tools][version] = "1.1"
-projects[admin_tools][subdir] = contrib
-
 projects[admin_views][version] = "1.2"
 projects[admin_views][subdir] = contrib
 
@@ -42,6 +36,13 @@ projects[auto_entitylabel][subdir] = contrib
 
 projects[auto_nodetitle][version] = "1.0"
 projects[auto_nodetitle][subdir] = contrib
+
+; Sandbox module
+projects[bvt][type] = module
+projects[bvt][download][type] = git
+projects[bvt][download][branch] = "7.x-1.x"
+projects[bvt][download][url] = http://git.drupal.org/sandbox/minorOffense/1793630.git
+projects[bvt][subdir] = contrib
 
 projects[block_class][version] = "2.1"
 projects[block_class][subdir] = contrib
@@ -175,6 +176,9 @@ projects[insert][subdir] = contrib
 projects[jump_menu][version] = "1.4"
 projects[jump_menu][subdir] = contrib
 
+projects[jquery_update][version] = "2.4"
+projects[jquery_update][subdir] = contrib
+
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = contrib
 
@@ -229,8 +233,17 @@ projects[migrate_extras][subdir] = contrib
 projects[mimemail][version] = "1.0-beta3"
 projects[mimemail][subdir] = contrib
 
+projects[mmenu][version] = "2.0"
+projects[mmenu][subdir] = contrib
+
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = contrib
+
+projects[navbar][version] = "1.5"
+projects[navbar][subdir] = contrib
+
+projects[navbar_flush_cache][version] = "1.x-dev"
+projects[navbar_flush_cache][subdir] = contrib
 
 projects[node_export][version] = "3.0"
 projects[node_export][subdir] = contrib
@@ -246,6 +259,9 @@ projects[page_title][subdir] = contrib
 
 projects[panels][version] = "3.3"
 projects[panels][subdir] = contrib
+
+projects[panels_custom_title_tag][version] = "1.0-alpha1"
+projects[panels_custom_title_tag][subdir] = contrib
 
 projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = contrib
@@ -267,12 +283,18 @@ projects[redirect][subdir] = contrib
 projects[references][version] = "2.1"
 projects[references][subdir] = contrib
 
+projects[references][version] = "2.1"
+projects[references][subdir] = contrib
+
 ; Sandbox module
 projects[refnav][type] = module
 projects[refnav][download][type] = git
 projects[refnav][download][branch] = "7.x-1.x"
 projects[refnav][download][url] = http://git.drupal.org/sandbox/dman/2209055.git
 projects[refnav][subdir] = contrib
+
+projects[responsive_tables][version] = "2.x-dev"
+projects[responsive_tables][subdir] = contrib
 
 projects[revisioning][version] = "1.4"
 projects[revisioning][subdir] = contrib
@@ -323,7 +345,7 @@ projects[varnish][subdir] = contrib
 projects[views][version] = "3.7"
 projects[views][subdir] = contrib
 
-projects[views_accordion][version] = "1.0-rc2"
+projects[views_accordion][version] = "1.1"
 projects[views_accordion][subdir] = contrib
 
 projects[views_bulk_operations][version] = "3.2"
@@ -332,7 +354,10 @@ projects[views_bulk_operations][subdir] = contrib
 projects[views_slideshow][version] = "3.1"
 projects[views_slideshow][subdir] = contrib
 
-projects[webform][version] = "4.0-beta1"
+projects[views_pdf][version] = "1.4"
+projects[views_pdf][subdir] = contrib
+
+projects[webform][version] = "4.3"
 projects[webform][subdir] = contrib
 
 projects[webform_accordion][version] = "2.0-alpha1"
@@ -356,142 +381,160 @@ projects[workbench_moderation][subdir] = contrib
 projects[wysiwyg][version] = "2.x-dev"
 projects[wysiwyg][subdir] = contrib
 
-; Custom Modules
+projects[youtube][version] = "1.3"
+projects[youtube][subdir] = contrib
+
+; Features
 : --------
+
 projects[mr_about_us][download][type] = "git"
 projects[mr_about_us][download][url] = "git@bitbucket.org:cdracars/mr_about_us.git"
 projects[mr_about_us][type] = "module"
-projects[mr_about_us][subdir] = custom
+projects[mr_about_us][subdir] = features
 
 projects[mr_accordian_links][download][type] = "git"
 projects[mr_accordian_links][download][url] = "git@bitbucket.org:cdracars/mr_accordian_links.git"
 projects[mr_accordian_links][type] = "module"
-projects[mr_accordian_links][subdir] = custom
-
-projects[mission_respondable_academics][download][type] = "git"
-projects[mission_respondable_academics][download][url] = "git@bitbucket.org:cdracars/mission_respondable_academics.git"
-projects[mission_respondable_academics][type] = "module"
-projects[mission_respondable_academics][subdir] = custom
-
-projects[wysiwyg][version] = "2.x-dev"
-projects[wysiwyg][subdir] = contrib
-
-; Custom Modules
-: --------
-projects[mr_about_us][download][type] = "git"
-projects[mr_about_us][download][url] = "git@bitbucket.org:cdracars/mr_about_us.git"
-projects[mr_about_us][type] = "module"
-projects[mr_about_us][subdir] = custom
-
-projects[mr_accordian_links][download][type] = "git"
-projects[mr_accordian_links][download][url] = "git@bitbucket.org:cdracars/mr_accordian_links.git"
-projects[mr_accordian_links][type] = "module"
-projects[mr_accordian_links][subdir] = custom
+projects[mr_accordian_links][subdir] = features
 
 projects[mission_respondable_academics][download][type] = "git"
 projects[mission_respondable_academics][download][url] = "git@bitbucket.org:cdracars/mr_academics.git"
 projects[mission_respondable_academics][type] = "module"
-projects[mission_respondable_academics][subdir] = custom
+projects[mission_respondable_academics][subdir] = features
 
 projects[mr_alerts][download][type] = "git"
 projects[mr_alerts][download][url] = "git@bitbucket.org:cdracars/mr_alerts.git"
 projects[mr_alerts][type] = "module"
-projects[mr_alerts][subdir] = custom
+projects[mr_alerts][subdir] = features
 
 projects[mr_alumni][download][type] = "git"
 projects[mr_alumni][download][url] = "git@bitbucket.org:cdracars/mr_alumni.git"
 projects[mr_alumni][type] = "module"
-projects[mr_alumni][subdir] = custom
+projects[mr_alumni][subdir] = features
 
 projects[mission_respondable_announcements][download][type] = "git"
 projects[mission_respondable_announcements][download][url] = "git@bitbucket.org:cdracars/mr_announcements.git"
 projects[mission_respondable_announcements][type] = "module"
-projects[mission_respondable_announcements][subdir] = custom
+projects[mission_respondable_announcements][subdir] = features
 
 projects[mr_controller][download][type] = "git"
 projects[mr_controller][download][url] = "git@bitbucket.org:cdracars/mr_controller.git"
 projects[mr_controller][type] = "module"
-projects[mr_controller][subdir] = custom
+projects[mr_controller][subdir] = features
 
 projects[mr_current_students][download][type] = "git"
 projects[mr_current_students][download][url] = "git@bitbucket.org:cdracars/mr_current_students.git"
 projects[mr_current_students][type] = "module"
-projects[mr_current_students][subdir] = custom
+projects[mr_current_students][subdir] = features
 
 projects[mission_respondable_directory][download][type] = "git"
 projects[mission_respondable_directory][download][url] = "git@bitbucket.org:cdracars/mr_directory.git"
 projects[mission_respondable_directory][type] = "module"
-projects[mission_respondable_directory][subdir] = custom
+projects[mission_respondable_directory][subdir] = features
 
 projects[mission_respondable_events][download][type] = "git"
 projects[mission_respondable_events][download][url] = "git@bitbucket.org:cdracars/mr_events.git"
 projects[mission_respondable_events][type] = "module"
-projects[mission_respondable_events][subdir] = custom
+projects[mission_respondable_events][subdir] = features
 
 projects[mission_respondable_divisions][download][type] = "git"
 projects[mission_respondable_divisions][download][url] = "git@bitbucket.org:cdracars/mr_divisions.git"
 projects[mission_respondable_divisions][type] = "module"
-projects[mission_respondable_divisions][subdir] = custom
+projects[mission_respondable_divisions][subdir] = features
 
 projects[mr_giving][download][type] = "git"
 projects[mr_giving][download][url] = "git@bitbucket.org:cdracars/mr_giving.git"
 projects[mr_giving][type] = "module"
-projects[mr_giving][subdir] = custom
+projects[mr_giving][subdir] = features
 
 projects[mission_respondable_header][download][type] = "git"
 projects[mission_respondable_header][download][url] = "git@bitbucket.org:cdracars/mission_respondable_header.git"
 projects[mission_respondable_header][type] = "module"
-projects[mission_respondable_header][subdir] = custom
+projects[mission_respondable_header][subdir] = features
 
 projects[mission_respondable_footer][download][type] = "git"
 projects[mission_respondable_footer][download][url] = "git@bitbucket.org:cdracars/mission_respondable_footer.git"
 projects[mission_respondable_footer][type] = "module"
-projects[mission_respondable_footer][subdir] = custom
+projects[mission_respondable_footer][subdir] = features
 
 projects[mission_respondable_front_buttons][download][type] = "git"
 projects[mission_respondable_front_buttons][download][url] = "git@bitbucket.org:cdracars/mission_respondable_front_buttons.git"
 projects[mission_respondable_front_buttons][type] = "module"
-projects[mission_respondable_front_buttons][subdir] = custom
+projects[mission_respondable_front_buttons][subdir] = features
 
 projects[mission_respondable_frontpage][download][type] = "git"
 projects[mission_respondable_frontpage][download][url] = "git@bitbucket.org:cdracars/mission_respondable_frontpage.git"
 projects[mission_respondable_frontpage][type] = "module"
-projects[mission_respondable_frontpage][subdir] = custom
+projects[mission_respondable_frontpage][subdir] = features
 
 projects[mission_respondable_future_students][download][type] = "git"
 projects[mission_respondable_future_students][download][url] = "git@bitbucket.org:cdracars/mr_future_students.git"
 projects[mission_respondable_future_students][type] = "module"
-projects[mission_respondable_future_students][subdir] = custom
+projects[mission_respondable_future_students][subdir] = features
 
 projects[mission_respondable_majors][download][type] = "git"
 projects[mission_respondable_majors][download][url] = "git@bitbucket.org:cdracars/mr_majors.git"
 projects[mission_respondable_majors][type] = "module"
-projects[mission_respondable_majors][subdir] = custom
+projects[mission_respondable_majors][subdir] = features
 
 projects[mission_respondable_news][download][type] = "git"
 projects[mission_respondable_news][download][url] = "git@bitbucket.org:cdracars/mission_respondable_news.git"
 projects[mission_respondable_news][type] = "module"
-projects[mission_respondable_news][subdir] = custom
+projects[mission_respondable_news][subdir] = features
 
 projects[mr_quicktab_blocks][download][type] = "git"
 projects[mr_quicktab_blocks][download][url] = "git@bitbucket.org:cdracars/mr_quicktab_blocks.git"
 projects[mr_quicktab_blocks][type] = "module"
-projects[mr_quicktab_blocks][subdir] = custom
+projects[mr_quicktab_blocks][subdir] = features
 
 projects[mr_search][download][type] = "git"
 projects[mr_search][download][url] = "git@bitbucket.org:cdracars/mr_search.git"
 projects[mr_search][type] = "module"
-projects[mr_search][subdir] = custom
+projects[mr_search][subdir] = features
 
 projects[mission_respondable_testimonials][download][type] = "git"
 projects[mission_respondable_testimonials][download][url] = "git@bitbucket.org:cdracars/mission_respondable_testimonials.git"
 projects[mission_respondable_testimonials][type] = "module"
-projects[mission_respondable_testimonials][subdir] = custom
+projects[mission_respondable_testimonials][subdir] = features
 
 projects[mission_respondable_viewbook][download][type] = "git"
 projects[mission_respondable_viewbook][download][url] = "git@bitbucket.org:cdracars/mission_respondable_viewbook.git"
 projects[mission_respondable_viewbook][type] = "module"
-projects[mission_respondable_viewbook][subdir] = custom
+projects[mission_respondable_viewbook][subdir] = features
+
+projects[usao-gallery-rotator][download][type] = "git"
+projects[usao-gallery-rotator][download][url] = "git@bitbucket.org:cdracars/usao-gallery-rotator.git"
+projects[usao-gallery-rotator][type] = "module"
+projects[usao-gallery-rotator][subdir] = features
+
+projects[mr_alerts][download][type] = "git"
+projects[mr_alerts][download][url] = "git@bitbucket.org:cdracars/mr_alerts.git"
+projects[mr_alerts][type] = "module"
+projects[mr_alerts][subdir] = features
+
+projects[athletics][download][type] = "git"
+projects[athletics][download][url] = "git@bitbucket.org:cdracars/athletics.git"
+projects[athletics][type] = "module"
+projects[athletics][subdir] = features
+
+projects[athletics_roster][download][type] = "git"
+projects[athletics_roster][download][url] = "git@bitbucket.org:cdracars/athletics_roster.git"
+projects[athletics_roster][type] = "module"
+projects[athletics_roster][subdir] = features
+
+; Custom Modules
+: --------
+projects[usao_deploy][download][type] = "git"
+projects[usao_deploy][download][url] = "git@bitbucket.org:cdracars/usao_deploy.git"
+projects[usao_deploy][download][tag] = "1.5.0"
+;projects[usao_deploy][download][branch] = "release/1.5.0"
+projects[usao_deploy][type] = "module"
+projects[usao_deploy][subdir] = custom
+
+projects[d6_migration][download][type] = "git"
+projects[d6_migration][download][url] = "git@bitbucket.org:cdracars/d6_migration.git"
+projects[d6_migration][type] = "module"
+projects[d6_migration][subdir] = custom
 
 projects[paranoia_user1][download][type] = "git"
 projects[paranoia_user1][download][url] = "git@github.com:cdracars/paranoia_user1.git"
@@ -503,27 +546,45 @@ projects[wec][download][url] = "git@bitbucket.org:drakythe/wec.git"
 projects[wec][type] = "module"
 projects[wec][subdir] = custom
 
+projects[usao_panels_layouts][download][type] = "git"
+projects[usao_panels_layouts][download][url] = "git@bitbucket.org:cdracars/usao_panels_layouts.git"
+projects[usao_panels_layouts][type] = "module"
+projects[usao_panels_layouts][subdir] = custom
+
+projects[athletics_layouts][download][type] = "git"
+projects[athletics_layouts][download][url] = "git@bitbucket.org:cdracars/athletics_layouts.git"
+projects[athletics_layouts][type] = "module"
+projects[athletics_layouts][subdir] = custom
+
+projects[athletics_secondary_menus][download][type] = "git"
+projects[athletics_secondary_menus][download][url] = "git@bitbucket.org:cdracars/athletics_secondary_menus.git"
+projects[athletics_secondary_menus][type] = "module"
+projects[athletics_secondary_menus][subdir] = custom
+
+projects[athletics_schedule_results][download][type] = "git"
+projects[athletics_schedule_results][download][url] = "git@bitbucket.org:cdracars/athletics_schedule_results.git"
+projects[athletics_schedule_results][type] = "module"
+projects[athletics_schedule_results][subdir] = custom
+
 ; Libraries
 ; --------
-libraries[flexslider][type] = "library"
-libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][download][type] = "git"
 libraries[flexslider][download][url] = "git://github.com/woothemes/FlexSlider.git"
+libraries[flexslider][download][tag] = "version/2.4.0"
+libraries[flexslider][directory_name] = "flexslider"
+libraries[flexslider][type] = "library"
 
 libraries[tinynav][download][type] = "git"
-libraries[tinynav][download][url] = "https://github.com/viljamis/TinyNav.js.git"
+libraries[tinynav][download][url] = "git@github.com:viljamis/TinyNav.js.git"
+libraries[tinynav][download][tag] = "v1.05"
 libraries[tinynav][directory_name] = "tinynav"
 libraries[tinynav][type] = "library"
 
 libraries[fitvids][download][type] = "git"
 libraries[fitvids][download][url] = "git@github.com:davatron5000/FitVids.js.git"
+libraries[fitvids][download][tag] = "v1.1.0"
 libraries[fitvids][directory_name] = "jquery.fitvids.js"
 libraries[fitvids][type] = "library"
-
-libraries[fullcalendar][download][type] = "get"
-libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.6.4/fullcalendar-1.6.4.zip"
-libraries[fullcalendar][download][subtree] = fullcalendar-1.6.4/fullcalendar/
-libraries[fullcalendar][type] = "library"
 
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.1/ckeditor_4.3.1_full.zip"
@@ -540,11 +601,72 @@ libraries[colorbox][destination] = "libraries"
 libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
 libraries[colorbox][directory_name] = "colorbox"
 
+libraries[mmenu][download][type] = "git"
+libraries[mmenu][download][url] = "git@github.com:BeSite/jQuery.mmenu.git"
+libraries[mmenu][download][tag] = "v4.7.5"
+libraries[mmenu][destination] = "libraries/mmenu/"
+libraries[mmenu][directory_name] = "main"
+libraries[mmenu][type] = "library"
+
+libraries[hammerjs][download][type] = "git"
+libraries[hammerjs][download][url] = "git@github.com:hammerjs/hammer.js.git"
+libraries[hammerjs][download][tag] = "2.0.4"
+libraries[hammerjs][destination] = "libraries/mmenu/"
+libraries[hammerjs][directory_name] = "hammer"
+libraries[hammerjs][type] = "library"
+
+libraries[jqueryhammerjs][download][type] = "git"
+libraries[jqueryhammerjs][download][url] = "git@github.com:hammerjs/jquery.hammer.js.git"
+libraries[jqueryhammerjs][download][tag] = "2.0.0"
+libraries[jqueryhammerjs][download][url] = "git@github.com:hammerjs/jquery.hammer.js.git"
+libraries[jqueryhammerjs][destination] = "libraries/mmenu/"
+libraries[jqueryhammerjs][directory_name] = "jquery.hammer"
+libraries[jqueryhammerjs][type] = "library"
+
+libraries[icomoon][download][type] = "get"
+libraries[icomoon][download][url] = "https://www.drupal.org/files/mmenu-icomoon.tar_.gz"
+libraries[icomoon][destination] = "libraries/mmenu/"
+libraries[icomoon][directory_name] = "icomoon"
+libraries[icomoon][type] = "library"
+
+libraries[backbonejs][download][type] = "git"
+libraries[backbonejs][download][url] = "git@github.com:jashkenas/backbone.git"
+libraries[backbonejs][download][tag] = "1.1.2"
+libraries[backbonejs][directory_name] = "backbone"
+libraries[backbonejs][type] = "library"
+
+libraries[underscorejs][download][type] = "get"
+libraries[underscorejs][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
+libraries[underscorejs][directory_name] = "underscore"
+libraries[underscorejs][type] = "library"
+
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "https://github.com/Modernizr/Modernizr/archive/v2.8.3.zip"
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"
+
+libraries[slick][download][type] = "get"
+libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.3.11.zip"
+libraries[slick][directory_name] = "slick-master"
+libraries[slick][type] = "library"
+
+libraries[tcpdf][download][type] = "get"
+libraries[tcpdf][download][url] = "http://downloads.sourceforge.net/project/tcpdf/tcpdf_6_2_6.zip"
+libraries[tcpdf][directory_name] = "tcpdf"
+libraries[tcpdf][type] = "library"
+
+libraries[fpdi][download][type] = "get"
+libraries[fpdi][download][url] = "http://www.setasign.com/supra/kon2_dl/80506/FPDI-1.5.2.zip"
+libraries[fpdi][directory_name] = "fpdi"
+libraries[fpdi][type] = "library"
+
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
 projects[mission_respondable][download][url] = "git://github.com/cdracars/mission_respondable.git"
+projects[mission_respondable][download][tag] = "1.5.0"
+;projects[mission_respondable][download][branch] = "release/1.5.0"
 projects[mission_respondable][type] = "theme"
-projects[mission_respondable][version] = "1.0"
 
 projects[zen][version] = "5.4"
+projects[ember][version] = "2.0-alpha3"
