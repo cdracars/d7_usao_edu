@@ -283,9 +283,6 @@ projects[redirect][subdir] = contrib
 projects[references][version] = "2.1"
 projects[references][subdir] = contrib
 
-projects[references][version] = "2.1"
-projects[references][subdir] = contrib
-
 ; Sandbox module
 projects[refnav][type] = module
 projects[refnav][download][type] = git
