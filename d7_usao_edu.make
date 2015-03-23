@@ -65,7 +65,7 @@ projects[cleanpager][subdir] = contrib
 projects[conditional_fields][version] = "3.0-alpha1"
 projects[conditional_fields][subdir] = contrib
 
-projects[colorbox][version] = "2.5"
+projects[colorbox][version] = "2.8"
 projects[colorbox][subdir] = contrib
 
 projects[colors][version] = "1.0-rc1"
@@ -602,10 +602,11 @@ libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlp
 libraries[htmlpurifier][directory_name] = "htmlpurifier"
 libraries[htmlpurifier][type] = "library"
 
-libraries[colorbox][download][type] = "git"
-libraries[colorbox][destination] = "libraries"
-libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
-libraries[colorbox][directory_name] = "colorbox"
+ libraries[colorbox][download][type] = "git"
+ libraries[colorbox][download][url] = "git://github.com/jackmoore/colorbox.git"
+ libraries[colorbox][download][tag] = "1.6.0"
+ libraries[colorbox][directory_name] = "colorbox"
+ libraries[colorbox][type] = "library"
 
 libraries[mmenu][download][type] = "git"
 libraries[mmenu][download][url] = "git@github.com:BeSite/jQuery.mmenu.git"
