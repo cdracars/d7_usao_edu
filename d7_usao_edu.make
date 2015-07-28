@@ -59,6 +59,14 @@ projects[calendar][subdir] = contrib
 projects[captcha][version] = "1.2"
 projects[captcha][subdir] = contrib
 
+; Sandbox module
+projects[ckeditor_media][type] = module
+projects[ckeditor_media][download][type] = git
+projects[ckeditor_media][download][branch] = "7.x-1.x"
+projects[ckeditor_media][download][url] = http://git.drupal.org/project/ckeditor_media.git
+projects[ckeditor_media][subdir] = contrib
+projects[ckeditor_media][patch][] = "https://www.drupal.org/files/issues/ckeditor_media-wysiwyg_module_support-2458717-2.patch" 
+
 projects[cleanpager][version] = "1.0"
 projects[cleanpager][subdir] = contrib
 
@@ -167,12 +175,6 @@ projects[httprl][subdir] = contrib
 
 projects[imagemagick][version] = "1.0"
 projects[imagemagick][subdir] = contrib
-
-projects[imce][version] = "1.8"
-projects[imce][subdir] = contrib
-
-projects[imce_wysiwyg][version] = "1.0"
-projects[imce_wysiwyg][subdir] = contrib
 
 projects[inline_entity_form][version] = "1.4"
 projects[inline_entity_form][subdir] = contrib
@@ -355,7 +357,7 @@ projects[uuid][subdir] = contrib
 projects[uuid_features][version] = "1.0-alpha3"
 projects[uuid_features][subdir] = contrib
 
-projects[varnish][version] = "1.0-beta2"
+projects[varnish][version] = "1.0-dev"
 projects[varnish][subdir] = contrib
 
 projects[views][version] = "3.7"
