@@ -25,7 +25,7 @@ before_install:
 
 install:
  - sudo apt-get install -y --force-yes php5-cgi php5-mysql php5-curl
- - composer install --prefer-source
+ - composer install -n --prefer-source
  - phpenv rehash
 
 before_script:
