@@ -62,6 +62,10 @@ projects[captcha][subdir] = contrib
 projects[cleanpager][version] = "1.0"
 projects[cleanpager][subdir] = contrib
 
+projects[ckeditor_media][version] = "1.0"
+projects[ckeditor_media][subdir] = contrib
+projects[ckeditor_media][patch][] = "https://www.drupal.org/files/issues/wysiwyg_module_support-2458717-1.patch"
+
 projects[conditional_fields][version] = "3.0-alpha1"
 projects[conditional_fields][subdir] = contrib
 
@@ -308,6 +312,9 @@ projects[revisioning][subdir] = contrib
 projects[rules][version] = "2.6"
 projects[rules][subdir] = contrib
 
+projects[s3fs][version] = "2.0"
+projects[s3fs][subdir] = contrib
+
 projects[search_api][version] = "1.11"
 projects[search_api][subdir] = contrib
 
@@ -319,6 +326,9 @@ projects[securepages][subdir] = contrib
 
 projects[select_or_other][version] = "2.20"
 projects[select_or_other][subdir] = contrib
+
+projects[sharethis][version] = "2.10"
+projects[sharethis][subdir] = contrib
 
 projects[stringoverrides][version] = "1.8"
 projects[stringoverrides][subdir] = contrib
@@ -387,7 +397,7 @@ projects[workbench_moderation][subdir] = contrib
 projects[wysiwyg][version] = "2.x-dev"
 projects[wysiwyg][subdir] = contrib
 
-projects[youtube][version] = "1.3"
+projects[youtube][version] = "1.6"
 projects[youtube][subdir] = contrib
 
 ; Features
@@ -641,6 +651,12 @@ libraries[backbonejs][download][url] = "git@github.com:jashkenas/backbone.git"
 libraries[backbonejs][download][tag] = "1.1.2"
 libraries[backbonejs][directory_name] = "backbone"
 libraries[backbonejs][type] = "library"
+
+libraries[aws-sdk-php][download][type] = "git"
+libraries[aws-sdk-php][download][url] = "https://github.com/aws/aws-sdk-php.git"
+libraries[aws-sdk-php][download][tag] = "2.7.26"
+libraries[aws-sdk-php][directory_name] = "awssdk2"
+libraries[aws-sdk-php][type] = "library"
 
 libraries[underscorejs][download][type] = "get"
 libraries[underscorejs][download][url] = "https://github.com/jashkenas/underscore/archive/1.5.2.zip"
