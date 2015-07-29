@@ -1,120 +1,73 @@
-# @file
-# .travis.yml - Drupal for Travis CI Integration
-#
-# Template provided by https://github.com/LionsAd/drupal_ti.
-#
-# Based for simpletest upon:
-#   https://github.com/sonnym/travis-ci-drupal-module-example
-
-#language: php
-
-sudo: false
+language: php
 
 php:
-  - 5.3
-  - 5.4
-  - 5.5
-  - 5.6
-  - 7
-  - hhvm
-
-matrix:
-  fast_finish: true
-  allow_failures:
-    - php: hhvm
+ - 5.3
 
 env:
   global:
-    # add composer's global bin directory to the path
-    # see: https://github.com/drush-ops/drush#install---composer
-    - PATH="$PATH:$HOME/.composer/vendor/bin"
-
-    # Configuration variables.
-    - DRUPAL_TI_MODULE_NAME="d7_usao_edu"
-    - DRUPAL_TI_SIMPLETEST_GROUP="Simpletest Group"
-
-    # Define runners and environment vars to include before and after the
-    # main runners / environment vars.
-    #- DRUPAL_TI_SCRIPT_DIR_BEFORE="./drupal_ti/before"
-    #- DRUPAL_TI_SCRIPT_DIR_AFTER="./drupal_ti/after"
-
-    # The environment to use, supported are: drupal-7, drupal-8
-    - DRUPAL_TI_ENVIRONMENT="drupal-7"
-
-    # Drupal specific variables.
-    - DRUPAL_TI_DB="drupal_travis_db"
-    - DRUPAL_TI_DB_URL="mysql://root:@127.0.0.1/drupal_travis_db"
-    # Note: Do not add a trailing slash here.
-    - DRUPAL_TI_WEBSERVER_URL="http://127.0.0.1"
-    - DRUPAL_TI_WEBSERVER_PORT="8080"
-
-    # Simpletest specific commandline arguments, the DRUPAL_TI_SIMPLETEST_GROUP is appended at the end.
-    - DRUPAL_TI_SIMPLETEST_ARGS="--verbose --color --concurrency 4 --url $DRUPAL_TI_WEBSERVER_URL:$DRUPAL_TI_WEBSERVER_PORT"
-
-    # === Behat specific variables.
-    # This is relative to $TRAVIS_BUILD_DIR
-    - DRUPAL_TI_BEHAT_DIR="./tests/behat"
-    # These arguments are passed to the bin/behat command.
-    - DRUPAL_TI_BEHAT_ARGS=""
-    # Specify the filename of the behat.yml with the $DRUPAL_TI_DRUPAL_DIR variables.
-    - DRUPAL_TI_BEHAT_YML="behat.yml.dist"
-    # This is used to setup Xvfb.
-    - DRUPAL_TI_BEHAT_SCREENSIZE_COLOR="1280x1024x16"
-    # The version of seleniumthat should be used.
-    - DRUPAL_TI_BEHAT_SELENIUM_VERSION="2.44"
-    # Set DRUPAL_TI_BEHAT_DRIVER to "selenium" to use "firefox" or "chrome" here.
-    - DRUPAL_TI_BEHAT_DRIVER="phantomjs"
-    - DRUPAL_TI_BEHAT_BROWSER="firefox"
-
-    # PHPUnit specific commandline arguments.
-    - DRUPAL_TI_PHPUNIT_ARGS=""
-    # Specifying the phpunit-core src/ directory is useful when e.g. a vendor/
-    # directory is present in the module directory, which phpunit would then
-    # try to find tests in. This option is relative to $TRAVIS_BUILD_DIR.
-    #- DRUPAL_TI_PHPUNIT_CORE_SRC_DIRECTORY="./tests/src"
-
-    # Code coverage via coveralls.io
-    - DRUPAL_TI_COVERAGE="satooshi/php-coveralls:0.6.*"
-    # This needs to match your .coveralls.yml file.
-    - DRUPAL_TI_COVERAGE_FILE="build/logs/clover.xml"
-
-    # Debug options
-    #- DRUPAL_TI_DEBUG="-x -v"
-    # Set to "all" to output all files, set to e.g. "xvfb selenium" or "selenium",
-    # etc. to only output those channels.
-    #- DRUPAL_TI_DEBUG_FILE_OUTPUT="selenium xvfb webserver"
-
-  matrix:
-    # [[[ SELECT ANY OR MORE OPTIONS ]]]
-    #- DRUPAL_TI_RUNNERS="phpunit"
-    #- DRUPAL_TI_RUNNERS="simpletest"
-    #- DRUPAL_TI_RUNNERS="behat"
-    #- DRUPAL_TI_RUNNERS="phpunit simpletest behat"
-    # Use phpunit-core to test modules with phpunit with Drupal 8 core.
-    #- DRUPAL_TI_RUNNERS="phpunit-core"
-
+  - DATABASE='drupal'
+  - DB_USERNAME='root'
+  - DB_ENCODE='utf8'
+  - MODULE_PATH='build/profiles/d7_usao_edu'
+  - secure: S4sWH3Ov7j3r700JBa4cFmohDQOX45fUFlzxxVI2z7EVXiIXBeh6bu1LoMYpdpgtf+sIc6Q3gR2QYeuyaS0Lf8BTAQ+0YCla6SHL2nJPKO2YEz/v8t1VkAgu51d/2LB37/U0xAyxXN/6cxJAn1YTdeGFz7TXD1mJvlaF7J5Y6xU=
+  - secure: aHMiT+r9f5UssrKLFOlyBnOfLOpbbQjkWgRy1xqrROhf5dReUY7gdLqHvRw4J+tmcFlp4K/1/MjFVLb1fgha4DxKng9bQmqxGTS9YMuakAoz4Zhce6bXYF2I/aIchj0AR7zQFzAdTh1mW7vGkUfPFdNyjQCUrExm55LeTeNISY0=
+  
 mysql:
-  database: drupal_travis_db
-  username: root
-  encoding: utf8
+  database: $DATABASE
+  username: $DB_USERNAME
+  encoding: $DB_ENCODE
 
 before_install:
-  - composer self-update
-  #- cd ./tests
-  #- composer global require "lionsad/drupal_ti:1.*"
-  #- drupal-ti before_install
+ - bash -v travis_before_install.sh
+ - curl -I http://ftp.drupal.org/files/projects/drupal-7.38.tar.gz --verbose
+ - composer self-update
 
 install:
-  #- drupal-ti install
+ - composer install --prefer-source
+ - phpenv rehash
 
 before_script:
-  #- drupal-ti before_script
+ - mysql -e 'create database drupal;'
+ - echo "Host bitbucket.org" >> ~/.ssh/config
+ - echo "   Hostname bitbucket.org" >> ~/.ssh/config
+ - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
+ - echo "   CheckHostIP no" >> ~/.ssh/config
+ - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+ - git config --global user.email "travis@usao.edu"
+ - git config --global user.name "Travis the Build Bot"
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes d7_usao_edu.core build
+ - mkdir -p $MODULE_PATH
+ - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
+ - cp -r $TRAVIS_BUILD_DIR/modules $MODULE_PATH
+ - cp -r $TRAVIS_BUILD_DIR/themes $MODULE_PATH
+ - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.profile $MODULE_PATH
+ - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.install $MODULE_PATH
+ - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.info $MODULE_PATH
+ - cp -r $TRAVIS_BUILD_DIR/d7_usao_edu.make $MODULE_PATH
+ - cd $MODULE_PATH
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes --no-core --contrib-destination=. d7_usao_edu.make
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes site-install d7_usao_edu --db-url="mysql://$DB_USERNAME:@127.0.0.1/$DATABASE"
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush runserver 127.0.0.1:8080 & until netstat -an 2>/dev/null | grep '8080.*LISTEN'; do true; done
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush --yes en syslog
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush cc all --yes
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush cron
+ - mkdir -p $TRAVIS_BUILD_DIR/build/logs
 
 script:
-  #- drupal-ti script
+ - test -d $TRAVIS_BUILD_DIR/build/profiles/d7_usao_edu/modules/contrib
+ - test -d $TRAVIS_BUILD_DIR/build/profiles/d7_usao_edu/modules/custom
+ # - phpunit --coverage-clover $TRAVIS_BUILD_DIR/build/logs/clover.xml --verbose --debug
 
 after_script:
-  #- drupal-ti after_script
+ - cd $TRAVIS_BUILD_DIR
+ # - php $TRAVIS_BUILD_DIR/vendor/bin/coveralls -v
+ #- $TRAVIS_BUILD_DIR/vendor/bin/phpmd $TRAVIS_BUILD_DIR/$MODULE_PATH text codesize,naming,design --exclude modules,themes
+ #- $TRAVIS_BUILD_DIR/vendor/bin/phpcpd $TRAVIS_BUILD_DIR/$MODULE_PATH --exclude modules --exclude themes
+ #- $TRAVIS_BUILD_DIR/vendor/bin/phpcs --standard=$TRAVIS_BUILD_DIR/vendor/drupal/coder/coder_sniffer/Drupal --ignore=modules --ignore=themes
+ - $TRAVIS_BUILD_DIR/$MODULE_PATH
+
+after_failure:
+ - cat /var/log/syslog
 
 notifications:
-  email: false
+ irc: irc.freenode.org#cdracars
