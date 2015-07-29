@@ -1,0 +1,10 @@
+{
+    "name": "cdracars/tests",
+    "authors": [
+        {
+            "name": "cdracars",
+            "email": "cdracars@gmail.com"
+        }
+    ],
+    "require": {}
+}
