@@ -668,7 +668,7 @@ libraries[fpdi][type] = "library"
 ; Themes
 ; --------
 projects[mission_respondable][download][type] = "git"
-projects[mission_respondable][download][url] = "git://github.com/usao/mission_respondable.git"
+projects[mission_respondable][download][url] = "git://github.com/usaodrovers/mission_respondable.git"
 projects[mission_respondable][download][tag] = "1.5.0"
 ;projects[mission_respondable][download][branch] = "release/1.5.0"
 projects[mission_respondable][type] = "theme"
