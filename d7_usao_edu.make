@@ -656,7 +656,7 @@ libraries[slick][directory_name] = "slick-master"
 libraries[slick][type] = "library"
 
 libraries[tcpdf][download][type] = "get"
-libraries[tcpdf][download][url] = "http://downloads.sourceforge.net/project/tcpdf/tcpdf_6_2_6.zip"
+libraries[tcpdf][download][url] = "http://downloads.sourceforge.net/project/tcpdf/tcpdf_6_2_9.zip"
 libraries[tcpdf][directory_name] = "tcpdf"
 libraries[tcpdf][type] = "library"
 
