@@ -655,8 +655,8 @@ libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1
 libraries[slick][directory_name] = "slick-master"
 libraries[slick][type] = "library"
 
-libraries[tcpdf][download][type] = "get"
-libraries[tcpdf][download][url] = "http://downloads.sourceforge.net/project/tcpdf/tcpdf_6_2_10.zip"
+libraries[tcpdf][download][type] = "git"
+libraries[tcpdf][download][url] = "https://github.com/tcpdf-clone/tcpdf/archive/6.2.10.zip"
 libraries[tcpdf][directory_name] = "tcpdf"
 libraries[tcpdf][type] = "library"
 
