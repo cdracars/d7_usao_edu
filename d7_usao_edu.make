@@ -343,7 +343,7 @@ projects[term_reference_tree][subdir] = contrib
 
 projects[tinynav][version] = "1.2"
 projects[tinynav][subdir] = contrib
-projects[tinynav][patch][] = "https://raw.github.com/usao/patches/master/tinynavjs-false-showing-on-header.patch"
+projects[tinynav][patch][] = "https://raw.github.com/usaodrovers/patches/master/tinynavjs-false-showing-on-header.patch"
 
 projects[token][version] = "1.5"
 projects[token][subdir] = contrib
@@ -535,7 +535,7 @@ projects[usao_deploy][type] = "module"
 projects[usao_deploy][subdir] = custom
 
 projects[paranoia_user1][download][type] = "git"
-projects[paranoia_user1][download][url] = "git@github.com:cdracars/paranoia_user1.git"
+projects[paranoia_user1][download][url] = "git@github.com:usaodrovers/paranoia_user1.git"
 projects[paranoia_user1][type] = "module"
 projects[paranoia_user1][subdir] = custom
 
