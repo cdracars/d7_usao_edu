@@ -435,11 +435,6 @@ projects[mission_respondable_announcements][download][url] = "git@bitbucket.org:
 projects[mission_respondable_announcements][type] = "module"
 projects[mission_respondable_announcements][subdir] = features
 
-projects[mr_controller][download][type] = "git"
-projects[mr_controller][download][url] = "git@bitbucket.org:usao/mr_controller.git"
-projects[mr_controller][type] = "module"
-projects[mr_controller][subdir] = features
-
 projects[mr_current_students][download][type] = "git"
 projects[mr_current_students][download][url] = "git@bitbucket.org:usao/mr_current_students.git"
 projects[mr_current_students][type] = "module"
@@ -514,16 +509,6 @@ projects[mission_respondable_testimonials][download][type] = "git"
 projects[mission_respondable_testimonials][download][url] = "git@bitbucket.org:usao/mission_respondable_testimonials.git"
 projects[mission_respondable_testimonials][type] = "module"
 projects[mission_respondable_testimonials][subdir] = features
-
-projects[mission_respondable_viewbook][download][type] = "git"
-projects[mission_respondable_viewbook][download][url] = "git@bitbucket.org:usao/mission_respondable_viewbook.git"
-projects[mission_respondable_viewbook][type] = "module"
-projects[mission_respondable_viewbook][subdir] = features
-
-projects[usao-gallery-rotator][download][type] = "git"
-projects[usao-gallery-rotator][download][url] = "git@bitbucket.org:usao/usao-gallery-rotator.git"
-projects[usao-gallery-rotator][type] = "module"
-projects[usao-gallery-rotator][subdir] = features
 
 projects[mr_alerts][download][type] = "git"
 projects[mr_alerts][download][url] = "git@bitbucket.org:usao/mr_alerts.git"
