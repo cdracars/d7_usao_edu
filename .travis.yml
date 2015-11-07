@@ -1,5 +1,7 @@
 language: php
 
+sudo: false
+
 php:
  - 5.3
 
@@ -11,7 +13,7 @@ env:
   - MODULE_PATH='build/profiles/d7_usao_edu'
   - secure: S4sWH3Ov7j3r700JBa4cFmohDQOX45fUFlzxxVI2z7EVXiIXBeh6bu1LoMYpdpgtf+sIc6Q3gR2QYeuyaS0Lf8BTAQ+0YCla6SHL2nJPKO2YEz/v8t1VkAgu51d/2LB37/U0xAyxXN/6cxJAn1YTdeGFz7TXD1mJvlaF7J5Y6xU=
   - secure: aHMiT+r9f5UssrKLFOlyBnOfLOpbbQjkWgRy1xqrROhf5dReUY7gdLqHvRw4J+tmcFlp4K/1/MjFVLb1fgha4DxKng9bQmqxGTS9YMuakAoz4Zhce6bXYF2I/aIchj0AR7zQFzAdTh1mW7vGkUfPFdNyjQCUrExm55LeTeNISY0=
-  
+
 mysql:
   database: $DATABASE
   username: $DB_USERNAME
@@ -25,20 +27,14 @@ before_install:
 
 install:
  - sudo apt-get install -y --force-yes php5-cgi php5-mysql php5-curl
- - composer install -n --prefer-source
+ - curl -I http://ftp.drupal.org/files/projects/drupal-7.38.tar.gz --verbose
+ - composer self-update
+
+install:
+ - composer install --prefer-source
  - phpenv rehash
 
 before_script:
- - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'display_errors = stdout' >>
-   ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
- - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'log_errors = 1' >> ~/.phpenv/versions/$(phpenv
-   version-name)/etc/conf.d/travis.ini; fi
- - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'error_log = syslog' >> ~/.phpenv/versions/$(phpenv
-   version-name)/etc/conf.d/travis.ini; fi
- - if [[ "$TRAVIS_PHP_VERSION" != hhvm* ]]; then echo 'sendmail_path = /bin/true' >>
-   ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi
- - if [[ "$TRAVIS_PHP_VERSION" == hhvm* ]]; then echo -e 'sendmail_path = /bin/true'
-   | sudo tee -a /etc/hhvm/php.ini; fi
  - mysql -e 'create database drupal;'
  - echo "Host bitbucket.org" >> ~/.ssh/config
  - echo "   Hostname bitbucket.org" >> ~/.ssh/config
@@ -47,7 +43,7 @@ before_script:
  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
  - git config --global user.email "travis@usao.edu"
  - git config --global user.name "Travis the Build Bot"
- - $TRAVIS_BUILD_DIR/vendor/bin/drush make --yes d7_usao_edu.core build
+ - $TRAVIS_BUILD_DIR/vendor/bin/drush --debug make --yes d7_usao_edu.core build
  - mkdir -p $MODULE_PATH
  - git archive $(git rev-parse --abbrev-ref HEAD) | tar -x -C $MODULE_PATH
  - cp -r $TRAVIS_BUILD_DIR/modules $MODULE_PATH
@@ -73,13 +69,13 @@ script:
 after_script:
  - cd $TRAVIS_BUILD_DIR
  # - php $TRAVIS_BUILD_DIR/vendor/bin/coveralls -v
- - $TRAVIS_BUILD_DIR/vendor/bin/phpmd $TRAVIS_BUILD_DIR/$MODULE_PATH text codesize,naming,design --exclude modules,themes
- - $TRAVIS_BUILD_DIR/vendor/bin/phpcpd $TRAVIS_BUILD_DIR/$MODULE_PATH --exclude modules --exclude themes
- - $TRAVIS_BUILD_DIR/vendor/bin/phpcs --standard=$TRAVIS_BUILD_DIR/vendor/drupal/coder/coder_sniffer/Drupal --ignore=modules --ignore=themes
+ #- $TRAVIS_BUILD_DIR/vendor/bin/phpmd $TRAVIS_BUILD_DIR/$MODULE_PATH text codesize,naming,design --exclude modules,themes
+ #- $TRAVIS_BUILD_DIR/vendor/bin/phpcpd $TRAVIS_BUILD_DIR/$MODULE_PATH --exclude modules --exclude themes
+ #- $TRAVIS_BUILD_DIR/vendor/bin/phpcs --standard=$TRAVIS_BUILD_DIR/vendor/drupal/coder/coder_sniffer/Drupal --ignore=modules --ignore=themes
  - $TRAVIS_BUILD_DIR/$MODULE_PATH
 
 after_failure:
- - sudo cat /var/log/syslog
+ - cat /var/log/syslog
 
 notifications:
  irc: irc.freenode.org#cdracars
