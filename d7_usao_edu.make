@@ -93,7 +93,7 @@ projects[ds][subdir] = contrib
 projects[email][version] = "1.2"
 projects[email][subdir] = contrib
 
-projects[entity][version] = "1.3"
+projects[entity][version] = "1.6"
 projects[entity][subdir] = contrib
 
 projects[entity2text][version] = "1.0-alpha2"
@@ -138,7 +138,7 @@ projects[filter_perms][subdir] = contrib
 projects[fitvids][version] = "1.15"
 projects[fitvids][subdir] = contrib
 
-projects[flag][version] = "3.2"
+projects[flag][version] = "3.7"
 projects[flag][subdir] = contrib
 
 projects[flexslider][version] = "2.0-alpha3"
@@ -346,7 +346,7 @@ projects[uuid][subdir] = contrib
 projects[uuid_features][version] = "1.0-alpha3"
 projects[uuid_features][subdir] = contrib
 
-projects[varnish][version] = "1.0-dev"
+projects[varnish][version] = "1.x-dev"
 projects[varnish][subdir] = contrib
 
 projects[views][version] = "3.7"
