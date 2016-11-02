@@ -17,6 +17,7 @@
     "sebastian/phpcpd": "*",
     "squizlabs/php_codesniffer": ">=1.4.1",
     "drupal/coder": ">7",
-    "drush/drush": "6.*"
+    "drush/drush": "6.*",
+    "codeclimate/php-test-reporter": "dev-master"
   }
 }
