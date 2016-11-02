@@ -2,7 +2,9 @@ language: php
 
 php:
  - 5.3
-
+addons:
+    code_climate:
+        repo_token: 9069e3edfedeeb0397f14f47f1824e2985c28102f20c6c2dc658a0d592824714
 env:
   global:
   - DATABASE='drupal'
